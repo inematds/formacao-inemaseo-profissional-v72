@@ -120,7 +120,7 @@
         {
           "rot": "Terminal · create the client folder",
           "icone": "terminal",
-          "conteudo": "mkdir -p <cliente>/{docs,briefings,reports,scripts,data/gsc}\ncd <cliente> && git init -b main\nprintf '.env\\n*.key\\ncredenciais/\\n' > .gitignore\ntouch .env AGENTS.md data/urls-chave.txt data/consultas-alvo.txt"
+          "conteudo": "mkdir -p <client>/{docs,briefings,reports,scripts,data/gsc}\ncd <client> && git init -b main\nprintf '.env\\n*.key\\ncredenciais/\\n' > .gitignore\ntouch .env AGENTS.md data/urls-chave.txt data/consultas-alvo.txt"
         },
         {
           "rot": "Structure (template for the INEMA working repo)",

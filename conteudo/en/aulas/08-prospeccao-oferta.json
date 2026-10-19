@@ -124,7 +124,7 @@
         {
           "rot": "Prospect list (CSV)",
           "icone": "arquivo",
-          "conteudo": "negocio,site,por_que_escolhi,achado_publico,url_do_achado,contato,data_contato,resposta,opt_out\n[nome],[endereço do site],[bem avaliado no bairro],[serviços sem texto no HTML],[endereço da página do achado],[e-mail público],,,"
+          "conteudo": "business,site,why_i_chose_it,public_finding,finding_url,contact,contact_date,response,opt_out\n[name],[website address],[well rated in the neighborhood],[services with no text in the HTML],[finding page address],[public email],,,"
         },
         {
           "rot": "First contact",

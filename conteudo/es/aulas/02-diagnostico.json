@@ -123,17 +123,17 @@
         {
           "rot": "Terminal · radiografía del método (bash)",
           "icone": "terminal",
-          "conteudo": "git clone https://github.com/inematds/inemaseo-metodo && cd inemaseo-metodo\ntools/auditoria.sh https://www.<site-do-cliente.com> /<pagina-1>/ /<pagina-2>/"
+          "conteudo": "git clone https://github.com/inematds/inemaseo-metodo && cd inemaseo-metodo\ntools/auditoria.sh https://www.<sitio-del-cliente.com> /<pagina-1>/ /<pagina-2>/"
         },
         {
           "rot": "Terminal · auditor y nota de preparación (Python 3.10+)",
           "icone": "terminal",
-          "conteudo": "git clone https://github.com/inematds/inemaseo-sistemas && cd inemaseo-sistemas\npython3 ferramentas/auditor/auditor.py https://<site-do-cliente.com> --max 50\npython3 ferramentas/agente-ready/agente-ready.py https://<site-do-cliente.com>"
+          "conteudo": "git clone https://github.com/inematds/inemaseo-sistemas && cd inemaseo-sistemas\npython3 ferramentas/auditor/auditor.py https://<sitio-del-cliente.com> --max 50\npython3 ferramentas/agente-ready/agente-ready.py https://<sitio-del-cliente.com>"
         },
         {
           "rot": "Planilla de la batería (CSV)",
           "icone": "arquivo",
-          "conteudo": "data,assistente,pergunta,execucao,cliente_citado(sim/nao/parcial),concorrentes_citados,fontes_citadas,erros_factuais\n<AAAA-MM-DD>,<assistente>,<pergunta neutra 01>,1,,,,"
+          "conteudo": "fecha,asistente,pregunta,ejecucion,cliente_citado(si/no/parcial),competidores_citados,fuentes_citadas,errores_facticos\n<AAAA-MM-DD>,<asistente>,<pregunta neutral 01>,1,,,,"
         },
         {
           "rot": "Diagnóstico de una página",

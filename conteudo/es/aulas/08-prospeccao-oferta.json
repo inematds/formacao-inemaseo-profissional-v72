@@ -124,7 +124,7 @@
         {
           "rot": "Lista de prospectos (CSV)",
           "icone": "arquivo",
-          "conteudo": "negocio,site,por_que_escolhi,achado_publico,url_do_achado,contato,data_contato,resposta,opt_out\n[nombre],[dirección del sitio],[bien valorado en el barrio],[servicios sin texto en el HTML],[dirección de la página del hallazgo],[correo público],,,"
+          "conteudo": "negocio,site,por_que_lo_elegi,hallazgo_publico,url_del_hallazgo,contacto,fecha_contacto,respuesta,opt_out\n[nombre],[dirección del sitio],[bien valorado en el barrio],[servicios sin texto en el HTML],[dirección de la página del hallazgo],[correo público],,,"
         },
         {
           "rot": "Primer contacto",
