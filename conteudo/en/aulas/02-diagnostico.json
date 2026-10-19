@@ -250,7 +250,7 @@
               "t": "It will show what the AIs answered that day, to the same 20 questions. Since answers vary, we repeat it every month and compare.",
               "vai": "fim-bom",
               "nota": 2,
-              "comenta": "To be honest: it's a sample, repeated with the same questions. The official citation dashboards today are Bing AI Performance and the AI report in Search Console."
+              "comenta": "To be honest: it's a sample, repeated with the same questions. The official dashboards today are Bing AI Performance, which shows citations, and the Search Console AI report, which shows impressions only."
             },
             {
               "t": "Yes, tool X gives you your official AI score.",

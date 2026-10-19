@@ -104,7 +104,7 @@
           ]},
         "ia": {"cliente": "E o diagnóstico vai mostrar se eu estou no ChatGPT?",
           "opcoes": [
-            {"t": "Vai mostrar o que as IAs responderam naquele dia, às mesmas 20 perguntas. Como as respostas variam, repetimos todo mês e comparamos.", "vai": "fim-bom", "nota": 2, "comenta": "Honesto: é uma amostra, repetida com as mesmas perguntas. Os painéis oficiais de citação hoje são o Bing AI Performance e o relatório de IA do Search Console."},
+            {"t": "Vai mostrar o que as IAs responderam naquele dia, às mesmas 20 perguntas. Como as respostas variam, repetimos todo mês e comparamos.", "vai": "fim-bom", "nota": 2, "comenta": "Honesto: é uma amostra, repetida com as mesmas perguntas. Os painéis oficiais hoje são o Bing AI Performance, que mostra citações, e o relatório de IA do Search Console, que mostra só impressões."},
             {"t": "Sim, a ferramenta X dá a sua nota oficial de IA.", "vai": "fim-nota", "nota": 0, "comenta": "Não existe nota oficial de IA de ferramenta. O Google avisa que métricas \"internas\" desse tipo não existem do lado dele."}
           ]},
         "fim-promessa": {"fim": true, "titulo": "Contrato frágil", "texto": "Ela assinou pela promessa. No mês 3, sem primeiro lugar, ela cancela e conta para outras clínicas."},
