@@ -1,0 +1,252 @@
+{
+  "slug": "plano-30-90-180",
+  "num": 3,
+  "menu": "Plan",
+  "titulo": "From diagnosis to the 30/90/180 plan, by impact × effort",
+  "titulo_curto": "30/90/180 plan",
+  "minutos": 18,
+  "lead": "The diagnosis tells you what's wrong. The plan tells you in what order to fix it, who does it and how you know it worked. The order that worked at INEMA: foundation and measurement in the first 30 days, content afterward, authority and other languages only when the index responds.",
+  "objetivo": "sort the findings by impact × effort and write a 30/90/180-day plan with a success metric and an owner on each line.",
+  "competencias": [
+    "priorizar-impacto-esforco",
+    "escrever-plano-30-90-180",
+    "definir-metrica-por-iniciativa"
+  ],
+  "aprende": [
+    {
+      "t": "The impact × effort matrix with the diagnostic findings"
+    },
+    {
+      "t": "Why foundation and measurement come before content"
+    },
+    {
+      "t": "A metric and an owner on every line, and targets as hypotheses"
+    },
+    {
+      "t": "The don't-do list, written into the plan itself"
+    }
+  ],
+  "hero_alt": "Desk seen from above with sheets organized in three columns, blank sticky notes, a pen and a ruler.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From findings to the plan's three windows",
+      "sub": "Tap each block.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Findings",
+          "sub": "from the diagnostic",
+          "detalhe": "Everything the X-ray, the readiness check and the question set showed, one per line, with the affected URL."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Impact × effort",
+          "sub": "the matrix",
+          "detalhe": "Impact: how much it changes what the search engine sees or the non-branded number. Effort: your hours and the client's. High impact and low effort go first."
+        },
+        {
+          "icone": "portao",
+          "titulo": "30 days",
+          "sub": "foundation and measurement",
+          "forte": true,
+          "detalhe": "Search Console and Bing verified, canonical, sitemap, robots by purpose, entity, weekly non-branded export turned on. Without measurement, nothing that comes after can be proven."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "90 days",
+          "sub": "your own content",
+          "detalhe": "A few pages with data only the client has, at the pace the site can handle, with a human gate. Title tweaks where there are impressions but no clicks."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "180 days",
+          "sub": "authority and language",
+          "detalhe": "External links and mentions, another language for the winning pages. Only after the index and impressions have responded."
+        }
+      ],
+      "legenda": "Foundation first. What comes next only goes in once the previous step has shown results in the dashboard."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to write the plan",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "Matrix",
+          "sub": "10 findings",
+          "texto": [
+            "Give each finding an impact score (high, medium, low) and an effort score (hours).",
+            "A finding with no impact on what the search engine sees or on non-branded goes to the end, even if it's easy."
+          ]
+        },
+        {
+          "titulo": "Critical sequence",
+          "sub": "what blocks the rest",
+          "texto": [
+            "In the INEMA roadmap, four initiatives were foundation and came in the first 30 days: measurement turned on, repository links to the site, unlocked profiles, the author's entity.",
+            "Content only after that. Other languages and external mentions only once the index has shown results."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "On 10/05, 12 of 14 key URLs were indexed; on 10/13, 13 of 14. Only with the index responding does the next window make sense."
+          }
+        },
+        {
+          "titulo": "Metric and owner",
+          "sub": "on every line",
+          "texto": [
+            "Each initiative has who does it (you, the client, the agent) and how you check it (a number in the dashboard, a file, a URL responding).",
+            "A numeric target is a hypothesis: write that down and recalibrate on day 30 with the dashboard data."
+          ]
+        },
+        {
+          "titulo": "What not to do",
+          "sub": "written into the plan",
+          "texto": [
+            "Publishing a big batch all at once, a network of sites, a paid indexer, one page per keyword variation, translation without review.",
+            "Writing this into the plan protects the client from you when you're in a hurry."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "283 profiles published in a single commit: of the 6 in the sample, 5 ended up \"discovered, not indexed\". The first line of INEMA's \"don't do\" list is not to repeat that."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Plan templates",
+      "sub": "Copy it and swap out what's in [brackets].",
+      "blocos": [
+        {
+          "rot": "Impact × effort matrix",
+          "icone": "lista",
+          "conteudo": "| # | finding | URL | impact (H/M/L) | effort (h) | window |\n|---|---|---|---|---|---|\n| 1 | [canonical mixed with and without www] | [/] | H | 2 | 30 d |\n| 2 | [Bing Webmaster not verified] | — | H | 0.5 | 30 d |\n| 3 | [service pages with little text in the HTML] | [/servicos/] | H | 8 | 30 d |\n| 4 | [long title on 28 pages] | [several] | L | 3 | 90 d |"
+        },
+        {
+          "rot": "One-page 30/90/180 plan",
+          "icone": "calendario",
+          "conteudo": "PLAN — [site] — start [date]\n\n| window | initiative | owner | how to check |\n|---|---|---|---|\n| 30 d | Search Console and Bing verified; sitemap submitted | client (DNS) + me | property active in both dashboards |\n| 30 d | weekly non-branded export set up | me | 2 lines in the weekly file |\n| 30 d | single canonical, robots by purpose | me | X-ray with no major finding |\n| 90 d | [3] pages with original data, client gate | I write, client approves | indexed in URL Inspection |\n| 90 d | new title where there are impressions with no clicks | me | before × after in 2 weeks |\n| 180 d | external mentions; [language] version of the winning page | client (relationships) + me | impressions in that language |\n\nGoals are hypotheses; we recalibrate on day 30 with the dashboard.\n\nWE DO NOT DO: a large batch of pages at once, a network of sites, a paid indexer,\na page per keyword variation, translation without review."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your first client's plan",
+      "sub": "Use the findings from lesson 2.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Matrix with 10 findings",
+          "min": "30 min",
+          "texto": "Move the findings from the diagnosis into the matrix, with impact, effort and window.",
+          "pronto": "the matrix has 10 rows, each with a URL (or \"whole site\"), impact, hours and window; no content row is in the 30-day window if measurement isn't on yet."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · One-page plan",
+          "min": "40 min",
+          "texto": "Write the 30/90/180 plan with an owner and a \"how to check\" on each row, plus the \"we do not do\" block.",
+          "pronto": "the plan fits on one page, every row has an owner and a check the client can do on their own, and it includes the sentence that goals are hypotheses to recalibrate on day 30."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The client wants to start with articles. Measurement isn't on yet. What do you propose?",
+          "opcoes": [
+            "Start with the articles, to show work.",
+            "Turn on measurement and the foundation in the first 30 days; without that, the effect of the articles can't be proven.",
+            "Do everything at the same time.",
+            "Wait 6 months."
+          ],
+          "certa": 1,
+          "explica": "Without a baseline and a weekly export, you don't have the \"before.\" The result of the articles becomes opinion.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "What does the case of INEMA's 283 profile pages teach the plan?",
+          "opcoes": [
+            "That profile pages don't work.",
+            "That publishing a large batch of thin pages at once chokes crawling: of the 6 in the sample, 5 had not been crawled.",
+            "That you need to pay for an indexer.",
+            "That Google was down."
+          ],
+          "certa": 1,
+          "explica": "A large batch of similar pages signals low value. The plan writes that into the \"we do not do\" block.",
+          "ref": "passos"
+        },
+        {
+          "p": "How should you treat a goal like \"X thousand impressions in 90 days\" in the plan?",
+          "opcoes": [
+            "As a contractual guarantee.",
+            "As a hypothesis, written that way, and recalibrated on day 30 with the dashboard data.",
+            "Don't write any goal at all.",
+            "Copy another client's goal."
+          ],
+          "certa": 1,
+          "explica": "A goal helps you decide; a promise becomes a demand for payment. The site's own data on day 30 is the right basis.",
+          "ref": "passos"
+        },
+        {
+          "p": "What does every row of the plan need to have?",
+          "opcoes": [
+            "A price.",
+            "An owner and a way to check that the client can do on their own.",
+            "A paid tool.",
+            "A target ranking."
+          ],
+          "certa": 1,
+          "explica": "An owner keeps the task from hanging in the air. A simple check lets the client follow along without depending on you.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "Impact × effort",
+          "texto": "High impact and low effort first; impact is what changes for the searcher or for non-branded traffic."
+        },
+        {
+          "t": "30 → 90 → 180",
+          "texto": "Foundation and measurement, then content, then authority and language."
+        },
+        {
+          "t": "A goal is a hypothesis",
+          "texto": "Recalibrate on day 30 with the dashboard. And write the \"we do not do\" block into the plan itself."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "inemaSEO method: the 10 steps and Plan B",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Course 3 · Measurement and Routine",
+          "href": "https://inematds.github.io/formacao-inemaseo-medicao-v72/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Selling with AI: a solution and a price that scales",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/solucao-preco/",
+          "icone": "alvo"
+        }
+      ]
+    }
+  ]
+}

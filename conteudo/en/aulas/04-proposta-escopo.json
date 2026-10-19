@@ -1,0 +1,236 @@
+{
+  "slug": "proposta-escopo",
+  "num": 4,
+  "menu": "Proposal",
+  "titulo": "Proposal and scope: four blocks, deliverables and limits",
+  "titulo_curto": "Proposal and scope",
+  "minutos": 17,
+  "lead": "The proposal turns the plan into a commitment. It says what you deliver, what you don't deliver, and what the client needs to do. A clear scope avoids the month 4 fight, when the client thinks \"SEO\" included everything, up to position 1.",
+  "objetivo": "write a one-page proposal with the scope in four blocks, deliverables, limits, and what the client needs to do.",
+  "competencias": [
+    "define-scope",
+    "write-one-page-proposal",
+    "list-client-prerequisites"
+  ],
+  "aprende": [
+    {
+      "t": "The four scope blocks: foundation, content, measurement, AI visibility"
+    },
+    {
+      "t": "A deliverable you can check and a limit in writing"
+    },
+    {
+      "t": "What the client needs to do for it to work"
+    },
+    {
+      "t": "Market ranges as a reference, not as a price list"
+    }
+  ],
+  "hero_alt": "Two people review a sheet of paper together on a table; one points at an item with a pen.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Four scope blocks",
+      "sub": "Tap each block.",
+      "nos": [
+        {
+          "icone": "portao",
+          "titulo": "Foundation",
+          "sub": "technical",
+          "detalhe": "Verified dashboards, a single canonical, sitemap with a real date, robots by purpose, thin pages kept out of the index, entity with @id. Deliverable: an X-ray with no major finding."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Content",
+          "sub": "your own data",
+          "detalhe": "A few pages with data that only the client has, a checklist before publishing, internal links. Deliverable: pages live and indexed. The client is the one who supplies the data."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Measurement",
+          "sub": "every week",
+          "detalhe": "Weekly non-branded export, URL Inspection of the key URLs, a one-page monthly report. Deliverable: the file and the report, every month."
+        },
+        {
+          "icone": "robo",
+          "titulo": "AI visibility",
+          "sub": "measured, not promised",
+          "forte": true,
+          "detalhe": "AI bots by purpose, readiness, a monthly question set run by hand, reading of the official dashboards (Bing AI Performance, the AI report in Search Console). Deliverable: the spreadsheet and the reading. Citations can't be guaranteed."
+        }
+      ],
+      "legenda": "Each block has a deliverable the client can check on their own and a limit in writing."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to put the proposal together",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "Scope",
+          "sub": "what's included",
+          "texto": [
+            "Choose the blocks the diagnosis called for. Not every client needs all four in the first month.",
+            "For each block: deliverable, deadline, and how to check it."
+          ]
+        },
+        {
+          "titulo": "Limits",
+          "sub": "what's not included",
+          "texto": [
+            "Write down what you don't promise: position, AI citations, number of articles, indexing time.",
+            "Google says there is no shortcut and no special requirement for AI, and AI answers vary with every run. That goes in the text, in those words."
+          ]
+        },
+        {
+          "titulo": "The client does",
+          "sub": "prerequisites",
+          "texto": [
+            "Access to the domain when needed, 1 to 2 hours a week of review while there is content, someone who decides and approves, credentials at the right moment (not before).",
+            "Without that, the deadline moves along with their review, and the proposal says so."
+          ]
+        },
+        {
+          "titulo": "Price",
+          "sub": "a reference, not a price list",
+          "texto": [
+            "US vendors advertise a one-time GEO audit between US$ 500 and US$ 7,500, and monthly support for a small business between US$ 2,000 and US$ 6,000. These are numbers from people who sell, with no independent study.",
+            "There is no reliable data for Brazil. Adapt it to your market and test."
+          ],
+          "exemplo": {
+            "rot": "To go deeper",
+            "texto": "Price ladder and menu of options are in course 2 of the Selling with AI Program; ranges by service and \"price is a test\", in course 4."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "One-page proposal template",
+      "sub": "Copy it and swap out what's in [brackets].",
+      "blocos": [
+        {
+          "rot": "Proposal",
+          "icone": "arquivo",
+          "conteudo": "PROPOSAL — [client] — [date]\n\nSTARTING POINT (from the diagnosis of [date])\n- [3 findings, one line each]\n- Non-branded searches: [clicks]/[impressions] in 28 days. Questions in the AIs: showed up in [x] of [y].\n\nSCOPE\n| block | deliverable | deadline | how you check it |\n|---|---|---|---|\n| Foundation | X-ray with no major finding | 30 d | before × after report |\n| Measurement | weekly export + 1-page monthly report | every month | file and report |\n| Content | [3] pages with your data, approved by you | 90 d | indexed URLs |\n| AI visibility | question set of [20] questions, by hand, every month | every month | spreadsheet |\n\nNOT INCLUDED / I DON'T PROMISE\n- Search engine ranking or AI citation (nobody controls it; Google says there is no shortcut).\n- Volume of articles. Site networks. Paid indexer.\n- Touching the site or the dashboards without written authorization (attached).\n\nYOU NEED TO PROVIDE\n- Read access to Search Console and Bing Webmaster; access to the domain when it's time to verify.\n- [1–2] h per week to review and approve content; one person who decides.\n\nINVESTMENT: [amount] — [payment terms]. Scope review on day 30."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the proposal ready to send",
+      "sub": "Use the diagnosis and the plan from lessons 2 and 3.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · One-page proposal",
+          "min": "45 min",
+          "texto": "Fill in the template with the diagnosis and the plan. Choose only the blocks the diagnosis justifies.",
+          "pronto": "the proposal fits on one page, each chosen block has a deliverable, a deadline and a way to check it, and the starting point has at least one number from the diagnosis."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Limits and prerequisites",
+          "min": "20 min",
+          "texto": "Write the \"not included / I don't promise\" section and the \"you need to provide\" section. Read it out loud as if it were for the client.",
+          "pronto": "there are at least 3 limits (ranking, AI citation, volume) and at least 2 client prerequisites, with hours per week written as a number."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "What goes into the \"AI visibility\" block of the proposal?",
+          "opcoes": [
+            "Guaranteed citation in ChatGPT.",
+            "Bots by purpose, readiness, a monthly question set and reading the official dashboards, without guaranteeing citation.",
+            "An llms.txt as the main deliverable.",
+            "An AI score from a tool."
+          ],
+          "certa": 1,
+          "explica": "What you deliver is preparation and measurement. Citation is a result of the AIs, which vary with every run.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "A client asks how much it costs. You saw that US vendors charge from US$ 500 to 7,500 per audit. How do you use that number?",
+          "opcoes": [
+            "Convert it and charge the same.",
+            "As a market reference from people who sell it, with no independent study; adapt it to your market and test.",
+            "Charge the maximum.",
+            "Ignore pricing."
+          ],
+          "certa": 1,
+          "explica": "These are numbers advertised by vendors, from another country. They help you get a sense of the range, not as a price list.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why does the proposal list what the client needs to do?",
+          "opcoes": [
+            "To share the blame.",
+            "Because content with their own data and domain verification depend on them; without that, the deadline moves along with their review.",
+            "To charge more.",
+            "No need to list it."
+          ],
+          "certa": 1,
+          "explica": "A written prerequisite avoids the month 4 conversation: \"why didn't it go out?\" has an answer on paper.",
+          "ref": "passos"
+        },
+        {
+          "p": "Which limit should be written in the proposal?",
+          "opcoes": [
+            "\"We guarantee position 1.\"",
+            "\"We don't promise search engine ranking or AI citation.\"",
+            "\"We publish 100 articles per month.\"",
+            "\"We use a paid indexer to speed things up.\""
+          ],
+          "certa": 1,
+          "explica": "It's the limit that protects both sides. The other three are promises or risky tactics.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "Four blocks",
+          "texto": "Foundation, content, measurement and AI visibility, each with a deliverable and a way to check it."
+        },
+        {
+          "t": "Written limit",
+          "texto": "Ranking and citation are not promised. The client reads this before signing."
+        },
+        {
+          "t": "Price is a reference",
+          "texto": "Ranges from US vendors (US$ 500 to 7,500 per audit) are only a guide; adapt them to your market."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "AEO/GEO Playbook (aiv2026): commercial summary and prerequisites",
+          "href": "https://github.com/inematds/aiv2026/blob/main/playbook-aeo-geo.md",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Selling with AI: a solution and a price that scales",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/solucao-preco/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Selling with AI: the first client's price",
+          "href": "https://inematds.github.io/formacao-vendas-ia-primeiro-cliente-v72/aulas/preco/",
+          "icone": "alvo"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "slug": "proposta-escopo",
+  "num": 4,
+  "menu": "Propuesta",
+  "titulo": "Propuesta y alcance: cuatro bloques, entregables y límites",
+  "titulo_curto": "Propuesta y alcance",
+  "minutos": 17,
+  "lead": "La propuesta convierte el plan en un compromiso. Dice qué entregas, qué no entregas y qué tiene que hacer el cliente. Un alcance claro evita la pelea del mes 4, cuando el cliente cree que \"SEO\" incluía todo, hasta la posición 1.",
+  "objetivo": "escribir una propuesta de una página con el alcance en cuatro bloques, entregables, límites y lo que el cliente tiene que hacer.",
+  "competencias": [
+    "delimitar-escopo",
+    "escrever-proposta-uma-pagina",
+    "listar-pre-requisitos-do-cliente"
+  ],
+  "aprende": [
+    {
+      "t": "Los cuatro bloques de alcance: fundación, contenido, medición, visibilidad en IA"
+    },
+    {
+      "t": "Entregable que se puede comprobar y límite escrito"
+    },
+    {
+      "t": "Lo que el cliente tiene que hacer para que funcione"
+    },
+    {
+      "t": "Rangos de mercado como referencia, no como tabla"
+    }
+  ],
+  "hero_alt": "Dos personas revisan juntas una hoja de papel sobre la mesa; una señala un ítem con el bolígrafo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Cuatro bloques de alcance",
+      "sub": "Haz clic en cada bloque.",
+      "nos": [
+        {
+          "icone": "portao",
+          "titulo": "Fundación",
+          "sub": "técnica",
+          "detalhe": "Paneles verificados, canónico único, sitemap con fecha real, robots por finalidad, página delgada fuera del índice, entidad con @id. Entregable: radiografía sin hallazgo importante."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "Contenido",
+          "sub": "dato propio",
+          "detalhe": "Pocas páginas con datos que solo el cliente tiene, checklist antes de publicar, enlaces internos. Entregable: páginas en línea e indexadas. Quien aporta el dato es el cliente."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Medición",
+          "sub": "cada semana",
+          "detalhe": "Export semanal sin marca, inspección de URL de las URLs clave, informe mensual de una página. Entregable: el archivo y el informe, cada mes."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Visibilidad en IA",
+          "sub": "medida, no prometida",
+          "forte": true,
+          "detalhe": "Robots de IA por finalidad, preparación, batería de preguntas mensual a mano, lectura de los paneles oficiales (Bing AI Performance, informe de IA de Search Console). Entregable: la planilla y la lectura. La citación no se garantiza."
+        }
+      ],
+      "legenda": "Cada bloque tiene un entregable que el cliente comprueba por sí mismo y un límite escrito."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo armar la propuesta",
+      "sub": "Haz clic en cada etapa.",
+      "passos": [
+        {
+          "titulo": "Alcance",
+          "sub": "lo que entra",
+          "texto": [
+            "Elige los bloques que pidió el diagnóstico. No todos los clientes necesitan los cuatro en el primer mes.",
+            "Para cada bloque: entregable, plazo y cómo se comprueba."
+          ]
+        },
+        {
+          "titulo": "Límites",
+          "sub": "lo que no entra",
+          "texto": [
+            "Escribe lo que no prometes: posición, citación en IA, volumen de artículos, plazo de indexación.",
+            "Google dice que no hay atajo ni requisito especial para la IA, y las respuestas de las IA varían en cada ejecución. Eso va en el texto, con esas mismas palabras."
+          ]
+        },
+        {
+          "titulo": "El cliente hace",
+          "sub": "prerrequisitos",
+          "texto": [
+            "Acceso al dominio cuando haga falta, 1 a 2 horas por semana de revisión mientras haya contenido, alguien que decida y apruebe, credenciales en el momento justo (no antes).",
+            "Sin eso, el plazo se mueve junto con su revisión, y la propuesta lo dice."
+          ]
+        },
+        {
+          "titulo": "Precio",
+          "sub": "referencia, no tabla",
+          "texto": [
+            "Proveedores de EE. UU. anuncian una auditoría GEO única entre US$ 500 y US$ 7.500, y un acompañamiento mensual para pequeñas empresas entre US$ 2.000 y US$ 6.000. Son números de quien vende, sin estudio independiente.",
+            "No hay datos confiables para Brasil. Adáptalo a tu mercado y pruébalo."
+          ],
+          "exemplo": {
+            "rot": "Para profundizar",
+            "texto": "La escalera de precios y el menú de opciones están en el curso 2 de la Formación Ventas con IA; los rangos por servicio y \"el precio es una prueba\", en el curso 4."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo de propuesta de una página",
+      "sub": "Copia y cambia lo que está entre [corchetes].",
+      "blocos": [
+        {
+          "rot": "Propuesta",
+          "icone": "arquivo",
+          "conteudo": "PROPUESTA — [cliente] — [fecha]\n\nPUNTO DE PARTIDA (del diagnóstico de [fecha])\n- [3 hallazgos, de una línea cada uno]\n- Búsquedas sin la marca: [clics]/[impresiones] en 28 días. Preguntas en las IA: apareció en [x] de [y].\n\nALCANCE\n| bloque | entregable | plazo | cómo lo verificas |\n|---|---|---|---|\n| Fundación | radiografía sin hallazgo importante | 30 d | informe antes × después |\n| Medición | export semanal + informe mensual de 1 página | cada mes | archivo e informe |\n| Contenido | [3] páginas con dato tuyo, aprobadas por ti | 90 d | URLs indexadas |\n| Visibilidad en IA | batería de [20] preguntas, a mano, cada mes | cada mes | hoja de cálculo |\n\nNO ESTÁ INCLUIDO / NO PROMETO\n- Posición en buscador o citación en IA (nadie lo controla; Google dice que no hay atajo).\n- Volumen de artículos. Red de sitios. Indexador de pago.\n- Tocar el sitio o los paneles sin la autorización por escrito (anexo).\n\nTÚ NECESITAS\n- Acceso de lectura a Search Console y a Bing Webmaster; acceso al dominio al momento de verificar.\n- [1–2] h por semana para revisar y aprobar contenido; una persona que decide.\n\nINVERSIÓN: [valor] — [forma]. Revisión del alcance el día 30."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la propuesta lista para enviar",
+      "sub": "Usa el diagnóstico y el plan de las clases 2 y 3.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Propuesta de una página",
+          "min": "45 min",
+          "texto": "Completa el modelo con el diagnóstico y el plan. Elige solo los bloques que el diagnóstico justifica.",
+          "pronto": "la propuesta cabe en una página, cada bloque elegido tiene entregable, plazo y verificación, y el punto de partida tiene al menos un número del diagnóstico."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Límites y requisitos previos",
+          "min": "20 min",
+          "texto": "Escribe la sección \"no está incluido / no prometo\" y la sección \"tú necesitas\". Léela en voz alta como si fuera para el cliente.",
+          "pronto": "hay al menos 3 límites (posición, citación en IA, volumen) y al menos 2 requisitos previos del cliente, con las horas por semana escritas en número."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Qué entra en el bloque \"Visibilidad en IA\" de la propuesta?",
+          "opcoes": [
+            "Citación garantizada en ChatGPT.",
+            "Robots por finalidad, preparación, batería de preguntas mensual y lectura de los paneles oficiales, sin garantizar citación.",
+            "Un llms.txt como entrega principal.",
+            "La nota de IA de una herramienta."
+          ],
+          "certa": 1,
+          "explica": "Lo que se entrega es preparación y medición. La citación es resultado de las IA, que varían en cada ejecución.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "Un cliente pregunta cuánto cuesta. Viste que proveedores de EE. UU. cobran de US$ 500 a 7.500 por auditoría. ¿Cómo usas ese número?",
+          "opcoes": [
+            "Convertir y cobrar igual.",
+            "Como referencia de mercado de quien vende, sin estudio independiente; adaptarlo a tu mercado y probar.",
+            "Cobrar el máximo.",
+            "Ignorar el precio."
+          ],
+          "certa": 1,
+          "explica": "Son números anunciados por proveedores, de otro país. Sirven para tener una idea de rango, no como tabla.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Por qué la propuesta enumera lo que el cliente necesita hacer?",
+          "opcoes": [
+            "Para repartir la culpa.",
+            "Porque el contenido con dato propio y la verificación de dominio dependen de él; sin eso, el plazo avanza junto con su revisión.",
+            "Para cobrar más.",
+            "No hace falta enumerarlo."
+          ],
+          "certa": 1,
+          "explica": "El requisito previo escrito evita la conversación del mes 4: \"¿por qué no salió?\" tiene respuesta en el papel.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Qué límite debe estar escrito en la propuesta?",
+          "opcoes": [
+            "\"Garantizamos la posición 1.\"",
+            "\"No prometemos posición en buscador ni citación en IA.\"",
+            "\"Publicamos 100 artículos por mes.\"",
+            "\"Usamos indexador de pago para acelerar.\""
+          ],
+          "certa": 1,
+          "explica": "Es el límite que protege a ambos lados. Las otras tres son promesas o tácticas de riesgo.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para llevar",
+      "itens": [
+        {
+          "t": "Cuatro bloques",
+          "texto": "Fundación, contenido, medición y visibilidad en IA, cada uno con entregable y verificación."
+        },
+        {
+          "t": "Límite escrito",
+          "texto": "Posición y citación no se prometen. El cliente lee esto antes de firmar."
+        },
+        {
+          "t": "El precio es referencia",
+          "texto": "Rangos de proveedores de EE. UU. (US$ 500 a 7.500 por auditoría) solo orientan; adáptalos a tu mercado."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Playbook AEO/GEO (aiv2026): resumen comercial y requisitos previos",
+          "href": "https://github.com/inematds/aiv2026/blob/main/playbook-aeo-geo.md",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Ventas con IA: solución y precio que escala",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/solucao-preco/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Ventas con IA: precio del primer cliente",
+          "href": "https://inematds.github.io/formacao-vendas-ia-primeiro-cliente-v72/aulas/preco/",
+          "icone": "alvo"
+        }
+      ]
+    }
+  ]
+}

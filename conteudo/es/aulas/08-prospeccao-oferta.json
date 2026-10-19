@@ -1,0 +1,365 @@
+{
+  "slug": "prospeccao-oferta",
+  "num": 8,
+  "menu": "Prospección",
+  "titulo": "Prospección y oferta combinada: de la enseñanza al acompañamiento",
+  "titulo_curto": "Prospección y oferta",
+  "minutos": 20,
+  "lead": "Vender la construcción de sitios se volvió una disputa de precio. Lo que se vende bien es una escalera: enseñar, diagnosticar, acompañar y revisar, hasta el informe mensual. La prospección también cambia: llegas con un hallazgo público del sitio de la persona, no con un paquete. Y tu propio sitio, medido con honestidad, es la mejor prueba.",
+  "objetivo": "armar la escalera de oferta (enseñanza → diagnóstico → plan → acompañamiento) y una lista de 10 prospectos con el motivo de cada contacto.",
+  "competencias": [
+    "montar-escada-de-oferta",
+    "prospectar-com-achado-publico",
+    "usar-o-proprio-site-como-prova",
+    "planejar-a-formacao"
+  ],
+  "aprende": [
+    {
+      "t": "Los cuatro roles del Profesional 2030 aplicados al SEO"
+    },
+    {
+      "t": "La oferta combinada: SEO, IA y preparación para agentes"
+    },
+    {
+      "t": "Prospectar con hallazgo público, puerta de control y opt-out"
+    },
+    {
+      "t": "El plan con fechas para hacer el curso completo"
+    }
+  ],
+  "hero_alt": "Una consultora camina por una calle comercial de barrio con pequeñas tiendas, sosteniendo una tableta.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La escalera de oferta",
+      "sub": "Haz clic en cada bloque.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Formador",
+          "sub": "enseñar",
+          "detalhe": "Un taller corto: cómo Google, Bing y las IA encuentran un sitio, y qué es el número sin marca. Muestra método, no herramienta. Es la puerta de entrada."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Consultor",
+          "sub": "diagnóstico y plan",
+          "detalhe": "El diagnóstico de una página (clase 2), el plan 30/90/180 (clase 3) y la propuesta con límites (clase 4)."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Mentor",
+          "sub": "90 días",
+          "forte": true,
+          "detalhe": "Acompañar al equipo del cliente mientras salen la base y las primeras páginas: puertas de control, revisión, enseñanza. Al final, el equipo sabe leer el informe por sí solo."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Auditor",
+          "sub": "revisar riesgos",
+          "detalhe": "Revisar lo que el equipo ya hizo con IA: páginas en lote, robots bloqueados por error, tácticas de spam heredadas de otro proveedor. Solo lectura, por escrito, y no es un pentest."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Mensual",
+          "sub": "acompañamiento",
+          "detalhe": "Informe de una página, batería de preguntas en las IA, una decisión por mes (clase 6). Es lo que mantiene la relación."
+        }
+      ],
+      "legenda": "Orden de los roles del Profesional 2030. El cliente puede entrar en cualquier nivel; el mensual es donde se acumula la confianza."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Oferta combinada y prospección",
+      "sub": "Haz clic en cada etapa.",
+      "passos": [
+        {
+          "titulo": "Oferta combinada",
+          "sub": "SEO + IA + agentes",
+          "texto": [
+            "En un solo diagnóstico: lo que ve el buscador, la batería de preguntas en las IAs y la preparación para agentes. Un sitio nuevo, cuando haga falta, entra como parte del plan, no como el producto.",
+            "WebMCP es preparación: borrador de comunidad del W3C (document.modelContext), sin navegador estable. No es un factor de ranking."
+          ]
+        },
+        {
+          "titulo": "Encontrar prospectos",
+          "sub": "hallazgo público",
+          "texto": [
+            "Negocios bien valorados cuyo sitio tiene un problema que se ve desde afuera: página sin texto en el HTML, canónico mezclado, robots de búsqueda bloqueados.",
+            "Anota el hallazgo y la URL. Es el motivo del contacto, y ya es una muestra del diagnóstico."
+          ],
+          "exemplo": {
+            "rot": "Idea del Prospector Agent",
+            "texto": "La cinta abierta de INEMA va de descubierto → calificado → … → puerta de control → enviado, con opt-out, lista de supresión y un contacto por lead. Usa su disciplina; cambia el rediseño del sitio por el diagnóstico."
+          }
+        },
+        {
+          "titulo": "Primer contacto",
+          "sub": "corto y con salida",
+          "texto": [
+            "Un mensaje: el hallazgo, por qué pesa, la oferta de mostrar el diagnóstico. Sin promesa de posición, con opción de no recibir más mensajes.",
+            "Un contacto por prospecto. Si no hay respuesta, no insistas con una secuencia automática."
+          ]
+        },
+        {
+          "titulo": "Tu sitio es la prueba",
+          "sub": "cliente cero",
+          "texto": [
+            "Aplica el método en tu sitio y publica el antes y el después, incluso lo que no salió bien.",
+            "INEMA cuenta su propio cero: 0 de 52 mediciones en las IAs en julio, impresiones sin marca de 8 a 157, clics sin marca todavía en 0 en el club. Eso convence más que un testimonio."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos de la escalera y de la prospección",
+      "sub": "Copia y cambia lo que está entre [corchetes].",
+      "blocos": [
+        {
+          "rot": "Escalera de oferta",
+          "icone": "lista",
+          "conteudo": "NIVEL          | QUÉ ENTREGO                                     | DURACIÓN  | PRÓXIMO PASO\nFormador       | taller: Google, Bing, IAs y el número sin marca | [1 h]     | diagnóstico\nConsultor      | diagnóstico de 1 página + plan 30/90/180        | [2 sem.]  | propuesta\nMentor         | 90 días con el equipo: base, puertas de control, enseñanza | 90 días   | mensual\nAuditor        | revisión de riesgos de lo que ya se hizo con IA | [1 sem.]  | plan de corrección\nMensual        | informe de 1 página + batería + 1 decisión      | cada mes  | revisión cada 90 días"
+        },
+        {
+          "rot": "Lista de prospectos (CSV)",
+          "icone": "arquivo",
+          "conteudo": "negocio,site,por_que_escolhi,achado_publico,url_do_achado,contato,data_contato,resposta,opt_out\n[nombre],[dirección del sitio],[bien valorado en el barrio],[servicios sin texto en el HTML],[dirección de la página del hallazgo],[correo público],,,"
+        },
+        {
+          "rot": "Primer contacto",
+          "icone": "enviar",
+          "conteudo": "Asunto: [negocio] — algo que Google no está viendo en tu sitio\n\nHola, [nombre]. Miré la página [URL] como la lee Google, sin ejecutar el sitio.\n[Hallazgo en una frase] — esto provoca [efecto en una frase].\n\nHago un diagnóstico de una página (lo que ve el buscador, la preparación para IA\ny si aparecen cuando alguien le pregunta a las IAs sobre [nicho]). ¿Puedo mostrártelo?\nNo prometo posición; muestro el punto de partida y un plan.\n\n[firma]\nSi no quieres recibir otro mensaje, solo responde \"no\"."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la escalera y los 10 prospectos",
+      "sub": "La última entrega del curso.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Tu escalera de oferta",
+          "min": "30 min",
+          "texto": "Completa la escalera con los niveles que haces hoy. Para cada uno: entrega, duración y próximo paso.",
+          "pronto": "la escalera tiene al menos 4 niveles, termina en el mensual y ningún nivel promete posición ni citación."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Diez prospectos con motivo",
+          "min": "60 min",
+          "dias": 3,
+          "texto": "Elige 10 negocios de tu nicho, ejecuta la radiografía de solo lectura en la página principal de cada uno y anota el hallazgo público.",
+          "pronto": "el CSV tiene 10 filas, cada una con un hallazgo y la URL donde aparece, y la columna opt_out existe."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "Un prospecto quiere solo \"un sitio nuevo\". ¿Cómo lo encajas en tu oferta?",
+          "opcoes": [
+            "Vender solo el sitio, más barato que la competencia.",
+            "Como parte del plan que sale del diagnóstico, con medición y seguimiento; el producto es la confianza, no la construcción.",
+            "Rechazarlo.",
+            "Hacer el sitio y desaparecer."
+          ],
+          "certa": 1,
+          "explica": "Construir se volvió fácil y se convirtió en una guerra de precios. Lo que sostiene la relación es el diagnóstico, el seguimiento y la enseñanza.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "¿Qué lleva el primer contacto con un prospecto?",
+          "opcoes": [
+            "Una tabla de paquetes.",
+            "Un hallazgo público de su sitio, por qué pesa, la oferta de mostrar el diagnóstico y la opción de no recibir más mensajes.",
+            "La promesa de primera página.",
+            "Una secuencia de 5 correos automáticos."
+          ],
+          "certa": 1,
+          "explica": "El hallazgo muestra método antes de vender. El opt-out y un contacto por prospecto son respeto y evitan convertirse en spam.",
+          "ref": "codigo"
+        },
+        {
+          "p": "El cliente pregunta si WebMCP pondrá su sitio en lo más alto de las IAs. ¿Qué le dices?",
+          "opcoes": [
+            "Sí, es el nuevo ranking.",
+            "Que es un borrador del W3C, sin navegador estable; entra como preparación para agentes, no como factor de ranking.",
+            "Que ya es estándar en todos los navegadores.",
+            "Que es igual a llms.txt."
+          ],
+          "certa": 1,
+          "explica": "Vender preparación como resultado es la misma promesa vacía que la posición garantizada.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Por qué publicar el caso de tu propio sitio, incluso el cero?",
+          "opcoes": [
+            "Para llenar el portafolio.",
+            "Porque un número real con fuente, incluso el malo, prueba el método mejor que un testimonio.",
+            "Porque Google lo exige.",
+            "No conviene mostrar el cero."
+          ],
+          "certa": 1,
+          "explica": "INEMA muestra 0 de 52 en las IAs y 0 clics sin marca en el club. Eso es lo que hace creíbles los demás números.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "El mapa del curso",
+      "sub": "Cuatro niveles y los ejercicios de cada uno. Haz clic en un ejercicio para ver el \"listo cuando\".",
+      "degraus": [
+        {
+          "aula": "o-que-vender",
+          "icone": "alvo",
+          "quando": "Semana 1",
+          "titulo": "Oferta",
+          "sub": "qué vender (clase 1)",
+          "saida": "Posicionamiento en 2 líneas y 5 promesas cambiadas.",
+          "passo": "Antes de hablar con un cliente, saber qué vendes y qué no prometes."
+        },
+        {
+          "aula": "diagnostico",
+          "icone": "lupa",
+          "quando": "Semanas 1 y 2",
+          "titulo": "Diagnóstico",
+          "sub": "diagnóstico, plan, propuesta (clases 2 a 4)",
+          "saida": "Diagnóstico de 1 página, plan 30/90/180 y propuesta con límites.",
+          "passo": "Requiere la oferta. El mapa muestra los ejercicios de la clase 2; el plan de abajo los lista todos."
+        },
+        {
+          "aula": "entrega-com-agentes",
+          "icone": "portao",
+          "quando": "Semana 3",
+          "titulo": "Entrega",
+          "sub": "carpeta, puertas de control y autorización (clases 5 y 7)",
+          "saida": "Carpeta del cliente con puertas de control y la autorización firmada.",
+          "passo": "Requiere la propuesta. El mapa muestra los ejercicios de la clase 5; el plan de abajo los lista todos."
+        },
+        {
+          "aula": "relatorio-mensal",
+          "icone": "grafico",
+          "quando": "Semana 4 en adelante",
+          "titulo": "Seguimiento",
+          "sub": "informe y prospección (clases 6 y 8)",
+          "saida": "Informe mensual de 1 página y 10 prospectos con hallazgo.",
+          "passo": "Requiere la entrega. A partir de aquí es rutina: un informe y una decisión por mes."
+        }
+      ],
+      "resultado": {
+        "titulo": "Al final del curso",
+        "texto": "Una oferta de confianza, del diagnóstico al informe mensual, con papel firmado y prospectos reales.",
+        "total": "16 ejercicios"
+      },
+      "rolagem_fim": {
+        "titulo": "El curso completo",
+        "texto": "Cuatro niveles en secuencia. Sube solo cuando el \"listo cuando\" del nivel anterior sea verdad."
+      },
+      "legenda": "Cada nivel usa lo que montó el anterior."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Genera tu plan con fechas",
+      "sub": "Elige la fecha de inicio y cuánto tiempo tienes por semana. El plan respeta los ejercicios que piden espera.",
+      "curso": "inemaSEO 6 · Profesional",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Clase 1 · Qué vender",
+          "aula": "o-que-vender"
+        },
+        {
+          "titulo": "Clase 2 · Diagnóstico",
+          "aula": "diagnostico"
+        },
+        {
+          "titulo": "Clase 3 · Plan 30/90/180",
+          "aula": "plano-30-90-180"
+        },
+        {
+          "titulo": "Clase 4 · Propuesta y alcance",
+          "aula": "proposta-escopo"
+        },
+        {
+          "titulo": "Clase 5 · Entrega con agentes",
+          "aula": "entrega-com-agentes"
+        },
+        {
+          "titulo": "Clase 6 · Informe mensual",
+          "aula": "relatorio-mensal"
+        },
+        {
+          "titulo": "Clase 7 · Ética y autorización",
+          "aula": "etica-autorizacao"
+        },
+        {
+          "titulo": "Clase 8 · Prospección y oferta",
+          "aula": "prospeccao-oferta"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — inemaSEO 6 · Profesional",
+        "inicio": "Inicio",
+        "ritmo": "Ritmo",
+        "termino": "Finalización prevista",
+        "ate": "hasta",
+        "pronto": "listo cuando",
+        "semanas": "semanas",
+        "travou": "## Qué se trabó y qué decidí",
+        "h": "h por semana",
+        "exs": "ejercicios"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para llevar",
+      "itens": [
+        {
+          "t": "Escalera, no paquete",
+          "texto": "Enseñar, diagnosticar, acompañar, revisar e informar todos los meses."
+        },
+        {
+          "t": "Prospecta con un hallazgo",
+          "texto": "Un problema visible desde afuera, un contacto, una opción para salir."
+        },
+        {
+          "t": "Tu sitio es la prueba",
+          "texto": "Un número real con fuente, hasta el cero, convence más que un testimonio."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Profesional 2030",
+          "href": "https://eventos.inema.pro/prof2030/",
+          "icone": "usuario"
+        },
+        {
+          "t": "Formación Ventas con IA: clientes que llegan solos",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/clientes-que-chegam/",
+          "icone": "megafone"
+        },
+        {
+          "t": "Prospector Agent (guía)",
+          "href": "https://inematds.github.io/prospector-agent/guia/",
+          "icone": "robo"
+        },
+        {
+          "t": "Curso 7 · Sistemas: arma tu propio Semrush abierto",
+          "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

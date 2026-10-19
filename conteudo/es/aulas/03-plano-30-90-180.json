@@ -1,0 +1,252 @@
+{
+  "slug": "plano-30-90-180",
+  "num": 3,
+  "menu": "Plan",
+  "titulo": "Del diagnóstico al plan 30/90/180, por impacto × esfuerzo",
+  "titulo_curto": "Plan 30/90/180",
+  "minutos": 18,
+  "lead": "El diagnóstico dice qué está mal. El plan dice en qué orden arreglarlo, quién lo hace y cómo se sabe que funcionó. El orden que funcionó en INEMA: base y medición en los primeros 30 días, contenido después, autoridad y otros idiomas solo cuando el índice responda.",
+  "objetivo": "ordenar los hallazgos por impacto × esfuerzo y escribir un plan de 30/90/180 días con métrica de éxito y responsable en cada línea.",
+  "competencias": [
+    "priorizar-impacto-esforco",
+    "escrever-plano-30-90-180",
+    "definir-metrica-por-iniciativa"
+  ],
+  "aprende": [
+    {
+      "t": "La matriz impacto × esfuerzo con los hallazgos del diagnóstico"
+    },
+    {
+      "t": "Por qué la base y la medición van antes que el contenido"
+    },
+    {
+      "t": "Métrica y responsable en cada línea, y la meta como hipótesis"
+    },
+    {
+      "t": "La lista de lo que no se hace, escrita en el propio plan"
+    }
+  ],
+  "hero_alt": "Mesa vista desde arriba con hojas organizadas en tres columnas, post-its en blanco, bolígrafo y regla.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "De los hallazgos a las tres ventanas del plan",
+      "sub": "Haz clic en cada bloque.",
+      "estilo": "escada",
+      "nos": [
+        {
+          "icone": "lista",
+          "titulo": "Hallazgos",
+          "sub": "del diagnóstico",
+          "detalhe": "Todo lo que la radiografía, la preparación y la batería de preguntas mostraron, uno por línea, con la URL afectada."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Impacto × esfuerzo",
+          "sub": "la matriz",
+          "detalhe": "Impacto: cuánto cambia lo que el buscador ve o el número sin marca. Esfuerzo: horas tuyas y del cliente. Lo de alto impacto y bajo esfuerzo va primero."
+        },
+        {
+          "icone": "portao",
+          "titulo": "30 días",
+          "sub": "base y medición",
+          "forte": true,
+          "detalhe": "Search Console y Bing verificados, canónico, sitemap, robots por finalidad, entidad, exportación semanal sin marca activada. Sin medición, nada de lo que viene después se puede probar."
+        },
+        {
+          "icone": "caneta",
+          "titulo": "90 días",
+          "sub": "contenido propio",
+          "detalhe": "Pocas páginas con datos que solo tiene el cliente, al ritmo que el sitio aguante, con puerta de control humana. Ajuste de título donde hay impresiones sin clics."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "180 días",
+          "sub": "autoridad e idioma",
+          "detalhe": "Enlaces y menciones externas, otro idioma para las páginas ganadoras. Solo después de que el índice y las impresiones hayan respondido."
+        }
+      ],
+      "legenda": "Primero la base. Lo que viene después solo entra cuando lo anterior mostró resultado en el panel."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo escribir el plan",
+      "sub": "Haz clic en cada etapa.",
+      "passos": [
+        {
+          "titulo": "Matriz",
+          "sub": "10 hallazgos",
+          "texto": [
+            "Dale a cada hallazgo una nota de impacto (alto, medio, bajo) y de esfuerzo (horas).",
+            "Un hallazgo sin impacto en lo que el buscador ve o en lo sin marca va al final, aunque sea fácil."
+          ]
+        },
+        {
+          "titulo": "Secuencia crítica",
+          "sub": "lo que bloquea todo lo demás",
+          "texto": [
+            "En la hoja de ruta de INEMA, cuatro iniciativas eran base y iban en los 30 días: medición activada, enlaces de los repositorios al sitio, fichas desbloqueadas, entidad del autor.",
+            "El contenido va solo después. Otros idiomas y menciones externas solo cuando el índice mostró resultado."
+          ],
+          "exemplo": {
+            "rot": "En INEMA",
+            "texto": "El 05/10, 12 de 14 URLs clave estaban indexadas; el 13/10, 13 de 14. Solo con el índice respondiendo tiene sentido la siguiente ventana."
+          }
+        },
+        {
+          "titulo": "Métrica y responsable",
+          "sub": "en cada línea",
+          "texto": [
+            "Cada iniciativa tiene quién la hace (tú, el cliente, el agente) y cómo se comprueba (un número en el panel, un archivo, una URL que responde).",
+            "La meta numérica es una hipótesis: escríbelo así y recalíbrala el día 30 con el dato del panel."
+          ]
+        },
+        {
+          "titulo": "Lo que no debes hacer",
+          "sub": "escrito en el plan",
+          "texto": [
+            "Publicar un lote grande de una sola vez, red de sitios, indexador de pago, una página por cada variación de palabra clave, traducción sin revisión.",
+            "Escribir esto en el plan protege al cliente de ti mismo cuando haya prisa."
+          ],
+          "exemplo": {
+            "rot": "En INEMA",
+            "texto": "283 fichas publicadas en un solo commit: de las 6 de la muestra, 5 quedaron \"descubiertas, sin indexar\". La primera línea del \"no hacer\" de INEMA es no repetir eso."
+          }
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos del plan",
+      "sub": "Copia y cambia lo que está entre [corchetes].",
+      "blocos": [
+        {
+          "rot": "Matriz impacto × esfuerzo",
+          "icone": "lista",
+          "conteudo": "| # | hallazgo | URL | impacto (A/M/B) | esfuerzo (h) | ventana |\n|---|---|---|---|---|---|\n| 1 | [canónico con y sin www mezclado] | [/] | A | 2 | 30 d |\n| 2 | [Bing Webmaster no verificado] | — | A | 0,5 | 30 d |\n| 3 | [páginas de servicio con poco texto en el HTML] | [/servicios/] | A | 8 | 30 d |\n| 4 | [título largo en 28 páginas] | [varias] | B | 3 | 90 d |"
+        },
+        {
+          "rot": "Plan de 30/90/180 en una página",
+          "icone": "calendario",
+          "conteudo": "PLAN — [sitio] — inicio [fecha]\n\n| ventana | iniciativa | responsable | cómo se verifica |\n|---|---|---|---|\n| 30 d | Search Console y Bing verificados; sitemap enviado | cliente (DNS) + yo | propiedad activa en los dos paneles |\n| 30 d | export semanal sin marca activado | yo | 2 líneas en el archivo semanal |\n| 30 d | canónico único, robots por finalidad | yo | radiografía sin hallazgo importante |\n| 90 d | [3] páginas con datos propios, puerta de control del cliente | yo escribo, el cliente aprueba | indexadas en la inspección de URL |\n| 90 d | título nuevo donde hay impresiones sin clics | yo | antes × después en 2 semanas |\n| 180 d | menciones externas; versión en [idioma] de la página ganadora | cliente (relaciones) + yo | impresiones en el idioma |\n\nLas metas son hipótesis; recalibramos el día 30 con el panel.\n\nNO HACEMOS: lote grande de páginas de una sola vez, red de sitios, indexador de pago,\npágina por variación de palabra clave, traducción sin revisión."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: el plan de tu primer cliente",
+      "sub": "Usa los hallazgos de la clase 2.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Matriz con 10 hallazgos",
+          "min": "30 min",
+          "texto": "Pasa los hallazgos del diagnóstico a la matriz, con impacto, esfuerzo y ventana.",
+          "pronto": "la matriz tiene 10 filas, cada una con URL (o \"sitio completo\"), impacto, horas y ventana; ninguna fila de contenido está en la ventana de 30 días si la medición aún no está activada."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Plan de una página",
+          "min": "40 min",
+          "texto": "Escribe el plan 30/90/180 con responsable y \"cómo se verifica\" en cada fila, más el bloque \"no hacemos\".",
+          "pronto": "el plan cabe en una página, cada fila tiene un responsable y una verificación que el cliente puede hacer solo, y está la frase de que las metas son hipótesis a recalibrar el día 30."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "El cliente quiere empezar por los artículos. La medición aún no está activada. ¿Qué propones?",
+          "opcoes": [
+            "Empezar por los artículos, para mostrar trabajo.",
+            "Activar la medición y la base en los primeros 30 días; sin eso, el efecto de los artículos no se puede probar.",
+            "Hacerlo todo al mismo tiempo.",
+            "Esperar 6 meses."
+          ],
+          "certa": 1,
+          "explica": "Sin línea de base ni export semanal, no tienes el \"antes\". El resultado de los artículos se vuelve opinión.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "¿Qué enseña el caso de las 283 fichas de INEMA para el plan?",
+          "opcoes": [
+            "Que las fichas no funcionan.",
+            "Que publicar de una sola vez un lote grande de páginas delgadas frena el rastreo: de las 6 de la muestra, 5 no habían sido rastreadas.",
+            "Que hay que pagar un indexador.",
+            "Que Google estaba caído."
+          ],
+          "certa": 1,
+          "explica": "Un lote grande de páginas parecidas señala poco valor. El plan lo escribe en el \"no hacemos\".",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Cómo tratar en el plan una meta como \"X mil impresiones en 90 días\"?",
+          "opcoes": [
+            "Como garantía contractual.",
+            "Como hipótesis, escrita así, y recalibrada el día 30 con los datos del panel.",
+            "No escribir ninguna meta.",
+            "Copiar la meta de otro cliente."
+          ],
+          "certa": 1,
+          "explica": "Una meta ayuda a decidir; una promesa se convierte en cobro. Los datos del propio sitio el día 30 son la base correcta.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿Qué debe tener toda fila del plan?",
+          "opcoes": [
+            "Un precio.",
+            "Un responsable y una forma de verificar que el cliente puede hacer solo.",
+            "Una herramienta de pago.",
+            "Una posición objetivo."
+          ],
+          "certa": 1,
+          "explica": "El responsable evita que la tarea quede en el aire. Una verificación simple deja que el cliente haga seguimiento sin depender de ti.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para llevar",
+      "itens": [
+        {
+          "t": "Impacto × esfuerzo",
+          "texto": "Primero alto impacto y bajo esfuerzo; el impacto es lo que cambia para el buscador o para lo sin marca."
+        },
+        {
+          "t": "30 → 90 → 180",
+          "texto": "Base y medición, después contenido, después autoridad e idioma."
+        },
+        {
+          "t": "La meta es una hipótesis",
+          "texto": "Recalibra el día 30 con el panel. Y escribe el \"no hacemos\" en el propio plan."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Método inemaSEO: las 10 etapas y el Plan B",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md",
+          "icone": "arquivo"
+        },
+        {
+          "t": "Curso 3 · Medición y Rutina",
+          "href": "https://inematds.github.io/formacao-inemaseo-medicao-v72/",
+          "icone": "grafico"
+        },
+        {
+          "t": "Ventas con IA: solución y precio que escala",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/solucao-preco/",
+          "icone": "alvo"
+        }
+      ]
+    }
+  ]
+}

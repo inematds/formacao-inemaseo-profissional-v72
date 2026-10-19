@@ -1,0 +1,365 @@
+{
+  "slug": "prospeccao-oferta",
+  "num": 8,
+  "menu": "Prospecting",
+  "titulo": "Prospecting and combined offer: from teaching to ongoing support",
+  "titulo_curto": "Prospecting and offer",
+  "minutos": 20,
+  "lead": "Selling website building has become a price fight. What sells well is a ladder: teach, diagnose, support, and review, all the way to the monthly report. Prospecting changes too: you show up with a public finding about the person's site, not a package. And your own site, measured honestly, is the best proof.",
+  "objetivo": "build the offer ladder (teaching → diagnosis → plan → ongoing support) and a list of 10 prospects with the reason for each contact.",
+  "competencias": [
+    "montar-escada-de-oferta",
+    "prospectar-com-achado-publico",
+    "usar-o-proprio-site-como-prova",
+    "planejar-a-formacao"
+  ],
+  "aprende": [
+    {
+      "t": "The four roles of the Professional 2030 applied to SEO"
+    },
+    {
+      "t": "The combined offer: SEO, AI, and agent readiness"
+    },
+    {
+      "t": "Prospecting with a public finding, gate, and opt-out"
+    },
+    {
+      "t": "The dated plan to complete the whole course"
+    }
+  ],
+  "hero_alt": "A consultant walks down a neighborhood shopping street lined with small shops, holding a tablet.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "The offer ladder",
+      "sub": "Tap each block.",
+      "nos": [
+        {
+          "icone": "usuario",
+          "titulo": "Trainer",
+          "sub": "teach",
+          "detalhe": "A short workshop: how Google, Bing, and AIs find a site, and what the non-branded number is. It shows the method, not a tool. It's the front door."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Consultant",
+          "sub": "diagnosis and plan",
+          "detalhe": "The diagnosis of a page (lesson 2), the 30/90/180 plan (lesson 3), and the proposal with limits (lesson 4)."
+        },
+        {
+          "icone": "calendario",
+          "titulo": "Mentor",
+          "sub": "90 days",
+          "forte": true,
+          "detalhe": "Support the client's team while the foundation and the first pages go out: gates, review, teaching. In the end, the team can read the report on their own."
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Auditor",
+          "sub": "review risks",
+          "detalhe": "Review what the team has already done with AI: batch pages, bots blocked by mistake, spam tactics inherited from another vendor. Read-only, in writing, and not a pentest."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Monthly",
+          "sub": "ongoing support",
+          "detalhe": "A one-page report, a question set run on the AIs, one decision per month (lesson 6). It's what keeps the relationship going."
+        }
+      ],
+      "legenda": "Order of the Professional 2030 roles. The client can enter at any step; the monthly is where trust builds up."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Combined offer and prospecting",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "Combined offer",
+          "sub": "SEO + AI + agents",
+          "texto": [
+            "One diagnostic covers it all: what search engines see, the question set run on the AIs, and readiness for agents. A new site, when you need one, comes in as part of the plan, not as the product.",
+            "WebMCP is preparation: a W3C community draft (document.modelContext), with no stable browser. It is not a ranking factor."
+          ]
+        },
+        {
+          "titulo": "Finding prospects",
+          "sub": "public finding",
+          "texto": [
+            "Well-reviewed businesses whose site has a problem you can see from the outside: a page with no text in the HTML, mixed canonicals, search bots blocked.",
+            "Write down the finding and the URL. It's the reason for reaching out, and it's already a sample of the diagnostic."
+          ],
+          "exemplo": {
+            "rot": "Prospector Agent idea",
+            "texto": "INEMA's open pipeline runs from discovered → qualified → … → gate → sent, with opt-out, a suppression list and one contact per lead. Use its discipline; swap the site redesign for the diagnostic."
+          }
+        },
+        {
+          "titulo": "First contact",
+          "sub": "short, with a way out",
+          "texto": [
+            "One message: the finding, why it matters, and the offer to show the diagnostic. No promise of rankings, with an option to stop receiving messages.",
+            "One contact per prospect. If there's no reply, don't push with an automatic sequence."
+          ]
+        },
+        {
+          "titulo": "Your site is the proof",
+          "sub": "client zero",
+          "texto": [
+            "Apply the method to your own site and publish the before and after, including what didn't work.",
+            "INEMA tells its own zero: 0 of 52 AI measurements in July, non-branded impressions from 8 to 157, non-branded clicks still at 0 on the club. That convinces more than a testimonial."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Offer ladder and prospecting templates",
+      "sub": "Copy it and swap out what's in [brackets].",
+      "blocos": [
+        {
+          "rot": "Offer ladder",
+          "icone": "lista",
+          "conteudo": "STEP           | WHAT I DELIVER                                  | DURATION  | NEXT STEP\nTrainer        | workshop: Google, Bing, AIs and the non-branded number | [1 h]     | diagnostic\nConsultant     | 1-page diagnostic + 30/90/180 plan              | [2 wks]   | proposal\nMentor         | 90 days with the team: foundation, gates, teaching | 90 days | monthly\nAuditor        | risk review of what's already been done with AI | [1 wk]    | fix plan\nMonthly        | 1-page report + question set + 1 decision       | every month | review every 90 days"
+        },
+        {
+          "rot": "Prospect list (CSV)",
+          "icone": "arquivo",
+          "conteudo": "negocio,site,por_que_escolhi,achado_publico,url_do_achado,contato,data_contato,resposta,opt_out\n[nome],[endereço do site],[bem avaliado no bairro],[serviços sem texto no HTML],[endereço da página do achado],[e-mail público],,,"
+        },
+        {
+          "rot": "First contact",
+          "icone": "enviar",
+          "conteudo": "Subject: [business] — one thing Google isn't seeing on your site\n\nHi [name]. I looked at the page [URL] the way Google reads it, without running the site.\n[Finding in one sentence] — this causes [effect in one sentence].\n\nI do a one-page diagnostic (what search engines see, readiness for AI,\nand whether you show up when someone asks the AIs about [niche]). Can I show you?\nI don't promise rankings; I show the starting point and a plan.\n\n[signature]\nIf you'd rather not get another message, just reply \"no\"."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the ladder and the 10 prospects",
+      "sub": "The last deliverable of the course.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Your offer ladder",
+          "min": "30 min",
+          "texto": "Fill in the ladder with the steps you do today. For each one: deliverable, duration and next step.",
+          "pronto": "the ladder has at least 4 steps, ends in the monthly one, and no step promises a ranking or a citation."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Ten prospects with a reason",
+          "min": "60 min",
+          "dias": 3,
+          "texto": "Pick 10 businesses in your niche, run the read-only X-ray on each one's main page, and write down the public finding.",
+          "pronto": "the CSV has 10 rows, each with a finding and the URL where it appears, and the opt_out column exists."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "A prospect wants just \"a new site.\" How do you fit that into your offer?",
+          "opcoes": [
+            "Sell only the site, cheaper than the competition.",
+            "As part of the plan that comes out of the diagnostic, with measurement and follow-up; the product is trust, not the build.",
+            "Turn it down.",
+            "Build the site and disappear."
+          ],
+          "certa": 1,
+          "explica": "Building got easy and turned into a price fight. What sustains the relationship is diagnostics, follow-up and teaching.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "What goes into the first contact with a prospect?",
+          "opcoes": [
+            "A table of packages.",
+            "A public finding about their site, why it matters, the offer to show the diagnostic, and the option to stop receiving messages.",
+            "A promise of first-page rankings.",
+            "A sequence of 5 automatic emails."
+          ],
+          "certa": 1,
+          "explica": "The finding shows method before selling. Opt-out and one contact per prospect show respect and keep you from becoming spam.",
+          "ref": "codigo"
+        },
+        {
+          "p": "The client asks whether WebMCP will put their site at the top of the AIs. What do you say?",
+          "opcoes": [
+            "Yes, it's the new ranking.",
+            "That it's a W3C draft with no stable browser support; it counts as preparation for agents, not as a ranking factor.",
+            "That it's already a standard in every browser.",
+            "That it's the same as llms.txt."
+          ],
+          "certa": 1,
+          "explica": "Selling preparation as a result is the same empty promise as a guaranteed ranking.",
+          "ref": "passos"
+        },
+        {
+          "p": "Why publish the case of your own site, including the zero?",
+          "opcoes": [
+            "To fill out your portfolio.",
+            "Because a real number with a source, even a bad one, proves the method better than a testimonial.",
+            "Because Google requires it.",
+            "You shouldn't show the zero."
+          ],
+          "certa": 1,
+          "explica": "INEMA shows 0 of 52 in the AIs and 0 non-branded clicks on the club. That's what makes the other numbers believable.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "The course map",
+      "sub": "Four steps and the exercises for each one. Click an exercise to see its \"done when\".",
+      "degraus": [
+        {
+          "aula": "o-que-vender",
+          "icone": "alvo",
+          "quando": "Week 1",
+          "titulo": "Offer",
+          "sub": "what to sell (lesson 1)",
+          "saida": "Positioning in 2 lines and 5 swapped promises.",
+          "passo": "Before talking to a client, know what you sell and what you don't promise."
+        },
+        {
+          "aula": "diagnostico",
+          "icone": "lupa",
+          "quando": "Weeks 1 and 2",
+          "titulo": "Diagnosis",
+          "sub": "diagnosis, plan, proposal (lessons 2 to 4)",
+          "saida": "A 1-page diagnosis, a 30/90/180 plan and a proposal with limits.",
+          "passo": "Requires the offer. The map shows the exercises from lesson 2; the plan below lists them all."
+        },
+        {
+          "aula": "entrega-com-agentes",
+          "icone": "portao",
+          "quando": "Week 3",
+          "titulo": "Delivery",
+          "sub": "folder, gates and authorization (lessons 5 and 7)",
+          "saida": "Client folder with gates and the signed authorization.",
+          "passo": "Requires the proposal. The map shows the exercises from lesson 5; the plan below lists them all."
+        },
+        {
+          "aula": "relatorio-mensal",
+          "icone": "grafico",
+          "quando": "Week 4 onward",
+          "titulo": "Follow-up",
+          "sub": "report and prospecting (lessons 6 and 8)",
+          "saida": "A 1-page monthly report and 10 prospects with a finding.",
+          "passo": "Requires the delivery. From here on it's routine: one report and one decision per month."
+        }
+      ],
+      "resultado": {
+        "titulo": "At the end of the course",
+        "texto": "An offer built on trust, from the diagnosis to the monthly report, with signed paper and real prospects.",
+        "total": "16 exercises"
+      },
+      "rolagem_fim": {
+        "titulo": "The whole course",
+        "texto": "Four steps in sequence. Only move up when the \"done when\" of the previous step is true."
+      },
+      "legenda": "Each step uses what the previous one built."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Generate your plan with dates",
+      "sub": "Pick a start date and how much time you have per week. The plan respects the exercises that call for waiting.",
+      "curso": "inemaSEO 6 · Professional",
+      "horas_padrao": 3,
+      "degraus": [
+        {
+          "titulo": "Lesson 1 · What to sell",
+          "aula": "o-que-vender"
+        },
+        {
+          "titulo": "Lesson 2 · Diagnosis",
+          "aula": "diagnostico"
+        },
+        {
+          "titulo": "Lesson 3 · 30/90/180 plan",
+          "aula": "plano-30-90-180"
+        },
+        {
+          "titulo": "Lesson 4 · Proposal and scope",
+          "aula": "proposta-escopo"
+        },
+        {
+          "titulo": "Lesson 5 · Delivery with agents",
+          "aula": "entrega-com-agentes"
+        },
+        {
+          "titulo": "Lesson 6 · Monthly report",
+          "aula": "relatorio-mensal"
+        },
+        {
+          "titulo": "Lesson 7 · Ethics and authorization",
+          "aula": "etica-autorizacao"
+        },
+        {
+          "titulo": "Lesson 8 · Prospecting and offer",
+          "aula": "prospeccao-oferta"
+        }
+      ],
+      "txt": {
+        "titulo": "Plan — inemaSEO 6 · Professional",
+        "inicio": "Start",
+        "ritmo": "Pace",
+        "termino": "Expected finish",
+        "ate": "by",
+        "pronto": "done when",
+        "semanas": "weeks",
+        "travou": "## What got stuck and what I decided",
+        "h": "h per week",
+        "exs": "exercises"
+      }
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "A ladder, not a package",
+          "texto": "Teach, diagnose, follow up, review, and report every month."
+        },
+        {
+          "t": "Prospect with a finding",
+          "texto": "One problem visible from the outside, one contact, a way to opt out."
+        },
+        {
+          "t": "Your site is the proof",
+          "texto": "A real number with a source, even a zero, convinces more than a testimonial."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Professional 2030",
+          "href": "https://eventos.inema.pro/prof2030/",
+          "icone": "usuario"
+        },
+        {
+          "t": "Selling with AI Program: clients who come to you",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/clientes-que-chegam/",
+          "icone": "megafone"
+        },
+        {
+          "t": "Prospector Agent (guide)",
+          "href": "https://inematds.github.io/prospector-agent/guia/",
+          "icone": "robo"
+        },
+        {
+          "t": "Course 7 · Systems: build your own open Semrush",
+          "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/",
+          "icone": "camadas"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "slug": "diagnostico",
+  "num": 2,
+  "menu": "Diagnóstico",
+  "titulo": "Diagnóstico: el HTML entregado, la preparación para IA y las preguntas en las IAs",
+  "titulo_curto": "Diagnóstico",
+  "minutos": 20,
+  "lead": "El diagnóstico es la primera entrega y la puerta de entrada de la venta. Tres partes, todas de solo lectura: lo que el servidor entrega al buscador, qué tan listo está el sitio para IA y agentes, y si el cliente aparece cuando alguien les pregunta a las IAs sobre su nicho. Todo cabe en una página.",
+  "objetivo": "armar el diagnóstico de un sitio en tres partes (HTML entregado, preparación para IA, preguntas neutras en las IAs) y presentarlo en una call.",
+  "competencias": [
+    "rodar-raio-x-so-leitura",
+    "montar-bateria-de-perguntas",
+    "resumir-diagnostico-em-uma-pagina",
+    "conduzir-call-de-diagnostico"
+  ],
+  "aprende": [
+    {
+      "t": "Las tres partes del diagnóstico y lo que responde cada una"
+    },
+    {
+      "t": "Ejecutar la radiografía y la nota de preparación con herramientas abiertas"
+    },
+    {
+      "t": "Armar la batería de preguntas neutras y congelarla"
+    },
+    {
+      "t": "Conducir la call sin prometer y sin pedir contraseña"
+    }
+  ],
+  "hero_alt": "Consultora en videollamada en el notebook con una clienta, cuaderno con anotaciones al lado.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del primer contacto al informe de una página",
+      "sub": "Haz clic en cada bloque.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Call",
+          "sub": "lo que el cliente mide",
+          "detalhe": "Antes de ejecutar nada: de dónde vienen los clientes hoy, qué búsquedas imagina, si tiene Search Console y Bing Webmaster verificados. La conversación define las preguntas de la batería."
+        },
+        {
+          "icone": "terminal",
+          "titulo": "Radiografía",
+          "sub": "HTML entregado",
+          "detalhe": "Lo que el servidor entrega a quien no ejecuta JavaScript: título, canónico, hreflang, robots, sitemap, JSON-LD, enlaces internos. auditoria.sh del método o el auditor de inemaseo-sistemas. Solo lectura, páginas públicas."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Preparación",
+          "sub": "IA y agentes",
+          "detalhe": "Una nota de 0 a 100 con pesos públicos: robots por finalidad habilitados, CDN sin bloquear, entidad con @id, texto sin JavaScript, autoría, fechas. Herramienta agente-ready o el WebMCP Readiness."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Preguntas",
+          "sub": "en las IA, a mano",
+          "detalhe": "20 preguntas neutras (sin el nombre del cliente), congeladas como v1, ejecutadas a mano en 4 o 5 asistentes. ¿Aparece el cliente? ¿Quién aparece en su lugar? ¿Qué fuentes citan las IA?"
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Una página",
+          "sub": "3 hallazgos + 1 número",
+          "forte": true,
+          "detalhe": "Los 3 hallazgos que más pesan, el número sin marca (si te da acceso al panel), las preguntas en las que no aparece y el siguiente paso. Un informe de 80 páginas nadie lo lee."
+        }
+      ],
+      "legenda": "Todo es solo de lectura. Tocar el sitio o abrir el panel del cliente exige autorización por escrito (clase 7)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo armar cada parte",
+      "sub": "Haz clic en cada etapa.",
+      "passos": [
+        {
+          "titulo": "Radiografía",
+          "sub": "lo que ve el buscador",
+          "texto": [
+            "Ejecuta el auditoria.sh del método o el auditor de inemaseo-sistemas sobre el sitio público, con pausa entre páginas.",
+            "Separa lo que es importante (página sin texto en el HTML, canónico incorrecto) de lo que es mejora (título largo)."
+          ],
+          "exemplo": {
+            "rot": "En INEMA",
+            "texto": "El 30/09 el índice de cursos pasó a ser \"solo búsqueda\" y 310 fichas perdieron el único enlace interno que entregaba el servidor. La radiografía del HTML es lo que detecta este tipo de error."
+          }
+        },
+        {
+          "titulo": "Preparación",
+          "sub": "nota con pesos públicos",
+          "texto": [
+            "La nota solo vale si los pesos son públicos: el cliente ve por qué perdió puntos.",
+            "Mide preparación, no garantiza citación. Dilo en el informe."
+          ]
+        },
+        {
+          "titulo": "Batería de preguntas",
+          "sub": "20 preguntas neutras",
+          "texto": [
+            "Arma con el cliente 20 preguntas que haría su público, sin mencionar la marca. Congélalas como v1: cambiarlas después rompe la comparación.",
+            "Ejecútalas a mano y anota en una planilla. Las respuestas varían: es una muestra de ese día, repetida todos los meses."
+          ],
+          "exemplo": {
+            "rot": "En INEMA",
+            "texto": "El 10/07/2026 INEMA apareció en 0 de 48 respuestas neutras en Claude y en 0 de 4 en Gemini. Y \"¿Qué es INEMA?\" trajo 4 de 4 respuestas sobre otro organismo con el mismo nombre: colisión de nombre."
+          }
+        },
+        {
+          "titulo": "Informe",
+          "sub": "una página",
+          "texto": [
+            "Tres hallazgos con el porqué, la batería resumida y un siguiente paso.",
+            "La enseñanza detallada de las herramientas está en el curso 7 (Sistemas)."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Los comandos y las plantillas",
+      "sub": "Herramientas abiertas (MIT). Cambia lo que está entre < > por lo tuyo. Solo lectura, en sitio público.",
+      "blocos": [
+        {
+          "rot": "Terminal · radiografía del método (bash)",
+          "icone": "terminal",
+          "conteudo": "git clone https://github.com/inematds/inemaseo-metodo && cd inemaseo-metodo\ntools/auditoria.sh https://www.<site-do-cliente.com> /<pagina-1>/ /<pagina-2>/"
+        },
+        {
+          "rot": "Terminal · auditor y nota de preparación (Python 3.10+)",
+          "icone": "terminal",
+          "conteudo": "git clone https://github.com/inematds/inemaseo-sistemas && cd inemaseo-sistemas\npython3 ferramentas/auditor/auditor.py https://<site-do-cliente.com> --max 50\npython3 ferramentas/agente-ready/agente-ready.py https://<site-do-cliente.com>"
+        },
+        {
+          "rot": "Planilla de la batería (CSV)",
+          "icone": "arquivo",
+          "conteudo": "data,assistente,pergunta,execucao,cliente_citado(sim/nao/parcial),concorrentes_citados,fontes_citadas,erros_factuais\n<AAAA-MM-DD>,<assistente>,<pergunta neutra 01>,1,,,,"
+        },
+        {
+          "rot": "Diagnóstico de una página",
+          "icone": "caneta",
+          "conteudo": "DIAGNÓSTICO — <sitio> — <fecha>\n\n1. Lo que ve el buscador (radiografía)\n   - Hallazgo 1 (importante): <qué> → <por qué pesa> → <qué hacer>\n   - Hallazgo 2: ...\n   - Hallazgo 3: ...\n2. Preparación para IA y agentes: nota <N>/100 (pesos públicos). Perdió puntos en: <...>\n   La nota mide preparación; no garantiza citación.\n3. Preguntas en las IA (batería v1, <fecha>, a mano): apareció en <x> de <y>.\n   Quién aparece en su lugar: <...>. Fuentes citadas: <...>\n4. Número sin marca (si hay acceso): <clics>/<impresiones> en 28 días\n5. Siguiente paso: plan 30/90/180 (clase 3)"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Auditor en inema.club (19/10/2026)",
+            "html": "<table><tr><th>prioridad</th><th>hallazgo</th><th>páginas</th></tr><tr><td>importante</td><td>Poco texto en el HTML entregado (menos de 80 palabras)</td><td>2</td></tr><tr><td>mejora</td><td>Título fuera de 15–65 caracteres</td><td>28</td></tr><tr><td>mejora</td><td>Organization/Person/WebSite sin @id</td><td>1</td></tr></table><p>Rastreo de 50 páginas, solo GET, pausa de 1 s. Las filas \"info\" (por ejemplo, el marcado de FAQ, cuyo rich result Google dejó de mostrar el 07/05/2026) quedan fuera del informe al cliente.</p>"
+          },
+          {
+            "rot": "Preparación en inema.club (19/10/2026)",
+            "html": "<table><tr><th>criterio</th><th>peso</th><th>resultado</th></tr><tr><td>robots de búsqueda habilitados</td><td>12</td><td>ok</td></tr><tr><td>CDN no bloquea robots</td><td>12</td><td>ok</td></tr><tr><td>texto sin JavaScript</td><td>10</td><td>ok</td></tr><tr><td>autoría</td><td>5</td><td>parcial</td></tr><tr><td>fechas</td><td>5</td><td>parcial</td></tr><tr><td>página sobre/contacto</td><td>2</td><td>falla</td></tr></table><p>Nota 93 de 100 (pesos.json v1.0.0). Ejemplos reales en inemaseo-sistemas/exemplos.</p>"
+          },
+          {
+            "rot": "Cómo leerlo",
+            "html": "<ul><li>Un hallazgo importante va arriba del informe; una mejora va en una línea.</li><li>Una nota alta no significa citación: el mismo INEMA tenía 0 de 52 mediciones neutras en las IA en julio.</li><li>Los 3 hallazgos del informe son los que cambian lo que ve el buscador.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Conversación simulada: la llamada de diagnóstico",
+      "sub": "Conversación simulada para practicar. Elige la respuesta que darías; el comentario aparece enseguida.",
+      "personagem": {
+        "nome": "Dueña de una clínica de fisioterapia",
+        "papel": "sitio propio, nunca hizo SEO"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "Quiero aparecer primero en Google y en ChatGPT. ¿Cuánto cuesta?",
+          "opcoes": [
+            {
+              "t": "Antes de hablar de precio: ¿de dónde vienen tus pacientes hoy y qué mides ya en el sitio?",
+              "vai": "medicao",
+              "nota": 2,
+              "comenta": "Medir antes de tocar. Sin conocer el punto de partida, después no se puede mostrar ningún resultado."
+            },
+            {
+              "t": "Te garantizo el primer lugar en 90 días.",
+              "vai": "fim-promessa",
+              "nota": 0,
+              "comenta": "Nadie controla la posición. La promesa cierra hoy y rompe la confianza en el mes 3."
+            },
+            {
+              "t": "Tengo un paquete de 50 artículos al mes con IA.",
+              "vai": "fim-pacote",
+              "nota": 0,
+              "comenta": "El volumen de artículos es el camino del contenido a escala, que Google trata como spam."
+            }
+          ]
+        },
+        "medicao": {
+          "cliente": "Los pacientes llegan por recomendación y por Instagram. El sitio recibe visitas, mi sobrino lo miró una vez.",
+          "opcoes": [
+            {
+              "t": "Propongo un diagnóstico de solo lectura: qué ve Google en el sitio, qué tan preparado está para la IA y 20 preguntas que tus pacientes les harían a las IA.",
+              "vai": "acesso",
+              "nota": 2,
+              "comenta": "Tres partes, nada invasivo, y ya estás mostrando método."
+            },
+            {
+              "t": "Pásame la contraseña del panel y del hosting y yo reviso todo.",
+              "vai": "senha",
+              "nota": 1,
+              "comenta": "Para el diagnóstico no necesitas contraseña. El acceso al panel viene después, por escrito y con el mínimo de permisos."
+            }
+          ]
+        },
+        "senha": {
+          "cliente": "Te mando la contraseña por WhatsApp, ¿te parece?",
+          "opcoes": [
+            {
+              "t": "Mejor no. Me das acceso de lectura dentro del propio Search Console, y lo acordamos por escrito.",
+              "vai": "acesso",
+              "nota": 1,
+              "comenta": "Buena corrección: acceso de lectura, en el panel de ella, con autorización por escrito (clase 7)."
+            },
+            {
+              "t": "Claro, yo la guardo bien.",
+              "vai": "fim-senha",
+              "nota": 0,
+              "comenta": "Una contraseña por mensaje es un riesgo para ella y para ti. Si algo pasa en el sitio, tú eres el primer sospechoso."
+            }
+          ]
+        },
+        "acesso": {
+          "cliente": "Bueno, ¿y qué me entregas al final?",
+          "opcoes": [
+            {
+              "t": "Una página: los 3 problemas que más pesan, si apareces en las IA para esas preguntas y el siguiente paso.",
+              "vai": "ia",
+              "nota": 2,
+              "comenta": "Corto y accionable. Es lo que ella va a leer y a mostrarle a su socio."
+            },
+            {
+              "t": "El informe completo de la herramienta, unas 80 páginas.",
+              "vai": "fim-ferramenta",
+              "nota": 0,
+              "comenta": "Un informe largo le pasa el trabajo a la clienta. Ella no sabe qué hacer primero."
+            }
+          ]
+        },
+        "ia": {
+          "cliente": "¿Y el diagnóstico va a mostrar si estoy en ChatGPT?",
+          "opcoes": [
+            {
+              "t": "Va a mostrar lo que las IA respondieron ese día, a las mismas 20 preguntas. Como las respuestas varían, lo repetimos cada mes y comparamos.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "Con honestidad: es una muestra, repetida con las mismas preguntas. Los paneles oficiales de citación hoy son Bing AI Performance y el informe de IA de Search Console."
+            },
+            {
+              "t": "Sí, la herramienta X te da tu nota oficial de IA.",
+              "vai": "fim-nota",
+              "nota": 0,
+              "comenta": "No existe una nota oficial de IA en ninguna herramienta. Google avisa que métricas \"internas\" de ese tipo no existen de su lado."
+            }
+          ]
+        },
+        "fim-promessa": {
+          "fim": true,
+          "titulo": "Contrato frágil",
+          "texto": "Ella firmó por la promesa. En el mes 3, sin primer lugar, cancela y se lo cuenta a otras clínicas."
+        },
+        "fim-pacote": {
+          "fim": true,
+          "titulo": "Riesgo para su sitio",
+          "texto": "50 artículos al mes sin datos propios es el patrón que Google trata como contenido a escala. El caso de las 283 fichas delgadas de INEMA lo muestra: un lote de páginas delgadas no se indexa."
+        },
+        "fim-senha": {
+          "fim": true,
+          "titulo": "Demasiada responsabilidad",
+          "texto": "Con la contraseña de ella en WhatsApp, cualquier problema en el sitio pasa a ser tuyo. El acceso es por escrito, con el mínimo necesario."
+        },
+        "fim-ferramenta": {
+          "fim": true,
+          "titulo": "Nadie lo leyó",
+          "texto": "El PDF de 80 páginas se quedó en la bandeja de entrada. Sin los 3 hallazgos a la vista, no hubo siguiente paso."
+        },
+        "fim-nota": {
+          "fim": true,
+          "titulo": "Número sin respaldo",
+          "texto": "Ella te va a exigir la \"nota oficial\" cada mes. Cuando la herramienta cambie el cálculo, tu credibilidad cae junto con ella."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Diagnóstico contratado",
+          "texto": "Ella entendió lo que va a recibir, sin promesa y sin contraseña. El informe de una página se vuelve la base del plan de la clase 3."
+        }
+      },
+      "licao": "Un buen diagnóstico es de solo lectura, cabe en una página y mide antes de prometer. El acceso al panel viene después, por escrito."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: el primer diagnóstico",
+      "sub": "Usa tu propio sitio o el de alguien que lo autorizó por escrito.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Radiografía y preparación",
+          "min": "40 min",
+          "texto": "Corre el auditor (o el auditoria.sh) y el agente-ready en un sitio tuyo. Elige los 3 hallazgos que más pesan y escribe, para cada uno, por qué pesa y qué hacer.",
+          "pronto": "tienes los archivos de salida de las dos herramientas y una lista de 3 hallazgos con \"por qué pesa\" y \"qué hacer\", cada uno con la URL afectada."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Batería v1 congelada",
+          "min": "45 min",
+          "texto": "Escribe 20 preguntas neutras que haría el público del sitio a una IA, sin el nombre de la marca. Ejecuta 5 de ellas a mano en 2 asistentes y anótalas en la hoja de cálculo.",
+          "pronto": "la hoja de cálculo tiene las 20 preguntas marcadas como v1 y al menos 10 filas completas (5 preguntas × 2 asistentes) con fecha y \"citado sí/no\"."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "¿Por qué las preguntas de la batería no pueden citar el nombre del cliente?",
+          "opcoes": [
+            "Para ahorrar tiempo.",
+            "Porque una pregunta con la marca arrastra la marca a la respuesta e invalida la medición.",
+            "Porque las IA lo prohíben.",
+            "No hace diferencia."
+          ],
+          "certa": 1,
+          "explica": "Una pregunta neutra muestra si el cliente aparece para quien todavía no lo conoce, que es lo que importa.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "La nota de preparación del sitio fue 93 de 100. ¿Qué le dices al cliente?",
+          "opcoes": [
+            "Que lo van a citar las IA.",
+            "Que el sitio está bien preparado; la citación es otra medida, que se hace con la batería y con los paneles oficiales.",
+            "Que la nota es oficial de Google.",
+            "Que no necesita hacer nada más."
+          ],
+          "certa": 1,
+          "explica": "Preparación es preparación. El propio INEMA, con buena preparación, apareció en 0 de 52 mediciones neutras en julio.",
+          "ref": "codigo"
+        },
+        {
+          "p": "Para el diagnóstico, ¿qué acceso necesitas?",
+          "opcoes": [
+            "La contraseña del hosting.",
+            "Ninguno: la radiografía, la preparación y la batería usan solo páginas públicas. El número sin marca exige acceso de lectura en el panel, autorizado por escrito.",
+            "La contraseña del correo del cliente.",
+            "Acceso de administrador al sitio."
+          ],
+          "certa": 1,
+          "explica": "Empieza solo con lectura. El acceso entra después, en el mínimo necesario y por escrito.",
+          "ref": "simconversa"
+        },
+        {
+          "p": "¿Por qué congelar la batería como v1?",
+          "opcoes": [
+            "Para no tener trabajo.",
+            "Porque cambiar las preguntas después rompe la comparación mes a mes; una pregunta nueva pasa a ser v2, medida en paralelo.",
+            "Porque las IA no aceptan preguntas nuevas.",
+            "No hace falta congelar."
+          ],
+          "certa": 1,
+          "explica": "La batería es la vara de medir. Una vara que cambia no mide evolución.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para llevar",
+      "itens": [
+        {
+          "t": "Tres partes, solo lectura",
+          "texto": "HTML entregado, preparación para IA, preguntas neutras en las IA."
+        },
+        {
+          "t": "Una página",
+          "texto": "3 hallazgos, el resultado de la batería, el número sin marca y el siguiente paso."
+        },
+        {
+          "t": "La vara de 2026",
+          "texto": "Medir la citación es una batería fija a mano todos los meses en 4–5 asistentes. La nota de una herramienta no es oficial."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "inemaseo-sistemas: auditor y agente-ready",
+          "href": "https://github.com/inematds/inemaseo-sistemas",
+          "icone": "terminal"
+        },
+        {
+          "t": "Curso 7 · Sistemas: profundizar en las herramientas",
+          "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/",
+          "icone": "camadas"
+        },
+        {
+          "t": "auditoria.sh del método",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/tools/auditoria.sh",
+          "icone": "terminal"
+        },
+        {
+          "t": "Ventas con IA: la llamada de descubrimiento",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/call-descoberta/",
+          "icone": "chat"
+        },
+        {
+          "t": "WebMCP Readiness",
+          "href": "https://webmcp.inema.pro/",
+          "icone": "robo"
+        }
+      ]
+    }
+  ]
+}

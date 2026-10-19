@@ -1,0 +1,186 @@
+{
+  "id": "formacao-inemaseo-profissional-v72",
+  "lang": "en",
+  "url": "https://inematds.github.io/formacao-inemaseo-profissional-v72/en/",
+  "nome": "inemaSEO 6 — Professional: selling and delivering SEO + AI as a service people can trust",
+  "sub": "inemaSEO Program · course 6 of 7",
+  "volta": {
+    "t": "inemaSEO Area",
+    "href": "https://eventos.inema.pro/inemaseo/"
+  },
+  "lado_card": {
+    "rot": "inemaSEO Program",
+    "t": "Course 6 of 7",
+    "texto": "To deliver with open tools, course 7 teaches you to set up the auditor, the Search Console history, the robot reader and the readiness score on your own computer.",
+    "link": "Go to course 7",
+    "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/"
+  },
+  "rodape": "INEMA.CLUB · open and free content · INEMA Learning v7.2 format · <a href=\"https://eventos.inema.pro/inemaseo/\">eventos.inema.pro/inemaseo</a> · <a href=\"https://eventos.inema.pro/prof2030/\">Professional 2030</a> · <a href=\"https://github.com/inematds/inemaseo-metodo\">inemaSEO method (MIT)</a> · <a href=\"https://inema.club/\">inema.club</a>",
+  "videos": {},
+  "inicio": {
+    "kicker": "inemaSEO Program · course 6 of 7 · 8 lessons",
+    "titulo": "Professional: selling and delivering SEO + AI as a service people can trust",
+    "lead": "Building got easy; trusting what was built did not. In eight lessons you learn to sell diagnosis, plan, measured follow-up and teaching, instead of position 1 or 500 articles. Diagnosis, 30/90/180 plan, proposal with limits, delivery with agents, monthly report, written authorization and an offer ladder.",
+    "cta": "Start with lesson 1",
+    "cta2": {
+      "t": "See the inemaSEO Area",
+      "href": "https://eventos.inema.pro/inemaseo/"
+    },
+    "capa_alt": "A consultant shows a one-page report to a small business owner at a simple meeting table.",
+    "numeros": [
+      {
+        "v": "8",
+        "t": "short lessons"
+      },
+      {
+        "v": "16",
+        "t": "exercises with \"done when\""
+      },
+      {
+        "v": "1",
+        "t": "page per client report"
+      },
+      {
+        "v": "0",
+        "t": "promise of ranking or citation"
+      }
+    ],
+    "aulas_titulo": "The lessons",
+    "aulas_sub": "In the order of the work with a client: what to sell, diagnose, plan, propose, deliver, report, protect and prospect.",
+    "blocos": [
+      {
+        "t": "Who it's for",
+        "itens": [
+          "Freelancers, agencies or consultants who want to sell SEO and AI visibility without promising what no one controls.",
+          "People who have taken the site-owner courses (or know the equivalent) and now want to look after other people's sites.",
+          "People who lose bids to those who promise \"first place in 30 days\" and want an offer that still holds up in month 6."
+        ]
+      },
+      {
+        "t": "What you'll be able to do",
+        "itens": [
+          "A 1-page diagnosis: delivered HTML, AI readiness and neutral questions in the AIs.",
+          "A 30/90/180-day plan by impact × effort and a proposal with scope, limits and prerequisites.",
+          "A folder per client with human gates and a monthly report that counts down to zero.",
+          "The written authorization, the list of what you turn down and an offer ladder with 10 prospects."
+        ]
+      },
+      {
+        "t": "Where this course fits in the inemaSEO Program",
+        "itens": [
+          "<b>1 Foundation</b>, <b>2 Content</b> and <b>3 Measurement</b>: the site owner builds the base, the pages only they can write, and measures the non-branded number.",
+          "<b>4 In the AIs</b> and <b>5 With Agents</b>: official AI dashboards and agents doing the repetitive work with gates.",
+          "<b>6 Professional</b> (this course): the same method sold and delivered as a service people can trust. <b>7 Systems</b>: the open tools to deliver with.",
+          "The vision comes from <a href=\"https://eventos.inema.pro/prof2030/\">Professional 2030</a>; the selling itself, from the <a href=\"https://inematds.github.io/formacao-vendas-ia-consultoria-v72/\">Selling with AI Program</a>."
+        ]
+      }
+    ]
+  },
+  "ui": {
+    "pular": "Skip to content",
+    "aulas": "Lessons",
+    "concluido": "completed",
+    "aula": "Lesson",
+    "nesta_aula": "In this lesson, you will learn:",
+    "objetivo": "Goal:",
+    "proxima_aula": "Next lesson",
+    "aula_anterior": "Previous lesson",
+    "voltar_inicio": "Back to the start of the course",
+    "marcar_concluida": "Mark lesson as completed",
+    "dg_dica": "Click each block in the diagram to see what it does.",
+    "copiar": "Copy",
+    "copiado": "Copied",
+    "selo_simulacao": "Simulation: illustrative example",
+    "selo_real": "Example from the repository",
+    "pronto_quando": "Done when:",
+    "fiz": "I did this exercise",
+    "video_pagina": "Video page with script",
+    "pergunta": "Question",
+    "de": "of",
+    "cert_tag": "skill",
+    "correto": "Correct",
+    "errado": "Not that one",
+    "quiz_aguarda": "Choose an option. The explanation appears after your attempt.",
+    "proxima_pergunta": "Next question",
+    "quiz_ver": "See result",
+    "quiz_fim": "Quiz complete",
+    "quiz_total": "You got {a} of {n} right. Get them all right and the lesson is marked as complete.",
+    "aparencia": "Appearance",
+    "tamanho_texto": "Text size",
+    "tema": "Theme",
+    "tema_escuro": "Dark",
+    "tema_papel": "Light paper",
+    "role_dica": "Scroll the page: each step below lights up its part of the diagram.",
+    "pre_requisito": "requires",
+    "ver_aula": "See the lesson",
+    "mapa_dica": "Click an exercise to see what to do and the \"done when\".",
+    "etapas": "Steps",
+    "exercicios": "exercises",
+    "rever": "Review:",
+    "revisar_erradas": "Review the wrong answers",
+    "refazer": "Retake the quiz",
+    "h_semana": "h per week",
+    "data_inicio": "Start date",
+    "ritmo": "Time available",
+    "gerar_plano": "Generate my plan",
+    "baixar_md": "Download plan.md",
+    "baixar_ics": "Download to calendar (.ics)",
+    "ind_estudo": "Study (lessons)",
+    "ind_pratica": "Declared practice",
+    "ind_nota": "Practice = exercises you marked as done. The proof comes in the certification exam.",
+    "estudo": {
+      "titulo": "Your study",
+      "continuar": "Pick up where I left off",
+      "comecar": "Start with lesson 1",
+      "cta_continuar": "Continue lesson {n}",
+      "hoje": "today",
+      "ontem": "yesterday",
+      "ha_dias": "{n} days ago",
+      "desempenho": "Quiz performance",
+      "notas": "My notes",
+      "dados": "Copy my data",
+      "sem_testes": "No quiz taken yet. The quiz is at the end of each lesson.",
+      "nao_fez": "quiz not taken yet",
+      "ultimo": "Latest",
+      "melhor": "Best",
+      "tentativas": "attempts",
+      "tentativa": "attempt",
+      "tudo_certo": "You got everything right on the latest quiz.",
+      "rever": "To review",
+      "resposta": "Correct answer:",
+      "ir_teste": "Retake the quiz",
+      "sem_notas": "No notes yet. In the lesson, select a piece of the text and tap Highlight or Note.",
+      "so_marcado": "(highlight only)",
+      "marcar": "Highlight",
+      "anotar": "Note",
+      "salvar": "Save",
+      "apagar": "Remove highlight",
+      "fechar": "Close",
+      "nota_ph": "Write your note about this passage…",
+      "um_bloco": "Highlight within a single paragraph only.",
+      "nao_marca": "This passage can't be highlighted.",
+      "dados_exp": "Your progress, your notes and your quiz scores stay only in this browser. Download a copy (.json) to keep or to continue on another computer or browser; there, load the copy. Loading adds to what already exists and deletes nothing.",
+      "exportar": "Download copy",
+      "importar": "Load copy",
+      "import_ok": "Copy loaded ({n} items). Refreshing the page…",
+      "import_erro": "File not recognized. Nothing was changed.",
+      "import_outro": "This copy is from a different course. Nothing was changed.",
+      "export_ok": "Copy downloaded."
+    },
+    "conv_dica": "Choose your answer. The feedback appears right after, and the conversation continues based on your choice.",
+    "conv_voce": "You",
+    "conv_escolha": "Your answer",
+    "conv_boa": "Good choice",
+    "conv_meio": "Room to improve",
+    "conv_ruim": "Weak choice",
+    "conv_fim": "End of the conversation",
+    "conv_placar": "You scored {p} out of {m} possible points.",
+    "conv_licao": "Lesson:",
+    "conv_recomecar": "Restart the conversation",
+    "conv_feita": "Your best score: {p} out of {m} points.",
+    "comecar": "Start the lesson",
+    "nesta_vai": "In this lesson you will",
+    "trocar_tema": "Switch light/dark theme"
+  },
+  "icone": "camadas"
+}

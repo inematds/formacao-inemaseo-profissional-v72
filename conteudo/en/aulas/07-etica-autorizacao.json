@@ -1,0 +1,264 @@
+{
+  "slug": "etica-autorizacao",
+  "num": 7,
+  "menu": "Ethics",
+  "titulo": "Ethics, risk and written authorization",
+  "titulo_curto": "Ethics and authorization",
+  "minutos": 17,
+  "lead": "A client request can take down their entire site: a network of sites, a thousand articles, forced indexing. You need to refuse by name, explain the risk and offer the safe path. And before touching anything, get in writing what you are allowed to do. An SEO diagnosis reads the site the way a search engine does: it is not a pentest.",
+  "objetivo": "refuse by name the tactics Google treats as spam, write the client's authorization and make it clear that an SEO diagnosis is not a pentest.",
+  "competencias": [
+    "reconhecer-tatica-de-spam",
+    "escrever-autorizacao-por-escrito",
+    "delimitar-diagnostico-de-pentest"
+  ],
+  "aprende": [
+    {
+      "t": "The tactics Google treats as spam, by name"
+    },
+    {
+      "t": "What to offer in place of each one"
+    },
+    {
+      "t": "What the written authorization needs to say"
+    },
+    {
+      "t": "Why an SEO diagnosis is not a pentest"
+    }
+  ],
+  "hero_alt": "A hand signs a one-page document on the table while another person watches.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From request to safe execution",
+      "sub": "Tap each block.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Request",
+          "sub": "from the client",
+          "detalhe": "\"I saw a course that teaches how to make 1,000 articles.\" \"My competitor has 5 sites linking to each other.\" \"Can we force indexing?\""
+        },
+        {
+          "icone": "escudo",
+          "titulo": "Is it spam?",
+          "sub": "Google policy",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "x",
+              "t": "scaled content"
+            },
+            {
+              "icone": "x",
+              "t": "link scheme"
+            },
+            {
+              "icone": "x",
+              "t": "someone else's site reputation"
+            },
+            {
+              "icone": "x",
+              "t": "forced indexing"
+            }
+          ],
+          "detalhe": "Google evaluates value, not the tool that wrote the text. But volume without value, agreed-upon links, shortcuts on someone else's domain and APIs used outside their permitted use are all in the spam policies."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Authorization",
+          "sub": "in writing",
+          "detalhe": "Scope, sites, access (minimal, read-only), what can be changed, who approves publishing, personal data, expiration. Signed before you start."
+        },
+        {
+          "icone": "check",
+          "titulo": "Execute",
+          "sub": "and record",
+          "detalhe": "Every change in git, with a date. Every publication with the approval recorded. If something goes wrong, you can show what was done and undo it."
+        }
+      ],
+      "legenda": "Refuse with a reason, offer the safe path and have everything in writing."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "The tactics and what to offer instead",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "Scaled content",
+          "sub": "volume without value",
+          "texto": [
+            "Five variations per keyword, a thousand articles, agents publishing 24 hours a day: this is what Google calls scaled content abuse.",
+            "\"Humanizing\" the text to pass an AI detector doesn't fix it: it aims at the wrong metric (Google evaluates usefulness) and it is paraphrasing at scale with intent to deceive."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "283 entries of 170 to 240 words, two of them with 47% of their vocabulary in common, published in a single commit. Of the 6 in the sample, 5 were never crawled."
+          }
+        },
+        {
+          "titulo": "Linked networks",
+          "sub": "network of sites",
+          "texto": [
+            "A network of your own sites with cross-links and \"20 backlinks per post\" is a link scheme. One manual action can take down all the domains at once.",
+            "Instead: contextual links, 1 or 2 per page, and real mentions (a partner, an event, an open project)."
+          ]
+        },
+        {
+          "titulo": "Shortcuts",
+          "sub": "someone else's domain and indexing",
+          "texto": [
+            "A subreddit named after the keyword, or mass posts on LinkedIn to rank, is site reputation abuse. The Google Indexing API is only for job postings (JobPosting) and live streams (BroadcastEvent); a paid indexer is a typical spam tool.",
+            "Instead: sitemap, Search Console, IndexNow and internal links."
+          ]
+        },
+        {
+          "titulo": "Not a pentest",
+          "sub": "the limit of the diagnosis",
+          "texto": [
+            "The X-ray reads public pages the way a search engine does: GET, a pause between pages, no passwords, forms or vulnerability scans.",
+            "If the client wants security, that is another service, with another authorization and another professional. Say so in the proposal."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Written authorization template",
+      "sub": "A template to adapt. It is not legal advice: for a large contract, run it by a lawyer.",
+      "blocos": [
+        {
+          "rot": "SEO service authorization",
+          "icone": "arquivo",
+          "conteudo": "AUTHORIZATION — [client] authorizes [you/company] — [date]\n\n1. SCOPE: SEO and AI visibility diagnosis and monitoring\n   of the sites: [domain 1], [domain 2]. Nothing outside this list.\n2. WHAT IS READ: public pages (the way a search engine reads them, with a pause between pages).\n   NOT A PENTEST: no password testing, forms, intrusion or search for security flaws.\n3. ACCESS (minimum):\n   - Search Console and Bing Webmaster: read-only user, in the name of [you].\n   - DNS/domain: only to verify ownership, done by [client] or in their presence.\n   - No passwords by message. Credentials stay out of repositories and reports.\n4. WHAT CAN BE CHANGED: [e.g.: titles, sitemap, robots.txt, approved new pages].\n   Every publication goes through approval by [name].\n5. PERSONAL DATA: reports use aggregated data from the dashboards; no data from\n   visitors or end customers is collected or exposed (LGPD).\n6. WILL NOT BE DONE: network of sites, buying links, paid indexer, Indexing API outside\n   permitted use, scaled content without review.\n7. VALIDITY: until [date]. It can be revoked at any time in writing;\n   upon revocation, access is removed within [N] days.\n\nSignatures: [client] · [you]"
+        },
+        {
+          "rot": "Table: request → I decline → I offer",
+          "icone": "lista",
+          "conteudo": "REQUEST                         | WHY I DECLINE                        | WHAT I OFFER\n1,000 AI articles               | scaled content (spam policy)         | a few pages with original data\n5 sites linking to each other   | link scheme; manual action           | contextual links and real mentions\n\"forcing\" indexing              | Indexing API only JobPosting/Broadcast | sitemap, Search Console, IndexNow\ntext that passes a detector     | aims at the wrong metric             | human review and original data\n\"example\" testimonials          | fabricated trust signal              | only real numbers with a source"
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the paperwork before the work",
+      "sub": "The two documents that go with every proposal.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Completed authorization",
+          "min": "30 min",
+          "texto": "Fill in the authorization template for the client from lesson 4 (or for your own site, as client zero).",
+          "pronto": "all 7 items are filled in, the domains are listed one by one, the access is read-only, and the phrase \"not a pentest\" is in item 2."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Request, refusal, offer",
+          "min": "20 min",
+          "texto": "Build your own table with 5 requests you have heard or expect to hear, the reason for declining, and what you offer instead.",
+          "pronto": "each row names the tactic (scaled content, link scheme, site reputation abuse, forced indexing or fabricated signal) and has an alternative you can actually deliver."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The client wants to use the Google Indexing API to index their blog posts. What do you say?",
+          "opcoes": [
+            "Great idea, it's faster.",
+            "That it only applies to JobPosting and BroadcastEvent; for posts, the path is sitemap, Search Console, IndexNow and internal links.",
+            "That you have to pay for it.",
+            "That it only works on Bing."
+          ],
+          "certa": 1,
+          "explica": "Using it outside what is permitted violates the terms. The right paths are free and you already teach them.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "The client asks you to \"humanize\" AI-generated texts so they won't be detected. Why decline?",
+          "opcoes": [
+            "Because it's a lot of work.",
+            "Because Google evaluates usefulness, not detectors; paraphrasing at scale to deceive makes the scaled content worse.",
+            "Because AI detectors are infallible.",
+            "You don't need to decline."
+          ],
+          "certa": 1,
+          "explica": "The problem was never the tool, but volume without value. Disguising it doesn't change the value.",
+          "ref": "passos"
+        },
+        {
+          "p": "What makes it clear that your diagnosis is not a pentest?",
+          "opcoes": [
+            "Nothing, it's the same thing.",
+            "The authorization says only public pages are read, the way a search engine reads them, with no password, form or flaw testing.",
+            "Running it at night.",
+            "Using a paid tool."
+          ],
+          "certa": 1,
+          "explica": "Writing down the limit protects you and the client. Security is another service, with another authorization.",
+          "ref": "codigo"
+        },
+        {
+          "p": "The client offers the hosting password by message. What does the authorization provide?",
+          "opcoes": [
+            "Accept it and store it in the repository.",
+            "Minimal, read-only access, no passwords by message, credentials kept out of any repository, and a report.",
+            "Accept it only if it is encrypted in the email.",
+            "Ask for the email password too."
+          ],
+          "certa": 1,
+          "explica": "The less access, the less risk for both of you. If you need more, you expand it in writing.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "Refuse by name",
+          "texto": "Scaled content, link scheme, site reputation abuse, forced indexing, fabricated signal."
+        },
+        {
+          "t": "In writing, beforehand",
+          "texto": "Scope, sites, minimal access, what can change, who approves, personal data, validity."
+        },
+        {
+          "t": "Not a pentest",
+          "texto": "The diagnosis reads like a search engine. Security is a different service."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Google spam policies (English)",
+          "href": "https://developers.google.com/search/docs/essentials/spam-policies",
+          "icone": "escudo"
+        },
+        {
+          "t": "Quality checklist (16 items)",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/CHECKLIST.md",
+          "icone": "check"
+        },
+        {
+          "t": "Course 2 · Content: what not to do",
+          "href": "https://inematds.github.io/formacao-inemaseo-conteudo-v72/",
+          "icone": "caneta"
+        },
+        {
+          "t": "Professional 2030: common base (risks, LGPD, and scope)",
+          "href": "https://eventos.inema.pro/prof2030/",
+          "icone": "usuario"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "slug": "entrega-com-agentes",
+  "num": 5,
+  "menu": "Entrega",
+  "titulo": "Entrega con agentes: una carpeta por cliente, puertas de control humanas y secretos fuera",
+  "titulo_curto": "Entrega con agentes",
+  "minutos": 18,
+  "lead": "Los agentes hacen lo repetitivo: correr la radiografía, armar el informe, proponer títulos, escribir el borrador. Lo que da confianza al cliente es que nada sale al aire sin que un humano lo apruebe, y que su contraseña nunca está en tu repositorio. Una carpeta por cliente, siempre con la misma estructura.",
+  "objetivo": "armar la carpeta de un cliente con estructura fija, puertas de control humanas y secretos fuera del repositorio, para entregar con agentes sin perder control.",
+  "competencias": [
+    "montar-carpeta-por-cliente",
+    "definir-puertas-humanas",
+    "mantener-secretos-fuera-del-repo"
+  ],
+  "aprende": [
+    {
+      "t": "La estructura de carpetas que se repite en cada cliente"
+    },
+    {
+      "t": "Dónde trabaja el agente y dónde solo decide el humano"
+    },
+    {
+      "t": "Por qué la puerta de control nunca se salta, ni con prisa"
+    },
+    {
+      "t": "Secretos fuera del repositorio y modelo por suscripción"
+    }
+  ],
+  "hero_alt": "Profesional frente a dos monitores con terminal y editor abiertos, en una oficina tranquila.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "La máquina de entrega de un cliente",
+      "sub": "Haz clic en cada bloque.",
+      "nos": [
+        {
+          "icone": "pasta",
+          "titulo": "Carpeta del cliente",
+          "sub": "estructura fija",
+          "detalhe": "docs, datos de Search Console, informes, briefings, scripts. La misma en cada cliente: el agente y tú saben dónde está cada cosa. El secreto queda en un .env que no va a git."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agente",
+          "sub": "lo repetitivo",
+          "detalhe": "Investigación, oportunidad, briefing, borrador, checklist, publicación, observación. El modelo corre por suscripción (Claude Code o Codex) siempre que sea posible; API de pago solo con autorización para esa finalidad."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Puerta 1",
+          "sub": "qué hacer",
+          "forte": true,
+          "detalhe": "El cliente (o tú, por él) aprueba la lista de páginas y temas del mes. Nada se escribe antes de eso."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Puerta 2",
+          "sub": "qué publicar",
+          "forte": true,
+          "detalhe": "Un humano revisa cada página: de 10 a 20 minutos, con el resumen de lo que cambió y las cosas que necesitan confirmación. Sin aprobación, no se publica."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Observar",
+          "sub": "vuelve a la puerta 1",
+          "detalhe": "Export semanal, inspección, informe. Lo que subió y lo que se trabó se convierte en la lista de la próxima puerta 1."
+        }
+      ],
+      "volta": "Cada mes: observar alimenta la próxima puerta 1",
+      "legenda": "El agente acelera el trabajo; las puertas de control cuidan la confianza del cliente."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo montar la entrega",
+      "sub": "Haz clic en cada etapa.",
+      "passos": [
+        {
+          "titulo": "Carpeta",
+          "sub": "un repositorio por cliente",
+          "texto": [
+            "Crea la carpeta con la estructura fija y un archivo de instrucciones para el agente (AGENTS.md o CLAUDE.md) con las reglas del cliente: tono, qué no publicar, quién aprueba.",
+            "Versión en git: cada cambio tiene fecha, autor y se puede deshacer."
+          ]
+        },
+        {
+          "titulo": "Secreto fuera",
+          "sub": ".env en .gitignore",
+          "texto": [
+            "Las claves y credenciales quedan en variables de entorno, nunca en el repositorio ni en el prompt.",
+            "El acceso a los paneles del cliente es de solo lectura, autorizado por escrito (clase 7)."
+          ]
+        },
+        {
+          "titulo": "Puertas de control",
+          "sub": "nunca se saltan",
+          "texto": [
+            "Si el cliente no tiene tiempo de revisar, la cadencia baja. La puerta de control no se salta.",
+            "Ayuda: el agente entrega el resumen de lo que cambió y las 3 cosas para que el cliente confirme."
+          ],
+          "exemplo": {
+            "rot": "En INEMA",
+            "texto": "Un script de enlaces tomó el nombre equivocado de un curso en una subcarpeta. Se detectó en el piloto, antes del push. Para eso sirve correr en pequeño y revisar antes."
+          }
+        },
+        {
+          "titulo": "Revisar al agente",
+          "sub": "número que no cuadra",
+          "texto": [
+            "Todo número que produce el agente pasa por una cuenta de verificación: la parte no puede ser mayor que el todo.",
+            "En INEMA, un export sumó las impresiones de marca por consulta y página y dio más que el total de la semana. La corrección fue sumar solo por consulta."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Plantillas de la carpeta",
+      "sub": "Copia y cambia lo que está entre < >.",
+      "blocos": [
+        {
+          "rot": "Terminal · crear la carpeta del cliente",
+          "icone": "terminal",
+          "conteudo": "mkdir -p <cliente>/{docs,briefings,reports,scripts,data/gsc}\ncd <cliente> && git init -b main\nprintf '.env\\n*.key\\ncredenciais/\\n' > .gitignore\ntouch .env AGENTS.md data/urls-chave.txt data/consultas-alvo.txt"
+        },
+        {
+          "rot": "Estructura (modelo del repo de trabajo de INEMA)",
+          "icone": "pasta",
+          "conteudo": "docs/        diagnóstico, plano, propuesta, autorización\nbriefings/   <slug>.md, uno por página\ndata/gsc/    export semanal (solo se agrega)\nreports/     semana-<data>.md, mensal-<mês>.md\nscripts/     radiografía, export, informe\nAGENTS.md    reglas del cliente para el agente\n.env         secreto (fuera de git)"
+        },
+        {
+          "rot": "AGENTS.md · reglas del cliente",
+          "icone": "arquivo",
+          "conteudo": "# Reglas — <cliente>\n- Tono: <cómo habla el cliente>. Público: <quién>.\n- Todo número o cita viene de una fuente del cliente; sin fuente, marcar PENDENTE y no publicar.\n- Antes de publicar: checklist de calidad completo.\n- Puerta 1: <nombre> aprueba la lista del mes. Puerta 2: <nombre> aprueba cada página.\n- Nunca: publicar sin aprobación, un lote grande de una vez, una página por variación de palabra clave.\n- Modelo por la suscripción. API de pago solo con autorización escrita para la finalidad.\n- Secreto solo en el .env. Nunca imprimir una clave en un log o informe."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: la carpeta del primer cliente",
+      "sub": "Puede ser tu propio sitio como cliente cero.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Carpeta con el secreto afuera",
+          "min": "25 min",
+          "texto": "Crea la carpeta con la estructura, el .gitignore y el AGENTS.md completo. Haz el primer commit.",
+          "pronto": "el comando git status no muestra el .env, el AGENTS.md tiene tono, regla de fuente, las dos puertas con nombre y la regla de API, y el primer commit existe."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Las puertas en papel",
+          "min": "20 min",
+          "texto": "Escribe quién aprueba cada puerta, cuánto tiempo lleva y qué pasa si la persona no tiene tiempo esa semana.",
+          "pronto": "la lista tiene las dos puertas con nombre, tiempo en minutos y la frase \"si no hay revisión, la cadencia baja; la puerta no se salta\"."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "El cliente desapareció por las vacaciones y no revisó las páginas de la semana. ¿Qué haces?",
+          "opcoes": [
+            "Publico, porque el agente ya revisó.",
+            "Retengo la publicación: la cadencia baja, la puerta no se salta.",
+            "Publico la mitad.",
+            "Cambio de cliente."
+          ],
+          "certa": 1,
+          "explica": "La puerta es lo que da confianza al servicio. Saltarla una vez es lo que crea el problema que después no puedes explicar.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "¿Dónde queda la credencial de lectura de Search Console del cliente?",
+          "opcoes": [
+            "En el AGENTS.md, para que el agente la encuentre.",
+            "En un .env fuera de git, cargada al momento de ejecutar.",
+            "En el informe mensual.",
+            "En el prompt del agente."
+          ],
+          "certa": 1,
+          "explica": "Un secreto en el repositorio o en el prompt se filtra en un commit, un log o un informe. El .gitignore garantiza que no se suba.",
+          "ref": "codigo"
+        },
+        {
+          "p": "El agente dice que las impresiones de marca de la semana fueron mayores que el total. ¿Qué indica eso?",
+          "opcoes": [
+            "Que el sitio creció mucho.",
+            "Error de suma: la parte no puede ser mayor que el todo. En INEMA, la suma por consulta y página contó la misma impresión más de una vez.",
+            "Que el panel de Google se equivocó.",
+            "Nada, es normal."
+          ],
+          "certa": 1,
+          "explica": "Una cuenta de verificación simple detecta el error del agente antes de que llegue al informe del cliente.",
+          "ref": "passos"
+        },
+        {
+          "p": "¿En qué punto puede trabajar el agente sin aprobación humana?",
+          "opcoes": [
+            "En publicar páginas.",
+            "En investigar, redactar borradores y armar el informe; publicar y elegir qué hacer pasan por las puertas.",
+            "En todo, si es un buen agente.",
+            "En nada."
+          ],
+          "certa": 1,
+          "explica": "Lo repetitivo es del agente. La decisión de qué hacer y de qué sale al aire es del humano.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para llevar",
+      "itens": [
+        {
+          "t": "Una carpeta por cliente",
+          "texto": "Estructura fija, git, AGENTS.md con sus reglas."
+        },
+        {
+          "t": "Dos puertas",
+          "texto": "Qué hacer y qué publicar. Sin revisión, la cadencia baja; la puerta se queda."
+        },
+        {
+          "t": "Secreto fuera",
+          "texto": ".env en el .gitignore, modelo por la suscripción, API de pago solo si está autorizada."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Método inemaSEO: la máquina con agentes",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md",
+          "icone": "robo"
+        },
+        {
+          "t": "Lista de verificación de calidad (16 ítems)",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/CHECKLIST.md",
+          "icone": "check"
+        },
+        {
+          "t": "Curso 5 · Con Agentes",
+          "href": "https://inematds.github.io/formacao-inemaseo-agentes-v72/",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

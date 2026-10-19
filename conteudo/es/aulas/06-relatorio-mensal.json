@@ -1,0 +1,270 @@
+{
+  "slug": "relatorio-mensal",
+  "num": 6,
+  "menu": "Informe",
+  "titulo": "Informe mensual al cliente: una página, hasta el cero",
+  "titulo_curto": "Informe mensual",
+  "minutos": 17,
+  "lead": "El informe mensual es lo que el cliente ve de tu trabajo. Si no lo entiende en dos minutos, no importa lo que hiciste. Una página: el número sin marca, la indexación de las URL clave, las consultas objetivo, la batería de preguntas en las IAs y una decisión que le pides a él. Y cuando el número es cero, dices que es cero.",
+  "objetivo": "armar el informe mensual de una página con sin marca, indexación, consultas objetivo, citación en las IAs y una decisión pedida al cliente.",
+  "competencias": [
+    "montar-relatorio-mensal",
+    "contar-numero-ruim-com-honestidade",
+    "pedir-decisao-ao-cliente"
+  ],
+  "aprende": [
+    {
+      "t": "De dónde viene cada número del informe"
+    },
+    {
+      "t": "Las 10 líneas arriba y la decisión que se pide"
+    },
+    {
+      "t": "Cómo contar un cero sin esconderlo y sin dramatizar"
+    },
+    {
+      "t": "El informe semanal como materia prima del mensual"
+    }
+  ],
+  "hero_alt": "Una dueña de panadería lee en el mostrador un informe impreso de una página, con panes desenfocados al fondo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Del archivo semanal a la página del mes",
+      "sub": "Haz clic en cada bloque.",
+      "nos": [
+        {
+          "icone": "grafico",
+          "titulo": "Sin marca",
+          "sub": "export semanal",
+          "detalhe": "Clics e impresiones de marca, sin marca y anonimizadas, una línea por semana. El mes es la suma de las semanas que no dividen días."
+        },
+        {
+          "icone": "check",
+          "titulo": "Indexación",
+          "sub": "URL clave",
+          "detalhe": "El estado de cada URL clave en la inspección de Search Console: indexada, descubierta, desconocida. Cuántas de cuántas, y qué cambió."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Consultas objetivo",
+          "sub": "posición e impresión",
+          "detalhe": "Las consultas acordadas en el plan: posición, impresiones, clics, página. La consulta sin impresión también aparece, escrita así."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Batería de preguntas",
+          "sub": "IAs, a mano",
+          "detalhe": "Las mismas preguntas del diagnóstico, ejecutadas en el mes. En cuántas apareció el cliente, y quién apareció en su lugar. Más los paneles oficiales: Bing AI Performance y el informe de IA de Search Console."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "Una página",
+          "sub": "10 líneas + 1 decisión",
+          "forte": true,
+          "detalhe": "Arriba, 10 líneas con los números del mes. Abajo, una decisión que solo el cliente puede tomar (aprobar la pauta, dar acceso, revisar páginas). El detalle va en un anexo."
+        }
+      ],
+      "legenda": "Cuatro fuentes, una página y un pedido de decisión."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Cómo armar el mes",
+      "sub": "Haz clic en cada etapa.",
+      "passos": [
+        {
+          "titulo": "Primero el semanal",
+          "sub": "la materia prima",
+          "texto": [
+            "Cada semana el script (o la hoja de cálculo a mano) junta el export sin marca, la inspección de las URL clave y las consultas objetivo en un archivo.",
+            "El mensual solo lee esos archivos; no ejecuta nada nuevo la víspera."
+          ]
+        },
+        {
+          "titulo": "10 líneas",
+          "sub": "arriba",
+          "texto": [
+            "Sin marca del mes y del mes anterior, URL indexadas, las 3 consultas objetivo que más se movieron, el resultado de la batería.",
+            "Cada línea con el número y la comparación. Sin adjetivos."
+          ]
+        },
+        {
+          "titulo": "El cero",
+          "sub": "dicho como es",
+          "texto": [
+            "El cero no se esconde en un gráfico de total. Di el número, qué significa y qué viene antes del clic.",
+            "Impresión sin marca subiendo y clic en cero significa que gente nueva está viendo el sitio y todavía no hace clic: el próximo paso es posición y título."
+          ],
+          "exemplo": {
+            "rot": "En INEMA",
+            "texto": "Semana del 05 al 11/10: inema.club con 0 clics sin marca y 157 impresiones sin marca (eran 8 cuatro semanas antes). En inema.pro, los 2 primeros clics sin marca, de búsquedas como \"curso jev\"."
+          }
+        },
+        {
+          "titulo": "Una decisión",
+          "sub": "pedida al cliente",
+          "texto": [
+            "Termina con una pregunta que solo él puede responder: aprobar la pauta, revisar 3 páginas, decidir el idioma.",
+            "Un informe que no pide nada se vuelve un archivo que nadie abre."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "El informe semanal y el modelo del mensual",
+      "sub": "El script es del repositorio de trabajo de INEMA (no público); el formato sirve de modelo. Sin credencial, la misma tabla sale a mano desde el panel.",
+      "blocos": [
+        {
+          "rot": "Terminal · informe de la semana con lo que ya está en data/gsc",
+          "icone": "terminal",
+          "conteudo": "# entradas: data/urls-chave.txt y data/consultas-alvo.txt (una por línea)\npython3 scripts/gsc_relatorio_semanal.py --sem-api\n# salidas: data/gsc/indexacao.csv (solo agrega) y reports/semana-<fim>.md"
+        },
+        {
+          "rot": "Informe mensual de una página",
+          "icone": "arquivo",
+          "conteudo": "INFORME — <cliente> — <mes>\n\nLOS NÚMEROS (vs mes anterior)\n1. Búsquedas sin tu marca: <clics> clics / <impresiones> impresiones (<antes>)\n2. Consultas sin marca distintas: <n> (<antes>)\n3. URLs clave indexadas: <x> de <y> (<antes>)\n4-6. Consultas objetivo que más cambiaron: <consulta> posición <p> (<antes>)\n7. Preguntas en las IAs (batería v1, a mano): apareció en <x> de <y> (<antes>)\n8. Bing AI Performance: <citas o \"sin dato\">\n9. Lo que publicamos: <páginas, con fecha>\n10. Lo que se trabó: <una línea>\n\nQUÉ SIGNIFICA ESTO (3 frases, sin adjetivos)\n\nDECISIÓN QUE NECESITO DE TI HASTA <fecha>\n- <aprobar la pauta | revisar 3 páginas | decidir el idioma>\n\nAnexo: informes semanales y planilla de la batería."
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Semana hasta el 11/10/2026 (totales)",
+            "html": "<table><tr><th>sitio</th><th>total</th><th>marca</th><th>sin marca</th><th>consultas sin marca</th></tr><tr><td>inema.club</td><td>114/702</td><td>87/238</td><td>0/157</td><td>51</td></tr><tr><td>inema.pro</td><td>11/761</td><td>5/116</td><td>2/293</td><td>52</td></tr></table><p>Clics/impresiones. Generado el 13/10/2026 por gsc_relatorio_semanal.py.</p>"
+          },
+          {
+            "rot": "Indexación (inspección del 13/10)",
+            "html": "<table><tr><th>URL</th><th>estado</th></tr><tr><td>/</td><td>indexada</td></tr><tr><td>/aprender-inteligencia-artificial/</td><td>indexada</td></tr><tr><td>/es/aprender-inteligencia-artificial/</td><td>indexada</td></tr><tr><td>/eventos/</td><td>desconocida para Google</td></tr></table><p>Indexadas: 13 de 14.</p>"
+          },
+          {
+            "rot": "Consultas sin marca (muestra)",
+            "html": "<table><tr><th>consulta</th><th>posición</th><th>impr.</th><th>clics</th></tr><tr><td>aprender ia</td><td>34,5</td><td>10</td><td>0</td></tr><tr><td>aprender inteligencia artificial desde cero</td><td>33,2</td><td>10</td><td>0</td></tr><tr><td>cómo aprender ia</td><td>46,1</td><td>8</td><td>0</td></tr></table><p>Todas de la página en español, indexada el 03/10.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Práctica: el primer informe",
+      "sub": "Usa tu propio sitio como cliente cero.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Informe de un mes",
+          "min": "45 min",
+          "dias": 28,
+          "texto": "Después de 4 semanas de exportación (curso 3, o a mano), completa el modelo de una página con los números del mes y la batería.",
+          "pronto": "el informe cabe en una página, las 10 líneas tienen número y comparación, y hay una decisión pedida con fecha."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · La frase del cero",
+          "min": "15 min",
+          "texto": "Elige el peor número del mes y escribe cómo se lo cuentas al cliente: el número, lo que significa y el siguiente paso.",
+          "pronto": "la frase tiene el número exacto (aunque sea 0), una explicación sin adjetivos y una acción con plazo."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Prueba lo que aprendiste",
+      "sub": "La explicación aparece después de tu respuesta.",
+      "perguntas": [
+        {
+          "p": "El sitio del cliente tuvo 0 clics sin marca en el mes, pero las impresiones sin marca subieron. ¿Cómo lo cuentas?",
+          "opcoes": [
+            "Muestra solo el total de clics, que subió.",
+            "Dice el cero, explica que gente nueva empezó a ver el sitio y que el siguiente paso es posición y título.",
+            "No manda el informe este mes.",
+            "Dice que Google tiene un problema."
+          ],
+          "certa": 1,
+          "explica": "Fue el caso de inema.club: de 8 a 157 impresiones sin marca en cuatro semanas, con 0 clics. El cero dicho con el contexto mantiene la confianza.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "¿Para qué sirve la decisión pedida al final del informe?",
+          "opcoes": [
+            "Para decorar.",
+            "Para que el cliente actúe sobre lo que solo él puede decidir; un informe sin pedido se vuelve un archivo sin lectura.",
+            "Para cobrar más.",
+            "Para cambiar el alcance todos los meses."
+          ],
+          "certa": 1,
+          "explica": "El informe es una conversación mensual. La decisión mantiene al cliente participando y destraba las puertas de control.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "¿De dónde salen los números del mensual?",
+          "opcoes": [
+            "De una ronda nueva la víspera.",
+            "De los archivos semanales ya guardados, más la batería del mes.",
+            "De una herramienta de pago de share of voice.",
+            "De la memoria."
+          ],
+          "certa": 1,
+          "explica": "Semanas guardadas en el mismo formato dan la serie. El mensual solo lee y resume.",
+          "ref": "passos"
+        },
+        {
+          "p": "Una URL clave aparece como \"desconocida para Google\". ¿Qué va en el informe?",
+          "opcoes": [
+            "Nada, para no preocupar.",
+            "La URL, el estado y la acción: enlaces internos hacia ella, sitemap y solicitud de indexación.",
+            "Que el sitio fue penalizado.",
+            "Que es culpa del cliente."
+          ],
+          "certa": 1,
+          "explica": "En INEMA, 13 de 14 indexadas; la que faltaba era /eventos/. Un estado con acción pendiente es información útil, no una alarma.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para llevar",
+      "itens": [
+        {
+          "t": "Una página",
+          "texto": "10 líneas de números con comparación y una decisión pedida con fecha."
+        },
+        {
+          "t": "El cero dicho como es",
+          "texto": "Número exacto, qué significa y el siguiente paso."
+        },
+        {
+          "t": "La vara de 2026",
+          "texto": "Citación: batería de preguntas fija hecha a mano y los paneles oficiales (Bing AI Performance, informe de IA de Search Console). El share of voice de una herramienta de pago no es una nota oficial."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir más allá",
+      "links": [
+        {
+          "t": "Curso 3 · Medición y Rutina: el export semanal",
+          "href": "https://inematds.github.io/formacao-inemaseo-medicao-v72/aulas/export-semanal/",
+          "icone": "grafico"
+        },
+        {
+          "t": "gsc_semanal.py (abierto)",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/tools/gsc_semanal.py",
+          "icone": "terminal"
+        },
+        {
+          "t": "Curso 7 · Sistemas: historial más allá de los 16 meses",
+          "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/aulas/gsc-historico/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Ventas con IA: comunicación e informe de una página",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/comunicacao/",
+          "icone": "chat"
+        }
+      ]
+    }
+  ]
+}

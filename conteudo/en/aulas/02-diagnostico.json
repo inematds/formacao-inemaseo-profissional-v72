@@ -1,0 +1,423 @@
+{
+  "slug": "diagnostico",
+  "num": 2,
+  "menu": "Diagnosis",
+  "titulo": "Diagnosis: the delivered HTML, AI readiness and the questions in the AIs",
+  "titulo_curto": "Diagnosis",
+  "minutos": 20,
+  "lead": "The diagnosis is the first deliverable and the entry point of the sale. Three parts, all read-only: what the server delivers to the search engine, how ready the site is for AI and agents, and whether the client shows up when someone asks the AIs about their niche. It all fits on one page.",
+  "objetivo": "put together a site's diagnosis in three parts (delivered HTML, AI readiness, neutral questions in the AIs) and present it on a call.",
+  "competencias": [
+    "rodar-raio-x-so-leitura",
+    "montar-bateria-de-perguntas",
+    "resumir-diagnostico-em-uma-pagina",
+    "conduzir-call-de-diagnostico"
+  ],
+  "aprende": [
+    {
+      "t": "The three parts of the diagnosis and what each one answers"
+    },
+    {
+      "t": "Run the X-ray and the readiness score with open tools"
+    },
+    {
+      "t": "Build the neutral question set and freeze it"
+    },
+    {
+      "t": "Run the call without promising and without asking for a password"
+    }
+  ],
+  "hero_alt": "Consultant on a video call on a laptop with a client, notebook with notes beside it.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From first contact to a one-page report",
+      "sub": "Tap each block.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "Call",
+          "sub": "what the client measures",
+          "detalhe": "Before running anything: where the clients come from today, which searches they imagine, whether they have Search Console and Bing Webmaster verified. The conversation defines the questions in the question set."
+        },
+        {
+          "icone": "terminal",
+          "titulo": "X-ray",
+          "sub": "Delivered HTML",
+          "detalhe": "What the server delivers to someone who doesn't run JavaScript: title, canonical, hreflang, robots, sitemap, JSON-LD, internal links. auditoria.sh from the method or the auditor from inemaseo-sistemas. Read-only, public pages."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Readiness",
+          "sub": "AI and agents",
+          "detalhe": "A score from 0 to 100 with public weights: bots allowed by purpose, CDN not blocking, entity with @id, text without JavaScript, authorship, dates. Agent-ready tool or the WebMCP Readiness."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Questions",
+          "sub": "in the AIs, by hand",
+          "detalhe": "20 neutral questions (without the client's name), frozen as v1, run by hand on 4 or 5 assistants. Does the client show up? Who shows up instead? Which sources do the AIs cite?"
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "One page",
+          "sub": "3 findings + 1 number",
+          "forte": true,
+          "detalhe": "The 3 findings that weigh the most, the non-branded number (if the client gives you access to the dashboard), the questions where they don't show up, and the next step. Nobody reads an 80-page report."
+        }
+      ],
+      "legenda": "Everything is read-only. Changing the site or opening the client's dashboard requires written authorization (lesson 7)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to build each part",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "X-ray",
+          "sub": "what the search engine sees",
+          "texto": [
+            "Run the method's auditoria.sh or the inemaseo-sistemas auditor on the public site, with a pause between pages.",
+            "Separate what is important (a page with no text in the HTML, wrong canonical) from what is an improvement (long title)."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "On 09/30 the course index became \"search only\" and 310 pages lost the only internal link the server delivered. The HTML X-ray is what catches this kind of error."
+          }
+        },
+        {
+          "titulo": "Readiness",
+          "sub": "score with public weights",
+          "texto": [
+            "The score only counts if the weights are public: the client sees why they lost points.",
+            "It measures readiness, not a guarantee of being cited. Say so in the report."
+          ]
+        },
+        {
+          "titulo": "Question set",
+          "sub": "20 neutral questions",
+          "texto": [
+            "Build 20 questions with the client that their audience would ask, without mentioning the brand. Freeze them as v1: changing them later breaks the comparison.",
+            "Run them by hand and note the results in a spreadsheet. Answers vary: it's a sample from that day, repeated every month."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "On 07/10/2026 INEMA showed up in 0 of 48 neutral answers on Claude and 0 of 4 on Gemini. And \"What is INEMA?\" brought back 4 of 4 answers about another organization with the same name: a name collision."
+          }
+        },
+        {
+          "titulo": "Report",
+          "sub": "one page",
+          "texto": [
+            "Three findings with the why, the question set summary, and one next step.",
+            "The detailed teaching of the tools is in course 7 (Systems)."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The commands and the templates",
+      "sub": "Open tools (MIT). Replace what is between < > with your own. Read-only, on a public site.",
+      "blocos": [
+        {
+          "rot": "Terminal · method X-ray (bash)",
+          "icone": "terminal",
+          "conteudo": "git clone https://github.com/inematds/inemaseo-metodo && cd inemaseo-metodo\ntools/auditoria.sh https://www.<site-do-cliente.com> /<pagina-1>/ /<pagina-2>/"
+        },
+        {
+          "rot": "Terminal · auditor and readiness score (Python 3.10+)",
+          "icone": "terminal",
+          "conteudo": "git clone https://github.com/inematds/inemaseo-sistemas && cd inemaseo-sistemas\npython3 ferramentas/auditor/auditor.py https://<site-do-cliente.com> --max 50\npython3 ferramentas/agente-ready/agente-ready.py https://<site-do-cliente.com>"
+        },
+        {
+          "rot": "Question set spreadsheet (CSV)",
+          "icone": "arquivo",
+          "conteudo": "data,assistente,pergunta,execucao,cliente_citado(sim/nao/parcial),concorrentes_citados,fontes_citadas,erros_factuais\n<AAAA-MM-DD>,<assistente>,<pergunta neutra 01>,1,,,,"
+        },
+        {
+          "rot": "One-page diagnosis",
+          "icone": "caneta",
+          "conteudo": "DIAGNOSIS — <site> — <date>\n\n1. What the search engine sees (X-ray)\n   - Finding 1 (important): <what> → <why it matters> → <what to do>\n   - Finding 2: ...\n   - Finding 3: ...\n2. Readiness for AI and agents: score <N>/100 (public weights). Lost points on: <...>\n   The score measures readiness; it does not guarantee being cited.\n3. Questions in the AIs (question set v1, <date>, by hand): showed up in <x> of <y>.\n   Who shows up instead: <...>. Sources cited: <...>\n4. Non-branded number (if there is access): <clicks>/<impressions> in 28 days\n5. Next step: 30/90/180 plan (lesson 3)"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Auditor on inema.club (10/19/2026)",
+            "html": "<table><tr><th>priority</th><th>finding</th><th>pages</th></tr><tr><td>important</td><td>Little text in the delivered HTML (fewer than 80 words)</td><td>2</td></tr><tr><td>improvement</td><td>Title outside 15–65 characters</td><td>28</td></tr><tr><td>improvement</td><td>Organization/Person/WebSite without @id</td><td>1</td></tr></table><p>Crawl of 50 pages, GET only, 1 s pause. The \"info\" rows (for example, FAQ markup, whose rich result Google stopped showing on 05/07/2026) are left out of the client report.</p>"
+          },
+          {
+            "rot": "Readiness on inema.club (10/19/2026)",
+            "html": "<table><tr><th>criterion</th><th>weight</th><th>result</th></tr><tr><td>search bots allowed</td><td>12</td><td>ok</td></tr><tr><td>CDN doesn't block bots</td><td>12</td><td>ok</td></tr><tr><td>text without JavaScript</td><td>10</td><td>ok</td></tr><tr><td>authorship</td><td>5</td><td>partial</td></tr><tr><td>dates</td><td>5</td><td>partial</td></tr><tr><td>about/contact page</td><td>2</td><td>fail</td></tr></table><p>Score 93 out of 100 (pesos.json v1.0.0). Real examples in inemaseo-sistemas/exemplos.</p>"
+          },
+          {
+            "rot": "How to read it",
+            "html": "<ul><li>An important finding goes at the top of the report; an improvement goes in one line.</li><li>A high score doesn't mean being cited: the same INEMA had 0 of 52 neutral measurements in the AIs in July.</li><li>The 3 findings in the report are the ones that change what the search engine sees.</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Simulated conversation: the diagnosis call",
+      "sub": "Simulated conversation for practice. Choose the answer you would give; the comment appears right after.",
+      "personagem": {
+        "nome": "Physical therapy clinic owner",
+        "papel": "own site, never did SEO"
+      },
+      "inicio": "abre",
+      "falas": {
+        "abre": {
+          "cliente": "I want to show up first on Google and ChatGPT. How much does it cost?",
+          "opcoes": [
+            {
+              "t": "Before we talk price: where do your patients come from today, and what do you already measure on the site?",
+              "vai": "medicao",
+              "nota": 2,
+              "comenta": "Measure before you change anything. Without a starting point, you can't show any result later."
+            },
+            {
+              "t": "I guarantee first place in 90 days.",
+              "vai": "fim-promessa",
+              "nota": 0,
+              "comenta": "Nobody controls rankings. The promise closes the deal today and breaks trust in month 3."
+            },
+            {
+              "t": "I have a package of 50 AI-written articles a month.",
+              "vai": "fim-pacote",
+              "nota": 0,
+              "comenta": "Article volume is the road to scaled content, which Google treats as spam."
+            }
+          ]
+        },
+        "medicao": {
+          "cliente": "Patients come by referral and through Instagram. The site gets visits, my nephew looked at it once.",
+          "opcoes": [
+            {
+              "t": "I suggest a read-only diagnostic: what Google sees on the site, how ready it is for AI, and 20 questions your patients would ask the AIs.",
+              "vai": "acesso",
+              "nota": 2,
+              "comenta": "Three parts, nothing invasive, and you're already showing method."
+            },
+            {
+              "t": "Give me the password to the dashboard and the hosting and I'll look at everything.",
+              "vai": "senha",
+              "nota": 1,
+              "comenta": "For the diagnostic you don't need a password. Dashboard access comes later, in writing and with minimum permissions."
+            }
+          ]
+        },
+        "senha": {
+          "cliente": "I'll send you the password on WhatsApp, is that okay?",
+          "opcoes": [
+            {
+              "t": "Better not. You give me read access inside Search Console itself, and we agree on that in writing.",
+              "vai": "acesso",
+              "nota": 1,
+              "comenta": "Good fix: read access, in her own dashboard, with written authorization (lesson 7)."
+            },
+            {
+              "t": "Sure, I'll keep it safe.",
+              "vai": "fim-senha",
+              "nota": 0,
+              "comenta": "A password sent by message is a risk for her and for you. If anything happens to the site, you're the first suspect."
+            }
+          ]
+        },
+        "acesso": {
+          "cliente": "OK, and what do you hand me at the end?",
+          "opcoes": [
+            {
+              "t": "One page: the 3 problems that weigh most, whether you show up in the AIs for those questions, and the next step.",
+              "vai": "ia",
+              "nota": 2,
+              "comenta": "Short and actionable. It's what she'll read and show to her partner."
+            },
+            {
+              "t": "The tool's full report, about 80 pages.",
+              "vai": "fim-ferramenta",
+              "nota": 0,
+              "comenta": "A long report hands the work over to the client. She doesn't know what to do first."
+            }
+          ]
+        },
+        "ia": {
+          "cliente": "And will the diagnostic show whether I'm on ChatGPT?",
+          "opcoes": [
+            {
+              "t": "It will show what the AIs answered that day, to the same 20 questions. Since answers vary, we repeat it every month and compare.",
+              "vai": "fim-bom",
+              "nota": 2,
+              "comenta": "To be honest: it's a sample, repeated with the same questions. The official citation dashboards today are Bing AI Performance and the AI report in Search Console."
+            },
+            {
+              "t": "Yes, tool X gives you your official AI score.",
+              "vai": "fim-nota",
+              "nota": 0,
+              "comenta": "There is no official AI score from any tool. Google says that \"internal\" metrics like that don't exist on its side."
+            }
+          ]
+        },
+        "fim-promessa": {
+          "fim": true,
+          "titulo": "Fragile contract",
+          "texto": "She signed because of the promise. In month 3, with no first place, she cancels and tells other clinics."
+        },
+        "fim-pacote": {
+          "fim": true,
+          "titulo": "Risk to her site",
+          "texto": "50 articles a month with no data of your own is the pattern Google treats as scaled content. The case of INEMA's 283 thin pages shows it: a batch of thin pages doesn't get indexed."
+        },
+        "fim-senha": {
+          "fim": true,
+          "titulo": "Too much responsibility",
+          "texto": "With her password on WhatsApp, any problem on the site becomes yours. Access is in writing, at the minimum needed."
+        },
+        "fim-ferramenta": {
+          "fim": true,
+          "titulo": "Nobody read it",
+          "texto": "The 80-page PDF sat in the inbox. With the 3 findings not in plain sight, there was no next step."
+        },
+        "fim-nota": {
+          "fim": true,
+          "titulo": "A number with nothing behind it",
+          "texto": "She'll ask for the \"official score\" every month. When the tool changes its calculation, your credibility drops with it."
+        },
+        "fim-bom": {
+          "fim": true,
+          "titulo": "Diagnostic hired",
+          "texto": "She understood what she'll receive, with no promise and no password. The one-page report becomes the basis of the lesson 3 plan."
+        }
+      },
+      "licao": "A good diagnostic is read-only, fits on one page, and measures before it promises. Dashboard access comes later, in writing."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the first diagnostic",
+      "sub": "Use your own site or one belonging to someone who authorized it in writing.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · X-ray and readiness",
+          "min": "40 min",
+          "texto": "Run the auditor (or auditoria.sh) and agente-ready on a site of yours. Pick the 3 findings that weigh most and write, for each one, why it matters and what to do.",
+          "pronto": "you have the output files from both tools and a list of 3 findings with \"why it matters\" and \"what to do\", each with the affected URL."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Question set v1 frozen",
+          "min": "45 min",
+          "texto": "Write 20 neutral questions the site's audience would ask an AI, without the brand name. Run 5 of them by hand in 2 assistants and log them in the spreadsheet.",
+          "pronto": "the spreadsheet has the 20 questions marked as v1 and at least 10 rows filled in (5 questions × 2 assistants) with the date and \"cited yes/no\"."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "Why can't the question set's questions mention the client's name?",
+          "opcoes": [
+            "To save time.",
+            "Because a question with the brand pulls the brand into the answer and invalidates the measurement.",
+            "Because the AIs forbid it.",
+            "It makes no difference."
+          ],
+          "certa": 1,
+          "explica": "A neutral question shows whether the client appears for people who don't know them yet, which is what matters.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "The site's readiness score came out at 93 out of 100. What do you tell the client?",
+          "opcoes": [
+            "That the AIs are going to cite them.",
+            "That the site is well prepared; citation is a different measure, done through the question set and the official dashboards.",
+            "That the score is official from Google.",
+            "That nothing else needs to be done."
+          ],
+          "certa": 1,
+          "explica": "Readiness is preparation. INEMA itself, with good preparation, showed up in 0 of 52 neutral measurements in July.",
+          "ref": "codigo"
+        },
+        {
+          "p": "For the diagnosis, what access do you need?",
+          "opcoes": [
+            "The hosting password.",
+            "None: X-ray, readiness and question set use only public pages. The non-branded number requires read access to the dashboard, authorized in writing.",
+            "The client's email password.",
+            "Administrator access to the site."
+          ],
+          "certa": 1,
+          "explica": "Start with read-only. Access comes later, at the minimum necessary and in writing.",
+          "ref": "simconversa"
+        },
+        {
+          "p": "Why freeze the question set as v1?",
+          "opcoes": [
+            "To avoid work.",
+            "Because changing the questions later breaks the month-over-month comparison; a new question becomes v2, measured in parallel.",
+            "Because the AIs don't accept new questions.",
+            "No need to freeze it."
+          ],
+          "certa": 1,
+          "explica": "The question set is the yardstick. A yardstick that changes doesn't measure progress.",
+          "ref": "passos"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "Three parts, read-only",
+          "texto": "Delivered HTML, AI readiness, neutral questions in the AIs."
+        },
+        {
+          "t": "One page",
+          "texto": "3 findings, the question set result, the non-branded number and the next step."
+        },
+        {
+          "t": "2026 yardstick",
+          "texto": "Measuring citation means running a fixed question set by hand every month in 4–5 assistants. A tool's score is not official."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "inemaseo-sistemas: auditor e agente-ready",
+          "href": "https://github.com/inematds/inemaseo-sistemas",
+          "icone": "terminal"
+        },
+        {
+          "t": "Course 7 · Systems: going deeper into the tools",
+          "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/",
+          "icone": "camadas"
+        },
+        {
+          "t": "auditoria.sh do método",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/tools/auditoria.sh",
+          "icone": "terminal"
+        },
+        {
+          "t": "Selling with AI: the discovery call",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/call-descoberta/",
+          "icone": "chat"
+        },
+        {
+          "t": "WebMCP Readiness",
+          "href": "https://webmcp.inema.pro/",
+          "icone": "robo"
+        }
+      ]
+    }
+  ]
+}

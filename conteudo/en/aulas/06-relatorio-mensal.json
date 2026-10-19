@@ -1,0 +1,270 @@
+{
+  "slug": "relatorio-mensal",
+  "num": 6,
+  "menu": "Report",
+  "titulo": "Monthly client report: one page, even at zero",
+  "titulo_curto": "Monthly report",
+  "minutos": 17,
+  "lead": "The monthly report is what the client sees of your work. If they can't understand it in two minutes, it doesn't matter what you did. One page: the non-branded number, the indexing of the key URLs, the target queries, the question set across the AIs, and one decision you ask of them. And when the number is zero, you say it's zero.",
+  "objetivo": "build the one-page monthly report with non-branded, indexing, target queries, AI citations and a decision asked of the client.",
+  "competencias": [
+    "montar-relatorio-mensal",
+    "contar-numero-ruim-com-honestidade",
+    "pedir-decisao-ao-cliente"
+  ],
+  "aprende": [
+    {
+      "t": "Where each number in the report comes from"
+    },
+    {
+      "t": "The 10 lines at the top and the decision you ask for"
+    },
+    {
+      "t": "How to report a zero without hiding it and without dramatizing it"
+    },
+    {
+      "t": "The weekly report as raw material for the monthly one"
+    }
+  ],
+  "hero_alt": "A bakery owner reads a one-page printed report at the counter, with loaves of bread blurred in the background.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From the weekly file to the month's page",
+      "sub": "Tap each block.",
+      "nos": [
+        {
+          "icone": "grafico",
+          "titulo": "Non-branded",
+          "sub": "weekly export",
+          "detalhe": "Branded and non-branded clicks and impressions, anonymized, one row per week. The month is the sum of the weeks that don't split days."
+        },
+        {
+          "icone": "check",
+          "titulo": "Indexing",
+          "sub": "Key URLs",
+          "detalhe": "The status of each key URL in Search Console's URL Inspection: indexed, discovered, unknown. How many out of how many, and what changed."
+        },
+        {
+          "icone": "alvo",
+          "titulo": "Target queries",
+          "sub": "position and impressions",
+          "detalhe": "The queries agreed on in the plan: position, impressions, clicks, page. A query with no impressions shows up too, written that way."
+        },
+        {
+          "icone": "lupa",
+          "titulo": "Question set",
+          "sub": "AIs, by hand",
+          "detalhe": "The same questions from the diagnosis, run during the month. In how many the client appeared, and who appeared instead. Plus the official panels: Bing AI Performance and the Search Console AI report."
+        },
+        {
+          "icone": "arquivo",
+          "titulo": "One page",
+          "sub": "10 lines + 1 decision",
+          "forte": true,
+          "detalhe": "At the top, 10 lines with the month's numbers. Below, one decision only the client can make (approve the content plan, grant access, review pages). The detail goes in an attachment."
+        }
+      ],
+      "legenda": "Four sources, one page and one decision request."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to build the month",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "Weekly first",
+          "sub": "the raw material",
+          "texto": [
+            "Every week the script (or the spreadsheet, by hand) gathers the non-branded export, the key URL inspection and the target queries into one file.",
+            "The monthly report only reads those files; it doesn't run anything new the day before."
+          ]
+        },
+        {
+          "titulo": "10 lines",
+          "sub": "at the top",
+          "texto": [
+            "Non-branded for the month and the previous month, indexed URLs, the 3 target queries that moved the most, the question set result.",
+            "Each line with the number and the comparison. No adjectives."
+          ]
+        },
+        {
+          "titulo": "The zero",
+          "sub": "said as it is",
+          "texto": [
+            "A zero doesn't get hidden in a total chart. Say the number, what it means, and what comes before the click.",
+            "Non-branded impressions going up with clicks at zero means new people are seeing the site and aren't clicking yet: the next step is position and title."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "Week of Oct 5 to 11: inema.club with 0 non-branded clicks and 157 non-branded impressions (it was 8 four weeks earlier). On inema.pro, the first 2 non-branded clicks, from searches like \"curso jev\"."
+          }
+        },
+        {
+          "titulo": "One decision",
+          "sub": "asked of the client",
+          "texto": [
+            "End with a question only the client can answer: approve the content plan, review 3 pages, decide the language.",
+            "A report that asks for nothing becomes a file nobody opens."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "The weekly report and the monthly template",
+      "sub": "The script comes from INEMA's working repository (not public); the format works as a template. Without credentials, the same table can be made by hand from the dashboard.",
+      "blocos": [
+        {
+          "rot": "Terminal · this week's report using what's already in data/gsc",
+          "icone": "terminal",
+          "conteudo": "# inputs: data/urls-chave.txt and data/consultas-alvo.txt (one per line)\npython3 scripts/gsc_relatorio_semanal.py --sem-api\n# outputs: data/gsc/indexacao.csv (append only) and reports/semana-<fim>.md"
+        },
+        {
+          "rot": "One-page monthly report",
+          "icone": "arquivo",
+          "conteudo": "REPORT — <client> — <month>\n\nTHE NUMBERS (vs previous month)\n1. Searches without your brand: <clicks> clicks / <impressions> impressions (<before>)\n2. Different non-branded queries: <n> (<before>)\n3. Key URLs indexed: <x> of <y> (<before>)\n4-6. Target queries that changed the most: <query> position <p> (<before>)\n7. Questions in the AIs (question set v1, by hand): appeared in <x> of <y> (<before>)\n8. Bing AI Performance: <citations or \"no data\">\n9. What we published: <pages, with date>\n10. What got stuck: <one line>\n\nWHAT THIS MEANS (3 sentences, no adjectives)\n\nDECISION I NEED FROM YOU BY <date>\n- <approve the content plan | review 3 pages | decide the language>\n\nAttachment: weekly reports and the question set spreadsheet."
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "Week ending 10/11/2026 (totals)",
+            "html": "<table><tr><th>site</th><th>total</th><th>branded</th><th>non-branded</th><th>non-branded queries</th></tr><tr><td>inema.club</td><td>114/702</td><td>87/238</td><td>0/157</td><td>51</td></tr><tr><td>inema.pro</td><td>11/761</td><td>5/116</td><td>2/293</td><td>52</td></tr></table><p>Clicks/impressions. Generated on 10/13/2026 by gsc_relatorio_semanal.py.</p>"
+          },
+          {
+            "rot": "Indexing (inspection on 10/13)",
+            "html": "<table><tr><th>URL</th><th>status</th></tr><tr><td>/</td><td>indexed</td></tr><tr><td>/aprender-inteligencia-artificial/</td><td>indexed</td></tr><tr><td>/es/aprender-inteligencia-artificial/</td><td>indexed</td></tr><tr><td>/eventos/</td><td>unknown to Google</td></tr></table><p>Indexed: 13 of 14.</p>"
+          },
+          {
+            "rot": "Non-branded queries (sample)",
+            "html": "<table><tr><th>query</th><th>position</th><th>impr.</th><th>clicks</th></tr><tr><td>aprender ia</td><td>34.5</td><td>10</td><td>0</td></tr><tr><td>aprender inteligencia artificial desde cero</td><td>33.2</td><td>10</td><td>0</td></tr><tr><td>cómo aprender ia</td><td>46.1</td><td>8</td><td>0</td></tr></table><p>All from the Spanish page, indexed on 10/03.</p>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the first report",
+      "sub": "Use your own site as client zero.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · One month's report",
+          "min": "45 min",
+          "dias": 28,
+          "texto": "After 4 weeks of exports (course 3, or by hand), fill in the one-page template with the month's numbers and the question set.",
+          "pronto": "the report fits on one page, all 10 lines have a number and a comparison, and one decision is requested with a date."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The sentence for zero",
+          "min": "15 min",
+          "texto": "Pick the worst number of the month and write how you'd tell it to the client: the number, what it means and the next step.",
+          "pronto": "the sentence has the exact number (even if it's 0), an explanation with no adjectives and an action with a deadline."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The client's site got 0 non-branded clicks this month, but non-branded impressions went up. How do you tell them?",
+          "opcoes": [
+            "You show only the total clicks, which went up.",
+            "You state the zero, explain that new people started seeing the site, and say the next step is position and title.",
+            "You don't send the report this month.",
+            "You say Google is having a problem."
+          ],
+          "certa": 1,
+          "explica": "That was the case for inema.club: 8 → 157 non-branded impressions in four weeks, with 0 clicks. Stating the zero with context keeps trust.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "What is the decision requested at the end of the report for?",
+          "opcoes": [
+            "To decorate it.",
+            "So the client acts on what only they can decide; a report with no request becomes a file nobody reads.",
+            "To charge more.",
+            "To change the scope every month."
+          ],
+          "certa": 1,
+          "explica": "The report is a monthly conversation. The decision keeps the client involved and unlocks the gates.",
+          "ref": "diagrama"
+        },
+        {
+          "p": "Where do the monthly numbers come from?",
+          "opcoes": [
+            "From a fresh run the day before.",
+            "From the weekly files already saved, plus the month's question set.",
+            "From a paid share-of-voice tool.",
+            "From memory."
+          ],
+          "certa": 1,
+          "explica": "Weeks saved in the same format give you the series. The monthly report only reads and summarizes.",
+          "ref": "passos"
+        },
+        {
+          "p": "A key URL shows up as \"unknown to Google\". What goes in the report?",
+          "opcoes": [
+            "Nothing, so you don't worry the client.",
+            "The URL, the status and the action: internal links to it, sitemap and an indexing request.",
+            "That the site was penalized.",
+            "That it's the client's fault."
+          ],
+          "certa": 1,
+          "explica": "At INEMA, 13 of 14 pages were indexed; the one missing was /eventos/. A status with an action attached is useful information, not an alarm.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "One page",
+          "texto": "10 lines of numbers with a comparison and one decision requested, with a date."
+        },
+        {
+          "t": "The zero, said as it is",
+          "texto": "The exact number, what it means and the next step."
+        },
+        {
+          "t": "2026 yardstick",
+          "texto": "Citation: a fixed question set run by hand and the official panels (Bing AI Performance, the Search Console AI report). Share of voice from a paid tool is not an official score."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Course 3 · Measurement and Routine: the weekly export",
+          "href": "https://inematds.github.io/formacao-inemaseo-medicao-v72/aulas/export-semanal/",
+          "icone": "grafico"
+        },
+        {
+          "t": "gsc_semanal.py (open)",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/tools/gsc_semanal.py",
+          "icone": "terminal"
+        },
+        {
+          "t": "Course 7 · Systems: history beyond the 16 months",
+          "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/aulas/gsc-historico/",
+          "icone": "camadas"
+        },
+        {
+          "t": "Selling with AI: communication and the one-page report",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/comunicacao/",
+          "icone": "chat"
+        }
+      ]
+    }
+  ]
+}

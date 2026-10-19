@@ -1,0 +1,254 @@
+{
+  "slug": "entrega-com-agentes",
+  "num": 5,
+  "menu": "Delivery",
+  "titulo": "Delivery with agents: one folder per client, human gates and secrets kept out",
+  "titulo_curto": "Delivery with agents",
+  "minutos": 18,
+  "lead": "Agents do the repetitive work: run the X-ray, build the report, suggest titles, write the draft. What gives the client confidence is that nothing goes live without a human approving it, and that their password is never in your repository. One folder per client, always with the same structure.",
+  "objetivo": "set up a client's folder with a fixed structure, human gates and secrets kept out of the repository, so you can deliver with agents without losing control.",
+  "competencias": [
+    "set-up-a-folder-per-client",
+    "define-human-gates",
+    "keep-secrets-out-of-the-repo"
+  ],
+  "aprende": [
+    {
+      "t": "The folder structure that repeats for every client"
+    },
+    {
+      "t": "Where the agent works and where only a human decides"
+    },
+    {
+      "t": "Why the gate is never skipped, even when you're in a hurry"
+    },
+    {
+      "t": "Secrets outside the repository and the model through the subscription"
+    }
+  ],
+  "hero_alt": "Professional in front of two monitors with a terminal and an editor open, in a calm office.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A client's delivery machine",
+      "sub": "Tap each block.",
+      "nos": [
+        {
+          "icone": "pasta",
+          "titulo": "Client folder",
+          "sub": "fixed structure",
+          "detalhe": "docs, Search Console data, reports, briefings, scripts. The same for every client: the agent and you know where everything is. The secret stays in a .env that doesn't go to git."
+        },
+        {
+          "icone": "robo",
+          "titulo": "Agent",
+          "sub": "the repetitive work",
+          "detalhe": "Research, opportunity, briefing, draft, checklist, publishing, monitoring. The model runs through the subscription (Claude Code or Codex) whenever possible; paid API only with authorization for that specific purpose."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Gate 1",
+          "sub": "what to do",
+          "forte": true,
+          "detalhe": "The client (or you, on their behalf) approves the list of pages and topics for the month. Nothing is written before that."
+        },
+        {
+          "icone": "portao",
+          "titulo": "Gate 2",
+          "sub": "what to publish",
+          "forte": true,
+          "detalhe": "A human reviews each page: 10 to 20 minutes, with a summary of what changed and the things that need confirmation. Without approval, it doesn't publish."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "Monitor",
+          "sub": "back to gate 1",
+          "detalhe": "Weekly export, inspection, report. What went up and what got stuck become the list for the next gate 1."
+        }
+      ],
+      "volta": "Every month: monitoring feeds the next gate 1",
+      "legenda": "The agent speeds up the work; the gates protect the client's trust."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "How to set up the delivery",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "Folder",
+          "sub": "one repository per client",
+          "texto": [
+            "Create the folder with the fixed structure and an instructions file for the agent (AGENTS.md or CLAUDE.md) with the client's rules: tone, what not to publish, who approves.",
+            "Versioned in git: every change has a date and an author, and can be undone."
+          ]
+        },
+        {
+          "titulo": "Secrets out",
+          "sub": ".env in .gitignore",
+          "texto": [
+            "Keys and credentials live in environment variables, never in the repository or in the prompt.",
+            "Access to the client's dashboards is read-only, authorized in writing (lesson 7)."
+          ]
+        },
+        {
+          "titulo": "Gates",
+          "sub": "never skipped",
+          "texto": [
+            "If the client doesn't have time to review, the cadence slows down. The gate is not skipped.",
+            "Help: the agent delivers the summary of what changed and the 3 things for the client to confirm."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "A links script picked up the wrong course name in a subfolder. It was caught in the pilot, before the push. That's what running small and checking beforehand is for."
+          }
+        },
+        {
+          "titulo": "Check the agent",
+          "sub": "a number that doesn't add up",
+          "texto": [
+            "Every number the agent produces goes through a cross-check: the part can't be bigger than the whole.",
+            "At INEMA, an export summed branded impressions by query and page and came out higher than the week's total. The fix was to sum by query only."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Folder templates",
+      "sub": "Copy it and swap out what's between < >.",
+      "blocos": [
+        {
+          "rot": "Terminal · create the client folder",
+          "icone": "terminal",
+          "conteudo": "mkdir -p <cliente>/{docs,briefings,reports,scripts,data/gsc}\ncd <cliente> && git init -b main\nprintf '.env\\n*.key\\ncredenciais/\\n' > .gitignore\ntouch .env AGENTS.md data/urls-chave.txt data/consultas-alvo.txt"
+        },
+        {
+          "rot": "Structure (template for the INEMA working repo)",
+          "icone": "pasta",
+          "conteudo": "docs/        diagnosis, plan, proposal, authorization\nbriefings/   <slug>.md, one per page\ndata/gsc/    weekly export (append-only)\nreports/     semana-<data>.md, mensal-<mês>.md\nscripts/     X-ray, export, report\nAGENTS.md    client rules for the agent\n.env         secret (kept out of git)"
+        },
+        {
+          "rot": "AGENTS.md · client rules",
+          "icone": "arquivo",
+          "conteudo": "# Rules — <client>\n- Tone: <how the client speaks>. Audience: <who>.\n- Every number or quote comes from a client source; with no source, mark it PENDING and do not publish.\n- Before publishing: complete quality checklist.\n- Gate 1: <name> approves the month's list. Gate 2: <name> approves each page.\n- Never: publish without approval, a big batch all at once, a page per keyword variation.\n- Model through the subscription. Paid API only with written authorization for the purpose.\n- Secrets only in .env. Never print a key in a log or report."
+        }
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: the first client's folder",
+      "sub": "It can be your own site as client zero.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Folder with the secret kept out",
+          "min": "25 min",
+          "texto": "Create the folder with the structure, the .gitignore and the filled-in AGENTS.md. Make the first commit.",
+          "pronto": "the git status command does not show the .env, the AGENTS.md has the tone, the source rule, both gates with a name and the API rule, and the first commit exists."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · The gates on paper",
+          "min": "20 min",
+          "texto": "Write down who approves each gate, how long it takes, and what happens if that person has no time that week.",
+          "pronto": "the list has both gates with a name, time in minutes, and the sentence \"if there is no review, the cadence drops; the gate is not skipped\"."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The client disappeared on vacation and didn't review the week's pages. What do you do?",
+          "opcoes": [
+            "Publish, because the agent already reviewed them.",
+            "Hold the publication: the cadence drops, the gate is not skipped.",
+            "Publish half.",
+            "Switch clients."
+          ],
+          "certa": 1,
+          "explica": "The gate is what gives the service its credibility. Skipping it once is what creates the problem you can't explain afterward.",
+          "ref": "passos",
+          "cert": true
+        },
+        {
+          "p": "Where does the client's Search Console read credential live?",
+          "opcoes": [
+            "In AGENTS.md, so the agent can find it.",
+            "In a .env kept out of git, loaded at run time.",
+            "In the monthly report.",
+            "In the agent's prompt."
+          ],
+          "certa": 1,
+          "explica": "A secret in the repository or in the prompt leaks through a commit, log or report. The .gitignore makes sure it doesn't get pushed.",
+          "ref": "codigo"
+        },
+        {
+          "p": "The agent says the week's branded impressions were higher than the total. What does that indicate?",
+          "opcoes": [
+            "That the site grew a lot.",
+            "A sum error: the part can't be bigger than the whole. At INEMA, summing by query and page counted the same impression more than once.",
+            "That Google's dashboard got it wrong.",
+            "Nothing, it's normal."
+          ],
+          "certa": 1,
+          "explica": "A simple cross-check calculation catches the agent's error before it goes into the client's report.",
+          "ref": "passos"
+        },
+        {
+          "p": "Where can the agent work without human approval?",
+          "opcoes": [
+            "Publishing pages.",
+            "Researching, drafting and building the report; publishing and choosing what to do go through the gates.",
+            "On everything, if it's a good agent.",
+            "On nothing."
+          ],
+          "certa": 1,
+          "explica": "The repetitive work is the agent's. Deciding what to do and what goes live is the human's.",
+          "ref": "diagrama"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "One folder per client",
+          "texto": "Fixed structure, git, AGENTS.md with the client's rules."
+        },
+        {
+          "t": "Two gates",
+          "texto": "What to do and what to publish. Without review, the cadence drops; the gate stays."
+        },
+        {
+          "t": "Secrets out",
+          "texto": ".env in .gitignore, model through the subscription, paid API only when authorized."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "inemaSEO method: the machine with agents",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md",
+          "icone": "robo"
+        },
+        {
+          "t": "Quality checklist (16 items)",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/CHECKLIST.md",
+          "icone": "check"
+        },
+        {
+          "t": "Course 5 · With Agents",
+          "href": "https://inematds.github.io/formacao-inemaseo-agentes-v72/",
+          "icone": "terminal"
+        }
+      ]
+    }
+  ]
+}

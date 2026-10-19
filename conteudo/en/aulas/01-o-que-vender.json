@@ -1,0 +1,295 @@
+{
+  "slug": "o-que-vender",
+  "num": 1,
+  "menu": "Offer",
+  "titulo": "What to sell: a measured non-branded result, not position 1",
+  "titulo_curto": "What to sell",
+  "minutos": 15,
+  "lead": "The client comes asking for first place on Google, 500 articles, or to \"show up in ChatGPT.\" Nobody controls that, and whoever promises it loses the client in month 6. What you can sell is what you control and can prove: diagnosis, plan, measured follow-up, and training.",
+  "objetivo": "separate what the client asks for from what you can deliver and measure, and write your offer of diagnosis, plan, follow-up, and training.",
+  "competencias": [
+    "separar-pedido-de-entrega",
+    "escrever-oferta-medivel",
+    "explicar-numero-sem-marca"
+  ],
+  "aprende": [
+    {
+      "t": "Why building got easy and trust didn't"
+    },
+    {
+      "t": "The promises you don't make, and what to offer instead"
+    },
+    {
+      "t": "The four deliverables you can sell and prove"
+    },
+    {
+      "t": "Why the number that proves the work is the non-branded one"
+    }
+  ],
+  "hero_alt": "A consultant standing next to a whiteboard talks with a client seated in a small meeting room.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "From the request to the deliverable you can prove",
+      "sub": "Tap each block.",
+      "nos": [
+        {
+          "icone": "chat",
+          "titulo": "The request",
+          "sub": "what the client says",
+          "detalhe": "\"I want to be first.\" \"I want 500 articles.\" \"I want to show up in ChatGPT.\" The request is legitimate: they want more customers. It's the form that nobody controls."
+        },
+        {
+          "icone": "x",
+          "titulo": "The bad promise",
+          "sub": "what you can't deliver",
+          "itens": [
+            {
+              "icone": "x",
+              "t": "guaranteed position"
+            },
+            {
+              "icone": "x",
+              "t": "AI article package"
+            },
+            {
+              "icone": "x",
+              "t": "guaranteed AI citation"
+            },
+            {
+              "icone": "x",
+              "t": "tool \"AI score\""
+            }
+          ],
+          "detalhe": "Google says there is no shortcut or special requirement to show up in AI, and AI answers change with every run. A volume package of articles is the path to scaled content, which Google treats as spam."
+        },
+        {
+          "icone": "check",
+          "titulo": "The deliverable",
+          "sub": "what you control",
+          "forte": true,
+          "itens": [
+            {
+              "icone": "lupa",
+              "t": "diagnosis"
+            },
+            {
+              "icone": "lista",
+              "t": "plan"
+            },
+            {
+              "icone": "grafico",
+              "t": "measured follow-up"
+            },
+            {
+              "icone": "usuario",
+              "t": "training"
+            }
+          ],
+          "detalhe": "Diagnose the site, write the plan, track it with numbers, and train the client's team. These are the roles of the Professional 2030 (Consultant, Auditor, Mentor, Trainer) applied to SEO."
+        },
+        {
+          "icone": "grafico",
+          "titulo": "The proof",
+          "sub": "non-branded number",
+          "detalhe": "Clicks and impressions from people who didn't type the client's name. It's the only number that shows new people arriving because of your work. The rest the client already had."
+        }
+      ],
+      "legenda": "You sell what you control and prove it with a number the client didn't have before."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Why sell this way",
+      "sub": "Tap each step.",
+      "passos": [
+        {
+          "titulo": "Building got easy",
+          "sub": "and loses value",
+          "texto": [
+            "The client can already generate a site, a page, and text with AI. Selling only the build turns into a price fight.",
+            "What they can't do alone is know whether it works, what is wrong, and what to do first."
+          ]
+        },
+        {
+          "titulo": "Trust is the product",
+          "sub": "Professional 2030",
+          "texto": [
+            "The company buys someone who diagnoses, reviews, tracks, and trains, and who says clearly what they know and what they don't know how to do.",
+            "In SEO this becomes: diagnosis, plan, measured follow-up, and training."
+          ]
+        },
+        {
+          "titulo": "The total is misleading",
+          "sub": "the INEMA case",
+          "texto": [
+            "In the 28-day baseline for inema.club, 639 of the 647 clicks from the top 25 searches were branded. Non-branded searches added up to 8 clicks.",
+            "If you show the client only the total, you're showing people who already knew them."
+          ],
+          "exemplo": {
+            "rot": "At INEMA",
+            "texto": "In four weeks, inema.club's non-branded impressions went from 8 to 157. Non-branded clicks stayed at 0. That's the kind of honest number you report."
+          }
+        },
+        {
+          "titulo": "What not to do",
+          "sub": "not even as a bonus",
+          "texto": [
+            "A network of cross-linked sites, a paid indexer, Google Indexing API for ordinary articles, one page per keyword variation.",
+            "A manual action takes down all of the client's domains at once. Lesson 7 covers each one in detail."
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Templates for your offer",
+      "sub": "Copy it and swap what's in [brackets] for your own.",
+      "blocos": [
+        {
+          "rot": "Positioning in 2 lines",
+          "icone": "caneta",
+          "conteudo": "I help [type of business] get found by people who don't know the brand yet, on Google, on Bing and in AI answers.\nI do the diagnosis, the plan, measured monthly follow-up and team training. I don't promise rankings, I don't sell article packages and I don't guarantee AI citations."
+        },
+        {
+          "rot": "Swapping a promise for a deliverable",
+          "icone": "lista",
+          "conteudo": "CLIENT REQUEST                 -> WHAT I OFFER\n\"first place on Google\"        -> diagnosis + plan + non-branded number measured every week\n\"500 articles with AI\"         -> a few pages with original data, at a pace the site can handle\n\"show up on ChatGPT\"           -> a fixed question set, run by hand every month, with a spreadsheet\n\"AI score\" from a tool         -> official dashboards: Search Console and Bing Webmaster\n\"llms.txt fixes it\"            -> optional, cheap item in the foundation, not the main deliverable"
+        }
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {
+            "rot": "INEMA baseline",
+            "html": "<table><tr><th>inema.club, 28 days</th><th>clicks</th><th>branded</th></tr><tr><td>site total</td><td>787</td><td>—</td></tr><tr><td>top 25 searches</td><td>647</td><td>639</td></tr></table><p>Non-branded searches: 8 clicks and 72 impressions. Baseline from 09/23/2026 (08/25–09/21).</p>"
+          },
+          {
+            "rot": "How to explain it to the client",
+            "html": "<ul><li><b>Don't</b>: \"the site had 787 clicks.\" Most of those are people who were already looking for the name.</li><li><b>Do</b>: \"non-branded searches: X clicks and Y impressions. That's the number our work has to move.\"</li></ul>"
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Practice: your offer on paper",
+      "sub": "Two short files you'll reuse throughout the course.",
+      "exercicios": [
+        {
+          "id": "e1",
+          "titulo": "E1 · Positioning in 2 lines",
+          "min": "20 min",
+          "texto": "Write your positioning from the template: who it's for, what you deliver and what you don't do.",
+          "pronto": "the 2 lines don't name any tool, they name the four deliverables (or the ones you do), and they say at least one thing you don't promise."
+        },
+        {
+          "id": "e2",
+          "titulo": "E2 · Five promises swapped",
+          "min": "25 min",
+          "texto": "List 5 requests you've heard (or imagine hearing) from a client and, next to each one, write the measurable deliverable you offer instead.",
+          "pronto": "each of the 5 lines has a request and a deliverable with a number you can check (non-branded, indexed, questions where you appear)."
+        }
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Test what you learned",
+      "sub": "The explanation appears after your answer.",
+      "perguntas": [
+        {
+          "p": "The client asks for \"first place on Google in 90 days.\" Which answer keeps the client in month 6?",
+          "opcoes": [
+            "Guarantee it, to close the contract.",
+            "Offer a diagnosis, a plan and the non-branded number measured every week, and say that nobody can guarantee a ranking.",
+            "Turn the client down.",
+            "Sell a package of 100 articles."
+          ],
+          "certa": 1,
+          "explica": "Ranking depends on Google and the competition. What you control is the work and the measurement. Guaranteeing closes the deal today and loses the client when the number doesn't come.",
+          "ref": "diagrama",
+          "cert": true
+        },
+        {
+          "p": "In the inema.club baseline, 639 of the 647 clicks from the top searches were branded. What does that teach you about the client report?",
+          "opcoes": [
+            "That SEO doesn't work.",
+            "That the total shows who already knew the brand; the work is proven in the non-branded numbers.",
+            "That you need to change the name.",
+            "That branded clicks don't count for anything."
+          ],
+          "certa": 1,
+          "explica": "The brand matters, but it isn't an effect of your SEO work. The non-branded number is what shows new people.",
+          "ref": "passos"
+        },
+        {
+          "p": "Which of these is a deliverable you control?",
+          "opcoes": [
+            "Guaranteed citation in ChatGPT.",
+            "An AI score from a paid tool.",
+            "A 30/90/180-day plan with a metric and an owner on every line.",
+            "Position 1 for the main keyword."
+          ],
+          "certa": 2,
+          "explica": "A plan is your work, with a deadline and a metric. Citation and position are results of Google and the AIs; you measure them, you don't guarantee them.",
+          "ref": "codigo"
+        },
+        {
+          "p": "The client wants llms.txt \"to show up in ChatGPT.\" What do you say?",
+          "opcoes": [
+            "That it's the main AI deliverable.",
+            "That it's an optional, cheap item in the foundation; an Ahrefs study saw 97% of these files with no reads at all.",
+            "That it's forbidden.",
+            "That it costs a lot."
+          ],
+          "certa": 1,
+          "explica": "It can go in the foundation because it costs little, but it's not a citation lever or something to sell on its own.",
+          "ref": "codigo"
+        }
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Takeaways",
+      "itens": [
+        {
+          "t": "Sell what you control",
+          "texto": "Diagnosis, plan, measured follow-up and teaching."
+        },
+        {
+          "t": "Prove it with non-branded",
+          "texto": "The total shows who already knew the client. On inema.club, 639 of the 647 clicks from the top searches were branded."
+        },
+        {
+          "t": "2026 yardstick",
+          "texto": "Google says there is no special requirement to appear in AI: it counts content that only the client can have. Your offer starts from there."
+        }
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "To go further",
+      "links": [
+        {
+          "t": "Professional 2030: the 4 programs",
+          "href": "https://eventos.inema.pro/prof2030/",
+          "icone": "usuario"
+        },
+        {
+          "t": "Selling with AI: consultant positioning",
+          "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/posicionamento/",
+          "icone": "alvo"
+        },
+        {
+          "t": "Google: optimizing for AI features (English)",
+          "href": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+          "icone": "lupa"
+        },
+        {
+          "t": "inemaSEO Method",
+          "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md",
+          "icone": "arquivo"
+        }
+      ]
+    }
+  ]
+}
