@@ -1,0 +1,172 @@
+{
+  "slug": "diagnostico",
+  "num": 2,
+  "menu": "Diagnóstico",
+  "titulo": "Diagnóstico: o HTML entregue, a prontidão para IA e as perguntas nas IAs",
+  "titulo_curto": "Diagnóstico",
+  "minutos": 20,
+  "lead": "O diagnóstico é a primeira entrega e a porta de entrada da venda. Três partes, todas só de leitura: o que o servidor entrega ao buscador, quão pronto o site está para IA e agentes, e se o cliente aparece quando alguém pergunta às IAs sobre o nicho dele. Tudo cabe numa página.",
+  "objetivo": "montar o diagnóstico de um site em três partes (HTML entregue, prontidão para IA, perguntas neutras nas IAs) e apresentá-lo numa call.",
+  "competencias": ["rodar-raio-x-so-leitura", "montar-bateria-de-perguntas", "resumir-diagnostico-em-uma-pagina", "conduzir-call-de-diagnostico"],
+  "aprende": [
+    {"t": "As três partes do diagnóstico e o que cada uma responde"},
+    {"t": "Rodar o raio-x e a nota de prontidão com ferramentas abertas"},
+    {"t": "Montar a bateria de perguntas neutras e congelá-la"},
+    {"t": "Conduzir a call sem prometer e sem pedir senha"}
+  ],
+  "hero_alt": "Consultora em videochamada no notebook com uma cliente, caderno com anotações ao lado.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do primeiro contato ao relatório de uma página",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {"icone": "chat", "titulo": "Call", "sub": "o que o cliente mede",
+         "detalhe": "Antes de rodar qualquer coisa: de onde vêm os clientes hoje, quais buscas ele imagina, se tem Search Console e Bing Webmaster verificados. A conversa define as perguntas da bateria."},
+        {"icone": "terminal", "titulo": "Raio-x", "sub": "HTML entregue",
+         "detalhe": "O que o servidor entrega a quem não roda JavaScript: título, canônico, hreflang, robots, sitemap, JSON-LD, links internos. auditoria.sh do método ou o auditor do inemaseo-sistemas. Só leitura, páginas públicas."},
+        {"icone": "robo", "titulo": "Prontidão", "sub": "IA e agentes",
+         "detalhe": "Nota de 0 a 100 com pesos públicos: robôs por finalidade liberados, CDN não barrando, entidade com @id, texto sem JavaScript, autoria, datas. Ferramenta agente-ready ou o WebMCP Readiness."},
+        {"icone": "lupa", "titulo": "Perguntas", "sub": "nas IAs, à mão",
+         "detalhe": "20 perguntas neutras (sem o nome do cliente), congeladas como v1, rodadas à mão em 4 ou 5 assistentes. O cliente aparece? Quem aparece no lugar? Que fontes as IAs citam?"},
+        {"icone": "arquivo", "titulo": "Uma página", "sub": "3 achados + 1 número", "forte": true,
+         "detalhe": "Os 3 achados que mais pesam, o número sem marca (se ele der acesso ao painel), as perguntas em que ele não aparece e o próximo passo. Relatório de 80 páginas ninguém lê."}
+      ],
+      "legenda": "Tudo só de leitura. Mexer no site ou abrir o painel do cliente exige autorização por escrito (aula 7)."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como montar cada parte",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Raio-x", "sub": "o que o buscador vê",
+         "texto": ["Rode o auditoria.sh do método ou o auditor do inemaseo-sistemas sobre o site público, com pausa entre páginas.", "Separe o que é importante (página sem texto no HTML, canônico errado) do que é melhoria (título longo)."],
+         "exemplo": {"rot": "No INEMA", "texto": "Em 30/09 o índice de cursos virou \"só busca\" e 310 fichas perderam o único link interno que o servidor entregava. O raio-x do HTML é o que pega esse tipo de erro."}},
+        {"titulo": "Prontidão", "sub": "nota com pesos públicos",
+         "texto": ["A nota só vale se os pesos são públicos: o cliente vê por que perdeu pontos.", "Ela mede preparação, não garante citação. Diga isso no relatório."]},
+        {"titulo": "Bateria", "sub": "20 perguntas neutras",
+         "texto": ["Monte com o cliente 20 perguntas que o público dele faria, sem citar a marca. Congele como v1: mudar depois quebra a comparação.", "Rode à mão, anote numa planilha. As respostas variam: é uma amostra daquele dia, repetida todo mês."],
+         "exemplo": {"rot": "No INEMA", "texto": "Em 10/07/2026 o INEMA apareceu em 0 de 48 respostas neutras no Claude e 0 de 4 no Gemini. E \"O que é INEMA?\" trouxe 4 de 4 respostas sobre outro órgão com o mesmo nome: colisão de nome."}},
+        {"titulo": "Relatório", "sub": "uma página",
+         "texto": ["Três achados com o porquê, a bateria resumida e um próximo passo.", "O ensino detalhado das ferramentas está no curso 7 (Sistemas)."]}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Os comandos e os modelos",
+      "sub": "Ferramentas abertas (MIT). Troque o que está entre < > pelo seu. Só leitura, em site público.",
+      "blocos": [
+        {"rot": "Terminal · raio-x do método (bash)", "icone": "terminal",
+         "conteudo": "git clone https://github.com/inematds/inemaseo-metodo && cd inemaseo-metodo\ntools/auditoria.sh https://www.<site-do-cliente.com> /<pagina-1>/ /<pagina-2>/"},
+        {"rot": "Terminal · auditor e nota de prontidão (Python 3.10+)", "icone": "terminal",
+         "conteudo": "git clone https://github.com/inematds/inemaseo-sistemas && cd inemaseo-sistemas\npython3 ferramentas/auditor/auditor.py https://<site-do-cliente.com> --max 50\npython3 ferramentas/agente-ready/agente-ready.py https://<site-do-cliente.com>"},
+        {"rot": "Planilha da bateria (CSV)", "icone": "arquivo",
+         "conteudo": "data,assistente,pergunta,execucao,cliente_citado(sim/nao/parcial),concorrentes_citados,fontes_citadas,erros_factuais\n<AAAA-MM-DD>,<assistente>,<pergunta neutra 01>,1,,,,"},
+        {"rot": "Diagnóstico de uma página", "icone": "caneta",
+         "conteudo": "DIAGNÓSTICO — <site> — <data>\n\n1. O que o buscador vê (raio-x)\n   - Achado 1 (importante): <o quê> → <por que pesa> → <o que fazer>\n   - Achado 2: ...\n   - Achado 3: ...\n2. Prontidão para IA e agentes: nota <N>/100 (pesos públicos). Perdeu pontos em: <...>\n   A nota mede preparação; não garante citação.\n3. Perguntas nas IAs (bateria v1, <data>, à mão): apareceu em <x> de <y>.\n   Quem aparece no lugar: <...>. Fontes citadas: <...>\n4. Número sem marca (se houver acesso): <cliques>/<impressões> em 28 dias\n5. Próximo passo: plano 30/90/180 (aula 3)"}
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {"rot": "Auditor no inema.club (19/10/2026)", "html": "<table><tr><th>prioridade</th><th>achado</th><th>páginas</th></tr><tr><td>importante</td><td>Pouco texto no HTML entregue (menos de 80 palavras)</td><td>2</td></tr><tr><td>melhoria</td><td>Título fora de 15–65 caracteres</td><td>28</td></tr><tr><td>melhoria</td><td>Organization/Person/WebSite sem @id</td><td>1</td></tr></table><p>Rastreio de 50 páginas, só GET, pausa de 1 s. As linhas \"info\" (por exemplo, marcação de FAQ, cujo rich result o Google deixou de mostrar em 07/05/2026) ficam fora do relatório ao cliente.</p>"},
+          {"rot": "Prontidão no inema.club (19/10/2026)", "html": "<table><tr><th>critério</th><th>peso</th><th>resultado</th></tr><tr><td>robôs de busca liberados</td><td>12</td><td>ok</td></tr><tr><td>CDN não barra robôs</td><td>12</td><td>ok</td></tr><tr><td>texto sem JavaScript</td><td>10</td><td>ok</td></tr><tr><td>autoria</td><td>5</td><td>parcial</td></tr><tr><td>datas</td><td>5</td><td>parcial</td></tr><tr><td>página sobre/contato</td><td>2</td><td>falha</td></tr></table><p>Nota 93 de 100 (pesos.json v1.0.0). Exemplos reais em inemaseo-sistemas/exemplos.</p>"},
+          {"rot": "Como ler", "html": "<ul><li>Achado importante vai para o topo do relatório; melhoria vai numa linha.</li><li>Nota alta não quer dizer citação: o mesmo INEMA tinha 0 de 52 medições neutras nas IAs em julho.</li><li>Os 3 achados do relatório são os que mudam o que o buscador vê.</li></ul>"}
+        ]
+      }
+    },
+    {
+      "tipo": "simconversa",
+      "titulo": "Conversa simulada: a call de diagnóstico",
+      "sub": "Conversa simulada para treinar. Escolha a resposta que você daria; o comentário aparece logo depois.",
+      "personagem": {"nome": "Dona de clínica de fisioterapia", "papel": "site próprio, nunca fez SEO"},
+      "inicio": "abre",
+      "falas": {
+        "abre": {"cliente": "Quero aparecer em primeiro no Google e no ChatGPT. Quanto custa?",
+          "opcoes": [
+            {"t": "Antes de falar em preço: de onde vêm os seus pacientes hoje, e o que você já mede no site?", "vai": "medicao", "nota": 2, "comenta": "Medir antes de mexer. Sem saber o ponto de partida, nenhum resultado depois pode ser mostrado."},
+            {"t": "Garanto o primeiro lugar em 90 dias.", "vai": "fim-promessa", "nota": 0, "comenta": "Ninguém controla posição. A promessa fecha hoje e quebra a confiança no mês 3."},
+            {"t": "Tenho um pacote de 50 artigos por mês com IA.", "vai": "fim-pacote", "nota": 0, "comenta": "Volume de artigos é o caminho do conteúdo escalado, que o Google trata como spam."}
+          ]},
+        "medicao": {"cliente": "Os pacientes vêm por indicação e pelo Instagram. O site recebe visitas, meu sobrinho olhou uma vez.",
+          "opcoes": [
+            {"t": "Proponho um diagnóstico só de leitura: o que o Google vê no site, quão pronto ele está para IA e 20 perguntas que seus pacientes fariam às IAs.", "vai": "acesso", "nota": 2, "comenta": "Três partes, nada invasivo, e você já está mostrando método."},
+            {"t": "Me passa a senha do painel e da hospedagem que eu olho tudo.", "vai": "senha", "nota": 1, "comenta": "Para o diagnóstico você não precisa de senha. Acesso a painel vem depois, por escrito e com o mínimo de permissão."}
+          ]},
+        "senha": {"cliente": "Te mando a senha pelo WhatsApp, pode ser?",
+          "opcoes": [
+            {"t": "Melhor não. Você me dá acesso de leitura dentro do próprio Search Console, e combinamos isso por escrito.", "vai": "acesso", "nota": 1, "comenta": "Correção boa: acesso de leitura, no painel dela, com autorização por escrito (aula 7)."},
+            {"t": "Pode, eu guardo bem.", "vai": "fim-senha", "nota": 0, "comenta": "Senha por mensagem é risco para ela e para você. Se algo acontecer no site, você é o primeiro suspeito."}
+          ]},
+        "acesso": {"cliente": "Tá, e o que você me entrega no fim?",
+          "opcoes": [
+            {"t": "Uma página: os 3 problemas que mais pesam, se você aparece nas IAs para essas perguntas e o próximo passo.", "vai": "ia", "nota": 2, "comenta": "Curto e acionável. É o que ela vai ler e mostrar ao sócio."},
+            {"t": "O relatório completo da ferramenta, umas 80 páginas.", "vai": "fim-ferramenta", "nota": 0, "comenta": "Relatório longo transfere o trabalho para a cliente. Ela não sabe o que fazer primeiro."}
+          ]},
+        "ia": {"cliente": "E o diagnóstico vai mostrar se eu estou no ChatGPT?",
+          "opcoes": [
+            {"t": "Vai mostrar o que as IAs responderam naquele dia, às mesmas 20 perguntas. Como as respostas variam, repetimos todo mês e comparamos.", "vai": "fim-bom", "nota": 2, "comenta": "Honesto: é uma amostra, repetida com as mesmas perguntas. Os painéis oficiais de citação hoje são o Bing AI Performance e o relatório de IA do Search Console."},
+            {"t": "Sim, a ferramenta X dá a sua nota oficial de IA.", "vai": "fim-nota", "nota": 0, "comenta": "Não existe nota oficial de IA de ferramenta. O Google avisa que métricas \"internas\" desse tipo não existem do lado dele."}
+          ]},
+        "fim-promessa": {"fim": true, "titulo": "Contrato frágil", "texto": "Ela assinou pela promessa. No mês 3, sem primeiro lugar, ela cancela e conta para outras clínicas."},
+        "fim-pacote": {"fim": true, "titulo": "Risco para o site dela", "texto": "50 artigos por mês sem dado próprio é o padrão que o Google trata como conteúdo escalado. O caso das 283 fichas finas do INEMA mostra: lote de páginas rasas não indexa."},
+        "fim-senha": {"fim": true, "titulo": "Responsabilidade demais", "texto": "Com a senha dela no WhatsApp, qualquer problema no site passa a ser seu. Acesso é por escrito, no mínimo necessário."},
+        "fim-ferramenta": {"fim": true, "titulo": "Ninguém leu", "texto": "O PDF de 80 páginas ficou na caixa de entrada. Sem os 3 achados à vista, não houve próximo passo."},
+        "fim-nota": {"fim": true, "titulo": "Número sem lastro", "texto": "Ela vai cobrar a \"nota oficial\" todo mês. Quando a ferramenta mudar o cálculo, a sua credibilidade cai junto."},
+        "fim-bom": {"fim": true, "titulo": "Diagnóstico contratado", "texto": "Ela entendeu o que vai receber, sem promessa e sem senha. O relatório de uma página vira a base do plano da aula 3."}
+      },
+      "licao": "Diagnóstico bom é só de leitura, cabe numa página e mede antes de prometer. Acesso a painel vem depois, por escrito."
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o primeiro diagnóstico",
+      "sub": "Use o seu próprio site ou o de alguém que autorizou por escrito.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Raio-x e prontidão", "min": "40 min",
+         "texto": "Rode o auditor (ou o auditoria.sh) e o agente-ready num site seu. Escolha os 3 achados que mais pesam e escreva, para cada um, por que pesa e o que fazer.",
+         "pronto": "você tem os arquivos de saída das duas ferramentas e uma lista de 3 achados com \"por que pesa\" e \"o que fazer\", cada um com a URL afetada."},
+        {"id": "e2", "titulo": "E2 · Bateria v1 congelada", "min": "45 min",
+         "texto": "Escreva 20 perguntas neutras que o público do site faria a uma IA, sem o nome da marca. Rode 5 delas à mão em 2 assistentes e anote na planilha.",
+         "pronto": "a planilha tem as 20 perguntas marcadas como v1 e pelo menos 10 linhas preenchidas (5 perguntas × 2 assistentes) com data e \"citado sim/não\"."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "Por que as perguntas da bateria não podem citar o nome do cliente?",
+         "opcoes": ["Para economizar tempo.", "Porque pergunta com a marca puxa a marca na resposta e invalida a medição.", "Porque as IAs proíbem.", "Não faz diferença."],
+         "certa": 1, "explica": "Pergunta neutra mostra se o cliente aparece para quem ainda não o conhece, que é o que importa.", "ref": "passos", "cert": true},
+        {"p": "A nota de prontidão do site deu 93 de 100. O que você diz ao cliente?",
+         "opcoes": ["Que ele vai ser citado pelas IAs.", "Que o site está bem preparado; citação é outra medida, feita pela bateria e pelos painéis oficiais.", "Que a nota é oficial do Google.", "Que não precisa fazer mais nada."],
+         "certa": 1, "explica": "Prontidão é preparação. O próprio INEMA, com boa preparação, apareceu em 0 de 52 medições neutras em julho.", "ref": "codigo"},
+        {"p": "Para o diagnóstico, de que acesso você precisa?",
+         "opcoes": ["Senha da hospedagem.", "Nenhum: raio-x, prontidão e bateria usam só páginas públicas. O número sem marca exige acesso de leitura no painel, autorizado por escrito.", "Senha do e-mail do cliente.", "Acesso de administrador ao site."],
+         "certa": 1, "explica": "Comece só de leitura. Acesso entra depois, no mínimo necessário e por escrito.", "ref": "simconversa"},
+        {"p": "Por que congelar a bateria como v1?",
+         "opcoes": ["Para não ter trabalho.", "Porque mudar as perguntas depois quebra a comparação mês a mês; pergunta nova vira v2, medida em paralelo.", "Porque as IAs não aceitam perguntas novas.", "Não precisa congelar."],
+         "certa": 1, "explica": "A bateria é a régua. Régua que muda não mede evolução.", "ref": "passos"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Três partes, só leitura", "texto": "HTML entregue, prontidão para IA, perguntas neutras nas IAs."},
+        {"t": "Uma página", "texto": "3 achados, o resultado da bateria, o número sem marca e o próximo passo."},
+        {"t": "Régua de 2026", "texto": "Medir citação é bateria fixa à mão todo mês em 4–5 assistentes. Nota de ferramenta não é oficial."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "inemaseo-sistemas: auditor e agente-ready", "href": "https://github.com/inematds/inemaseo-sistemas", "icone": "terminal"},
+        {"t": "Curso 7 · Sistemas: aprofundar nas ferramentas", "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/", "icone": "camadas"},
+        {"t": "auditoria.sh do método", "href": "https://github.com/inematds/inemaseo-metodo/blob/main/tools/auditoria.sh", "icone": "terminal"},
+        {"t": "Vendas com IA: a call de descoberta", "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/call-descoberta/", "icone": "chat"},
+        {"t": "WebMCP Readiness", "href": "https://webmcp.inema.pro/", "icone": "robo"}
+      ]
+    }
+  ]
+}

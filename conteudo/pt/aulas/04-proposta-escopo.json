@@ -1,0 +1,111 @@
+{
+  "slug": "proposta-escopo",
+  "num": 4,
+  "menu": "Proposta",
+  "titulo": "Proposta e escopo: quatro blocos, entregáveis e limites",
+  "titulo_curto": "Proposta e escopo",
+  "minutos": 17,
+  "lead": "A proposta transforma o plano em compromisso. Ela diz o que você entrega, o que não entrega e o que o cliente precisa fazer. Escopo claro evita a briga do mês 4, quando o cliente acha que \"SEO\" incluía tudo, até a posição 1.",
+  "objetivo": "escrever uma proposta de uma página com escopo em quatro blocos, entregáveis, limites e o que o cliente precisa fazer.",
+  "competencias": ["delimitar-escopo", "escrever-proposta-uma-pagina", "listar-pre-requisitos-do-cliente"],
+  "aprende": [
+    {"t": "Os quatro blocos de escopo: fundação, conteúdo, medição, visibilidade em IA"},
+    {"t": "Entregável que se confere e limite escrito"},
+    {"t": "O que o cliente precisa fazer para dar certo"},
+    {"t": "Faixas de mercado como referência, não como tabela"}
+  ],
+  "hero_alt": "Duas pessoas revisam juntas uma folha de papel sobre a mesa; uma aponta um item com a caneta.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Quatro blocos de escopo",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {"icone": "portao", "titulo": "Fundação", "sub": "técnica",
+         "detalhe": "Painéis verificados, canônico único, sitemap com data real, robots por finalidade, página rasa fora do índice, entidade com @id. Entregável: raio-x sem achado importante."},
+        {"icone": "caneta", "titulo": "Conteúdo", "sub": "dado próprio",
+         "detalhe": "Poucas páginas com dado que só o cliente tem, checklist antes de publicar, links internos. Entregável: páginas no ar e indexadas. Quem fornece o dado é o cliente."},
+        {"icone": "grafico", "titulo": "Medição", "sub": "toda semana",
+         "detalhe": "Export semanal sem marca, inspeção das URLs-chave, relatório mensal de uma página. Entregável: o arquivo e o relatório, todo mês."},
+        {"icone": "robo", "titulo": "Visibilidade em IA", "sub": "medida, não prometida", "forte": true,
+         "detalhe": "Robôs de IA por finalidade, prontidão, bateria de perguntas mensal à mão, leitura dos painéis oficiais (Bing AI Performance, relatório de IA do Search Console). Entregável: a planilha e a leitura. Citação não se garante."}
+      ],
+      "legenda": "Cada bloco tem um entregável que o cliente confere sozinho e um limite escrito."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como montar a proposta",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Escopo", "sub": "o que entra",
+         "texto": ["Escolha os blocos que o diagnóstico pediu. Nem todo cliente precisa dos quatro no primeiro mês.", "Para cada bloco: entregável, prazo e como se confere."]},
+        {"titulo": "Limites", "sub": "o que não entra",
+         "texto": ["Escreva o que você não promete: posição, citação em IA, volume de artigos, prazo de indexação.", "O Google diz que não há atalho nem requisito especial para IA, e as respostas das IAs variam a cada execução. Isso vai no texto, com essas palavras."]},
+        {"titulo": "O cliente faz", "sub": "pré-requisitos",
+         "texto": ["Acesso ao domínio quando for preciso, 1 a 2 horas por semana de revisão enquanto houver conteúdo, alguém que decide e aprova, credenciais na hora certa (não antes).", "Sem isso, o prazo anda junto com a revisão dele, e a proposta diz isso."]},
+        {"titulo": "Preço", "sub": "referência, não tabela",
+         "texto": ["Fornecedores dos EUA anunciam auditoria GEO única entre US$ 500 e US$ 7.500, e acompanhamento mensal para pequena empresa entre US$ 2.000 e US$ 6.000. São números de quem vende, sem estudo independente.", "Não há dado confiável para o Brasil. Adapte ao seu mercado e teste."],
+         "exemplo": {"rot": "Para aprofundar", "texto": "Escada de preço e cardápio de opções estão no curso 2 da Formação Vendas com IA; faixas por serviço e \"preço é teste\", no curso 4."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo de proposta de uma página",
+      "sub": "Copie e troque o que está entre [colchetes].",
+      "blocos": [
+        {"rot": "Proposta", "icone": "arquivo",
+         "conteudo": "PROPOSTA — [cliente] — [data]\n\nPONTO DE PARTIDA (do diagnóstico de [data])\n- [3 achados em uma linha cada]\n- Buscas sem a marca: [cliques]/[impressões] em 28 dias. Perguntas nas IAs: apareceu em [x] de [y].\n\nESCOPO\n| bloco | entregável | prazo | como você confere |\n|---|---|---|---|\n| Fundação | raio-x sem achado importante | 30 d | relatório antes × depois |\n| Medição | export semanal + relatório mensal de 1 página | todo mês | arquivo e relatório |\n| Conteúdo | [3] páginas com dado seu, aprovadas por você | 90 d | URLs indexadas |\n| Visibilidade em IA | bateria de [20] perguntas, à mão, todo mês | todo mês | planilha |\n\nNÃO ESTÁ INCLUÍDO / NÃO PROMETO\n- Posição em buscador ou citação em IA (ninguém controla; o Google diz que não há atalho).\n- Volume de artigos. Rede de sites. Indexador pago.\n- Mexer no site ou nos painéis sem a autorização por escrito (anexo).\n\nVOCÊ PRECISA\n- Acesso de leitura ao Search Console e ao Bing Webmaster; acesso ao domínio na hora de verificar.\n- [1–2] h por semana para revisar e aprovar conteúdo; uma pessoa que decide.\n\nINVESTIMENTO: [valor] — [forma]. Revisão do escopo no dia 30."}
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a proposta pronta para enviar",
+      "sub": "Use o diagnóstico e o plano das aulas 2 e 3.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Proposta de uma página", "min": "45 min",
+         "texto": "Preencha o modelo com o diagnóstico e o plano. Escolha só os blocos que o diagnóstico justifica.",
+         "pronto": "a proposta cabe numa página, cada bloco escolhido tem entregável, prazo e conferência, e o ponto de partida tem pelo menos um número do diagnóstico."},
+        {"id": "e2", "titulo": "E2 · Limites e pré-requisitos", "min": "20 min",
+         "texto": "Escreva a seção \"não está incluído / não prometo\" e a seção \"você precisa\". Leia em voz alta como se fosse para o cliente.",
+         "pronto": "há pelo menos 3 limites (posição, citação em IA, volume) e pelo menos 2 pré-requisitos do cliente, com horas por semana escritas em número."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "O que entra no bloco \"Visibilidade em IA\" da proposta?",
+         "opcoes": ["Citação garantida no ChatGPT.", "Robôs por finalidade, prontidão, bateria de perguntas mensal e leitura dos painéis oficiais, sem garantir citação.", "Um llms.txt como entrega principal.", "Nota de IA de uma ferramenta."],
+         "certa": 1, "explica": "O que se entrega é preparação e medição. Citação é resultado das IAs, que variam a cada execução.", "ref": "diagrama", "cert": true},
+        {"p": "Um cliente pergunta quanto custa. Você viu que fornecedores dos EUA cobram de US$ 500 a 7.500 por auditoria. Como usar esse número?",
+         "opcoes": ["Converter e cobrar igual.", "Como referência de mercado de quem vende, sem estudo independente; adaptar ao seu mercado e testar.", "Cobrar o máximo.", "Ignorar preço."],
+         "certa": 1, "explica": "São números anunciados por fornecedores, de outro país. Servem para ter noção de faixa, não como tabela.", "ref": "passos"},
+        {"p": "Por que a proposta lista o que o cliente precisa fazer?",
+         "opcoes": ["Para dividir a culpa.", "Porque conteúdo com dado próprio e verificação de domínio dependem dele; sem isso, o prazo anda junto com a revisão dele.", "Para cobrar mais.", "Não precisa listar."],
+         "certa": 1, "explica": "Pré-requisito escrito evita a conversa do mês 4: \"por que não saiu?\" tem resposta no papel.", "ref": "passos"},
+        {"p": "Qual limite deve estar escrito na proposta?",
+         "opcoes": ["\"Garantimos a posição 1.\"", "\"Não prometemos posição em buscador nem citação em IA.\"", "\"Publicamos 100 artigos por mês.\"", "\"Usamos indexador pago para acelerar.\""],
+         "certa": 1, "explica": "É o limite que protege os dois lados. As outras três são promessas ou táticas de risco.", "ref": "codigo"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Quatro blocos", "texto": "Fundação, conteúdo, medição e visibilidade em IA, cada um com entregável e conferência."},
+        {"t": "Limite escrito", "texto": "Posição e citação não se prometem. O cliente lê isso antes de assinar."},
+        {"t": "Preço é referência", "texto": "Faixas de fornecedores dos EUA (US$ 500 a 7.500 por auditoria) só orientam; adapte ao seu mercado."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Playbook AEO/GEO (aiv2026): resumo comercial e pré-requisitos", "href": "https://github.com/inematds/aiv2026/blob/main/playbook-aeo-geo.md", "icone": "arquivo"},
+        {"t": "Vendas com IA: solução e preço que escala", "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/solucao-preco/", "icone": "alvo"},
+        {"t": "Vendas com IA: preço do primeiro cliente", "href": "https://inematds.github.io/formacao-vendas-ia-primeiro-cliente-v72/aulas/preco/", "icone": "alvo"}
+      ]
+    }
+  ]
+}

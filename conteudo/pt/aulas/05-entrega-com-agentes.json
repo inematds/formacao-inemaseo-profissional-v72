@@ -1,0 +1,118 @@
+{
+  "slug": "entrega-com-agentes",
+  "num": 5,
+  "menu": "Entrega",
+  "titulo": "Entrega com agentes: uma pasta por cliente, portões humanos e segredo fora",
+  "titulo_curto": "Entrega com agentes",
+  "minutos": 18,
+  "lead": "Agentes fazem o repetitivo: rodar o raio-x, montar o relatório, propor títulos, escrever o rascunho. O que dá confiança ao cliente é que nada vai ao ar sem um humano aprovar, e que a senha dele nunca está no seu repositório. Uma pasta por cliente, sempre com a mesma estrutura.",
+  "objetivo": "montar a pasta de um cliente com estrutura fixa, portões humanos e segredo fora do repositório, para entregar com agentes sem perder controle.",
+  "competencias": ["montar-pasta-por-cliente", "definir-portoes-humanos", "manter-segredo-fora-do-repo"],
+  "aprende": [
+    {"t": "A estrutura de pasta que se repete em todo cliente"},
+    {"t": "Onde o agente trabalha e onde só o humano decide"},
+    {"t": "Por que o portão nunca é pulado, nem com pressa"},
+    {"t": "Segredo fora do repositório e modelo pela assinatura"}
+  ],
+  "hero_alt": "Profissional diante de dois monitores com terminal e editor abertos, num escritório calmo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A máquina de entrega de um cliente",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {"icone": "pasta", "titulo": "Pasta do cliente", "sub": "estrutura fixa",
+         "detalhe": "docs, dados do Search Console, relatórios, briefings, scripts. A mesma em todo cliente: o agente e você sabem onde está cada coisa. O segredo fica num .env que não vai para o git."},
+        {"icone": "robo", "titulo": "Agente", "sub": "o repetitivo",
+         "detalhe": "Pesquisa, oportunidade, briefing, rascunho, checklist, publicação, observação. O modelo roda pela assinatura (Claude Code ou Codex) sempre que possível; API paga só com autorização para aquela finalidade."},
+        {"icone": "portao", "titulo": "Portão 1", "sub": "o que fazer", "forte": true,
+         "detalhe": "O cliente (ou você, por ele) aprova a lista de páginas e temas do mês. Nada é escrito antes disso."},
+        {"icone": "portao", "titulo": "Portão 2", "sub": "o que publicar", "forte": true,
+         "detalhe": "Humano revisa cada página: 10 a 20 minutos, com o resumo do que mudou e as coisas que precisam de confirmação. Sem aprovação, não publica."},
+        {"icone": "grafico", "titulo": "Observar", "sub": "volta ao portão 1",
+         "detalhe": "Export semanal, inspeção, relatório. O que subiu e o que travou viram a lista do próximo portão 1."}
+      ],
+      "volta": "Todo mês: observar alimenta o próximo portão 1",
+      "legenda": "O agente acelera o trabalho; os portões guardam a confiança do cliente."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como montar a entrega",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Pasta", "sub": "um repositório por cliente",
+         "texto": ["Crie a pasta com a estrutura fixa e um arquivo de instruções para o agente (AGENTS.md ou CLAUDE.md) com as regras do cliente: tom, o que não publicar, quem aprova.", "Versão no git: cada mudança tem data, autor e pode ser desfeita."]},
+        {"titulo": "Segredo fora", "sub": ".env no .gitignore",
+         "texto": ["Chaves e credenciais ficam em variáveis de ambiente, nunca no repositório nem no prompt.", "Acesso aos painéis do cliente é o de leitura, autorizado por escrito (aula 7)."]},
+        {"titulo": "Portões", "sub": "nunca pulados",
+         "texto": ["Se o cliente não tem tempo de revisar, a cadência cai. O portão não é pulado.", "Ajuda: o agente entrega o resumo do que mudou e as 3 coisas para o cliente confirmar."],
+         "exemplo": {"rot": "No INEMA", "texto": "Um script de links pegou o nome errado de um curso numa subpasta. Foi pego no piloto, antes do push. É para isso que serve rodar pequeno e conferir antes."}},
+        {"titulo": "Conferir o agente", "sub": "número que não fecha",
+         "texto": ["Todo número que o agente produz passa por uma conta de conferência: a parte não pode ser maior que o todo.", "No INEMA, um export somou as impressões de marca por consulta e página e deu mais que o total da semana. A correção foi somar só por consulta."]}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos da pasta",
+      "sub": "Copie e troque o que está entre < >.",
+      "blocos": [
+        {"rot": "Terminal · criar a pasta do cliente", "icone": "terminal",
+         "conteudo": "mkdir -p <cliente>/{docs,briefings,reports,scripts,data/gsc}\ncd <cliente> && git init -b main\nprintf '.env\\n*.key\\ncredenciais/\\n' > .gitignore\ntouch .env AGENTS.md data/urls-chave.txt data/consultas-alvo.txt"},
+        {"rot": "Estrutura (modelo do repo de trabalho do INEMA)", "icone": "pasta",
+         "conteudo": "docs/        diagnóstico, plano, proposta, autorização\nbriefings/   <slug>.md, um por página\ndata/gsc/    export semanal (só acrescenta)\nreports/     semana-<data>.md, mensal-<mês>.md\nscripts/     raio-x, export, relatório\nAGENTS.md    regras do cliente para o agente\n.env         segredo (fora do git)"},
+        {"rot": "AGENTS.md · regras do cliente", "icone": "arquivo",
+         "conteudo": "# Regras — <cliente>\n- Tom: <como o cliente fala>. Público: <quem>.\n- Todo número ou citação vem de fonte do cliente; sem fonte, marcar PENDENTE e não publicar.\n- Antes de publicar: checklist de qualidade completo.\n- Portão 1: <nome> aprova a lista do mês. Portão 2: <nome> aprova cada página.\n- Nunca: publicar sem aprovação, lote grande de uma vez, página por variação de palavra-chave.\n- Modelo pela assinatura. API paga só com autorização escrita para a finalidade.\n- Segredo só no .env. Nunca imprimir chave em log ou relatório."}
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a pasta do primeiro cliente",
+      "sub": "Pode ser o seu próprio site como cliente-zero.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Pasta com segredo fora", "min": "25 min",
+         "texto": "Crie a pasta com a estrutura, o .gitignore e o AGENTS.md preenchido. Faça o primeiro commit.",
+         "pronto": "o comando git status não mostra o .env, o AGENTS.md tem tom, regra de fonte, os dois portões com nome e a regra de API, e o primeiro commit existe."},
+        {"id": "e2", "titulo": "E2 · Os portões no papel", "min": "20 min",
+         "texto": "Escreva quem aprova cada portão, quanto tempo leva e o que acontece se a pessoa não tiver tempo naquela semana.",
+         "pronto": "a lista tem os dois portões com nome, tempo em minutos e a frase \"se não houver revisão, a cadência cai; o portão não é pulado\"."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "O cliente sumiu nas férias e não revisou as páginas da semana. O que você faz?",
+         "opcoes": ["Publica, porque o agente já revisou.", "Segura a publicação: a cadência cai, o portão não é pulado.", "Publica metade.", "Troca de cliente."],
+         "certa": 1, "explica": "O portão é o que dá confiança ao serviço. Pular uma vez é o que cria o problema que você não consegue explicar depois.", "ref": "passos", "cert": true},
+        {"p": "Onde fica a credencial de leitura do Search Console do cliente?",
+         "opcoes": ["No AGENTS.md, para o agente achar.", "Num .env fora do git, carregada na hora de rodar.", "No relatório mensal.", "No prompt do agente."],
+         "certa": 1, "explica": "Segredo no repositório ou no prompt vaza em commit, log ou relatório. O .gitignore garante que ele não sobe.", "ref": "codigo"},
+        {"p": "O agente diz que as impressões de marca da semana foram maiores que o total. O que isso indica?",
+         "opcoes": ["Que o site cresceu muito.", "Erro de soma: a parte não pode ser maior que o todo. No INEMA, a soma por consulta e página contou a mesma impressão mais de uma vez.", "Que o painel do Google errou.", "Nada, é normal."],
+         "certa": 1, "explica": "Conta de conferência simples pega erro do agente antes de ele ir para o relatório do cliente.", "ref": "passos"},
+        {"p": "Em que ponto o agente pode trabalhar sem aprovação humana?",
+         "opcoes": ["Em publicar páginas.", "Em pesquisar, rascunhar e montar relatório; publicar e escolher o que fazer passam pelos portões.", "Em tudo, se for um bom agente.", "Em nada."],
+         "certa": 1, "explica": "O repetitivo é do agente. A decisão do que fazer e do que vai ao ar é do humano.", "ref": "diagrama"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Uma pasta por cliente", "texto": "Estrutura fixa, git, AGENTS.md com as regras dele."},
+        {"t": "Dois portões", "texto": "O que fazer e o que publicar. Sem revisão, a cadência cai; o portão fica."},
+        {"t": "Segredo fora", "texto": ".env no .gitignore, modelo pela assinatura, API paga só autorizada."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Método inemaSEO: a máquina com agentes", "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md", "icone": "robo"},
+        {"t": "Checklist de qualidade (16 itens)", "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/CHECKLIST.md", "icone": "check"},
+        {"t": "Curso 5 · Com Agentes", "href": "https://inematds.github.io/formacao-inemaseo-agentes-v72/", "icone": "terminal"}
+      ]
+    }
+  ]
+}

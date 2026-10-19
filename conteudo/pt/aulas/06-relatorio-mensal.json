@@ -1,0 +1,124 @@
+{
+  "slug": "relatorio-mensal",
+  "num": 6,
+  "menu": "Relatório",
+  "titulo": "Relatório mensal ao cliente: uma página, até o zero",
+  "titulo_curto": "Relatório mensal",
+  "minutos": 17,
+  "lead": "O relatório mensal é o que o cliente vê do seu trabalho. Se ele não entende em dois minutos, não importa o que você fez. Uma página: o número sem marca, a indexação das URLs-chave, as consultas-alvo, a bateria nas IAs e uma decisão que você pede a ele. E quando o número é zero, você diz que é zero.",
+  "objetivo": "montar o relatório mensal de uma página com sem marca, indexação, consultas-alvo, citação nas IAs e uma decisão pedida ao cliente.",
+  "competencias": ["montar-relatorio-mensal", "contar-numero-ruim-com-honestidade", "pedir-decisao-ao-cliente"],
+  "aprende": [
+    {"t": "De onde vem cada número do relatório"},
+    {"t": "As 10 linhas no topo e a decisão pedida"},
+    {"t": "Como contar um zero sem esconder e sem dramatizar"},
+    {"t": "O relatório semanal como matéria-prima do mensal"}
+  ],
+  "hero_alt": "Dona de padaria lê um relatório impresso de uma página no balcão, com pães desfocados ao fundo.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do arquivo semanal à página do mês",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {"icone": "grafico", "titulo": "Sem marca", "sub": "export semanal",
+         "detalhe": "Cliques e impressões de marca, sem marca e anônimas, uma linha por semana. O mês é a soma das semanas que não dividem dias."},
+        {"icone": "check", "titulo": "Indexação", "sub": "URLs-chave",
+         "detalhe": "O estado de cada URL-chave na inspeção do Search Console: indexada, descoberta, desconhecida. Quantas de quantas, e o que mudou."},
+        {"icone": "alvo", "titulo": "Consultas-alvo", "sub": "posição e impressão",
+         "detalhe": "As consultas combinadas no plano: posição, impressões, cliques, página. Consulta sem impressão também aparece, escrita assim."},
+        {"icone": "lupa", "titulo": "Bateria", "sub": "IAs, à mão",
+         "detalhe": "As mesmas perguntas do diagnóstico, rodadas no mês. Em quantas o cliente apareceu, e quem apareceu no lugar. Mais os painéis oficiais: Bing AI Performance e relatório de IA do Search Console."},
+        {"icone": "arquivo", "titulo": "Uma página", "sub": "10 linhas + 1 decisão", "forte": true,
+         "detalhe": "No topo, 10 linhas com os números do mês. Embaixo, uma decisão que só o cliente pode tomar (aprovar a pauta, dar acesso, revisar páginas). O detalhe vai em anexo."}
+      ],
+      "legenda": "Quatro fontes, uma página e um pedido de decisão."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como montar o mês",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Semanal primeiro", "sub": "a matéria-prima",
+         "texto": ["Toda semana o script (ou a planilha à mão) junta o export sem marca, a inspeção das URLs-chave e as consultas-alvo num arquivo.", "O mensal só lê esses arquivos; não roda nada novo na véspera."]},
+        {"titulo": "10 linhas", "sub": "no topo",
+         "texto": ["Sem marca do mês e do mês anterior, URLs indexadas, as 3 consultas-alvo que mais se mexeram, o resultado da bateria.", "Cada linha com o número e a comparação. Sem adjetivo."]},
+        {"titulo": "O zero", "sub": "dito como é",
+         "texto": ["Zero não se esconde num gráfico de total. Diga o número, o que ele quer dizer e o que vem antes do clique.", "Impressão sem marca subindo e clique em zero quer dizer que gente nova está vendo o site e ainda não está clicando: o próximo passo é posição e título."],
+         "exemplo": {"rot": "No INEMA", "texto": "Semana de 05 a 11/10: inema.club com 0 clique sem marca e 157 impressões sem marca (eram 8 quatro semanas antes). No inema.pro, os 2 primeiros cliques sem marca, de buscas como \"curso jev\"."}},
+        {"titulo": "Uma decisão", "sub": "pedida ao cliente",
+         "texto": ["Termine com uma pergunta que só ele responde: aprovar a pauta, revisar 3 páginas, decidir o idioma.", "Relatório que não pede nada vira arquivo que ninguém abre."]}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "O relatório semanal e o modelo do mensal",
+      "sub": "O script é do repositório de trabalho do INEMA (não público); o formato serve de modelo. Sem credencial, a mesma tabela sai à mão do painel.",
+      "blocos": [
+        {"rot": "Terminal · relatório da semana com o que já está em data/gsc", "icone": "terminal",
+         "conteudo": "# entradas: data/urls-chave.txt e data/consultas-alvo.txt (uma por linha)\npython3 scripts/gsc_relatorio_semanal.py --sem-api\n# saídas: data/gsc/indexacao.csv (só acrescenta) e reports/semana-<fim>.md"},
+        {"rot": "Relatório mensal de uma página", "icone": "arquivo",
+         "conteudo": "RELATÓRIO — <cliente> — <mês>\n\nOS NÚMEROS (vs mês anterior)\n1. Buscas sem a sua marca: <cliques> cliques / <impressões> impressões (<antes>)\n2. Consultas sem marca diferentes: <n> (<antes>)\n3. URLs-chave indexadas: <x> de <y> (<antes>)\n4-6. Consultas-alvo que mais mudaram: <consulta> posição <p> (<antes>)\n7. Perguntas nas IAs (bateria v1, à mão): apareceu em <x> de <y> (<antes>)\n8. Bing AI Performance: <citações ou \"sem dado\">\n9. O que publicamos: <páginas, com data>\n10. O que travou: <uma linha>\n\nO QUE ISSO QUER DIZER (3 frases, sem adjetivo)\n\nDECISÃO QUE PRECISO DE VOCÊ ATÉ <data>\n- <aprovar a pauta | revisar 3 páginas | decidir o idioma>\n\nAnexo: relatórios semanais e planilha da bateria."}
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {"rot": "Semana até 11/10/2026 (totais)", "html": "<table><tr><th>site</th><th>total</th><th>marca</th><th>sem marca</th><th>consultas sem marca</th></tr><tr><td>inema.club</td><td>114/702</td><td>87/238</td><td>0/157</td><td>51</td></tr><tr><td>inema.pro</td><td>11/761</td><td>5/116</td><td>2/293</td><td>52</td></tr></table><p>Cliques/impressões. Gerado em 13/10/2026 por gsc_relatorio_semanal.py.</p>"},
+          {"rot": "Indexação (inspeção de 13/10)", "html": "<table><tr><th>URL</th><th>estado</th></tr><tr><td>/</td><td>indexada</td></tr><tr><td>/aprender-inteligencia-artificial/</td><td>indexada</td></tr><tr><td>/es/aprender-inteligencia-artificial/</td><td>indexada</td></tr><tr><td>/eventos/</td><td>desconhecida pro Google</td></tr></table><p>Indexadas: 13 de 14.</p>"},
+          {"rot": "Consultas sem marca (amostra)", "html": "<table><tr><th>consulta</th><th>posição</th><th>impr.</th><th>cliques</th></tr><tr><td>aprender ia</td><td>34,5</td><td>10</td><td>0</td></tr><tr><td>aprender inteligencia artificial desde cero</td><td>33,2</td><td>10</td><td>0</td></tr><tr><td>cómo aprender ia</td><td>46,1</td><td>8</td><td>0</td></tr></table><p>Todas da página em espanhol, indexada em 03/10.</p>"}
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o primeiro relatório",
+      "sub": "Use o seu site como cliente-zero.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Relatório de um mês", "min": "45 min", "dias": 28,
+         "texto": "Depois de 4 semanas de export (curso 3, ou à mão), preencha o modelo de uma página com os números do mês e a bateria.",
+         "pronto": "o relatório cabe numa página, as 10 linhas têm número e comparação, e há uma decisão pedida com data."},
+        {"id": "e2", "titulo": "E2 · A frase do zero", "min": "15 min",
+         "texto": "Escolha o pior número do mês e escreva como você o conta ao cliente: o número, o que quer dizer e o próximo passo.",
+         "pronto": "a frase tem o número exato (mesmo que seja 0), uma explicação sem adjetivo e uma ação com prazo."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "O site do cliente teve 0 clique sem marca no mês, mas as impressões sem marca subiram. Como você conta?",
+         "opcoes": ["Mostra só o total de cliques, que subiu.", "Diz o zero, explica que gente nova começou a ver o site e que o próximo passo é posição e título.", "Não manda o relatório este mês.", "Diz que o Google está com problema."],
+         "certa": 1, "explica": "Foi o caso do inema.club: 8 → 157 impressões sem marca em quatro semanas, com 0 clique. O zero dito com o contexto mantém a confiança.", "ref": "passos", "cert": true},
+        {"p": "Para que serve a decisão pedida no fim do relatório?",
+         "opcoes": ["Para enfeitar.", "Para que o cliente aja sobre o que só ele pode decidir; relatório sem pedido vira arquivo sem leitura.", "Para cobrar mais.", "Para mudar o escopo todo mês."],
+         "certa": 1, "explica": "O relatório é uma conversa mensal. A decisão mantém o cliente participando e destrava os portões.", "ref": "diagrama"},
+        {"p": "De onde vêm os números do mensal?",
+         "opcoes": ["De uma rodada nova na véspera.", "Dos arquivos semanais já gravados, mais a bateria do mês.", "De uma ferramenta paga de share of voice.", "Da memória."],
+         "certa": 1, "explica": "Semanas gravadas no mesmo formato dão a série. O mensal só lê e resume.", "ref": "passos"},
+        {"p": "Uma URL-chave aparece como \"desconhecida pro Google\". O que vai no relatório?",
+         "opcoes": ["Nada, para não preocupar.", "A URL, o estado e a ação: links internos para ela, sitemap e pedido de indexação.", "Que o site foi penalizado.", "Que é culpa do cliente."],
+         "certa": 1, "explica": "No INEMA, 13 de 14 indexadas; a que faltava era /eventos/. Estado com ação é informação útil, não alarme.", "ref": "codigo"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Uma página", "texto": "10 linhas de número com comparação e uma decisão pedida com data."},
+        {"t": "O zero dito como é", "texto": "Número exato, o que ele quer dizer e o próximo passo."},
+        {"t": "Régua de 2026", "texto": "Citação: bateria fixa à mão e os painéis oficiais (Bing AI Performance, relatório de IA do Search Console). Share of voice de ferramenta paga não é nota oficial."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Curso 3 · Medição e Rotina: o export semanal", "href": "https://inematds.github.io/formacao-inemaseo-medicao-v72/aulas/export-semanal/", "icone": "grafico"},
+        {"t": "gsc_semanal.py (aberto)", "href": "https://github.com/inematds/inemaseo-metodo/blob/main/tools/gsc_semanal.py", "icone": "terminal"},
+        {"t": "Curso 7 · Sistemas: histórico além dos 16 meses", "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/aulas/gsc-historico/", "icone": "camadas"},
+        {"t": "Vendas com IA: comunicação e relatório de uma página", "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/comunicacao/", "icone": "chat"}
+      ]
+    }
+  ]
+}

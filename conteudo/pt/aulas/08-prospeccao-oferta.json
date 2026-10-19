@@ -1,0 +1,154 @@
+{
+  "slug": "prospeccao-oferta",
+  "num": 8,
+  "menu": "Prospecção",
+  "titulo": "Prospecção e oferta combinada: do ensino ao acompanhamento",
+  "titulo_curto": "Prospecção e oferta",
+  "minutos": 20,
+  "lead": "Vender construção de site virou disputa de preço. O que se vende bem é uma escada: ensinar, diagnosticar, acompanhar e revisar, até o relatório mensal. A prospecção também muda: você chega com um achado público do site da pessoa, não com um pacote. E o seu próprio site, medido com honestidade, é a melhor prova.",
+  "objetivo": "montar a escada de oferta (ensino → diagnóstico → plano → acompanhamento) e uma lista de 10 prospects com o motivo de cada contato.",
+  "competencias": ["montar-escada-de-oferta", "prospectar-com-achado-publico", "usar-o-proprio-site-como-prova", "planejar-a-formacao"],
+  "aprende": [
+    {"t": "Os quatro papéis do Profissional 2030 aplicados ao SEO"},
+    {"t": "A oferta combinada: SEO, IA e preparação para agentes"},
+    {"t": "Prospectar com achado público, portão e opt-out"},
+    {"t": "O plano datado para fazer o curso inteiro"}
+  ],
+  "hero_alt": "Consultora caminha por uma rua comercial de bairro com pequenas lojas, segurando um tablet.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "A escada de oferta",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {"icone": "usuario", "titulo": "Treinador", "sub": "ensinar",
+         "detalhe": "Um workshop curto: como o Google, o Bing e as IAs acham um site, e o que é o número sem marca. Mostra método, não ferramenta. É a porta de entrada."},
+        {"icone": "lupa", "titulo": "Consultor", "sub": "diagnóstico e plano",
+         "detalhe": "O diagnóstico de uma página (aula 2), o plano 30/90/180 (aula 3) e a proposta com limites (aula 4)."},
+        {"icone": "calendario", "titulo": "Mentor", "sub": "90 dias", "forte": true,
+         "detalhe": "Acompanhar a equipe do cliente enquanto a fundação e as primeiras páginas saem: portões, revisão, ensino. No fim, a equipe sabe ler o relatório sozinha."},
+        {"icone": "escudo", "titulo": "Auditor", "sub": "revisar riscos",
+         "detalhe": "Revisar o que a equipe já fez com IA: páginas em lote, robôs bloqueados por engano, táticas de spam herdadas de outro fornecedor. Só leitura, por escrito, e não é pentest."},
+        {"icone": "grafico", "titulo": "Mensal", "sub": "acompanhamento",
+         "detalhe": "Relatório de uma página, bateria nas IAs, uma decisão por mês (aula 6). É o que mantém a relação."}
+      ],
+      "legenda": "Ordem dos papéis do Profissional 2030. O cliente pode entrar em qualquer degrau; o mensal é onde a confiança se acumula."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Oferta combinada e prospecção",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Oferta combinada", "sub": "SEO + IA + agentes",
+         "texto": ["Num diagnóstico só: o que o buscador vê, a bateria nas IAs e a prontidão para agentes. Site novo, quando precisar, entra como parte do plano, não como o produto.", "WebMCP é preparação: rascunho de comunidade do W3C (document.modelContext), sem navegador estável. Não é fator de ranking."]},
+        {"titulo": "Achar prospects", "sub": "achado público",
+         "texto": ["Negócios bem avaliados cujo site tem um problema que se vê de fora: página sem texto no HTML, canônico misturado, robôs de busca bloqueados.", "Anote o achado e a URL. É o motivo do contato, e já é uma amostra do diagnóstico."],
+         "exemplo": {"rot": "Ideia do Prospector Agent", "texto": "A esteira aberta do INEMA vai de descoberto → qualificado → … → portão → enviado, com opt-out, lista de supressão e um contato por lead. Use a disciplina dela; troque o redesenho do site pelo diagnóstico."}},
+        {"titulo": "Primeiro contato", "sub": "curto e com saída",
+         "texto": ["Uma mensagem: o achado, por que pesa, a oferta de mostrar o diagnóstico. Sem promessa de posição, com opção de não receber mais.", "Um contato por prospect. Sem resposta, não insista em sequência automática."]},
+        {"titulo": "Seu site é a prova", "sub": "cliente-zero",
+         "texto": ["Aplique o método no seu site e publique o antes e depois, inclusive o que não deu certo.", "O INEMA conta o próprio zero: 0 de 52 medições nas IAs em julho, impressões sem marca de 8 para 157, cliques sem marca ainda em 0 no club. Isso convence mais que depoimento."]}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos da escada e da prospecção",
+      "sub": "Copie e troque o que está entre [colchetes].",
+      "blocos": [
+        {"rot": "Escada de oferta", "icone": "lista",
+         "conteudo": "DEGRAU         | O QUE ENTREGO                                   | DURAÇÃO   | PRÓXIMO PASSO\nTreinador      | workshop: Google, Bing, IAs e o número sem marca | [1 h]     | diagnóstico\nConsultor      | diagnóstico de 1 página + plano 30/90/180       | [2 sem.]  | proposta\nMentor         | 90 dias com a equipe: fundação, portões, ensino | 90 dias   | mensal\nAuditor        | revisão de riscos do que já foi feito com IA    | [1 sem.]  | plano de correção\nMensal         | relatório de 1 página + bateria + 1 decisão     | todo mês  | revisão a cada 90 dias"},
+        {"rot": "Lista de prospects (CSV)", "icone": "arquivo",
+         "conteudo": "negocio,site,por_que_escolhi,achado_publico,url_do_achado,contato,data_contato,resposta,opt_out\n[nome],[https://...],[bem avaliado no bairro],[serviços sem texto no HTML],[https://.../servicos/],[e-mail público],,,"},
+        {"rot": "Primeiro contato", "icone": "enviar",
+         "conteudo": "Assunto: [negócio] — uma coisa que o Google não está vendo no seu site\n\nOlá, [nome]. Olhei a página [URL] como o Google lê, sem rodar o site.\n[Achado em uma frase] — isso faz [efeito em uma frase].\n\nFaço um diagnóstico de uma página (o que o buscador vê, prontidão para IA\ne se vocês aparecem quando alguém pergunta às IAs sobre [nicho]). Posso mostrar?\nNão prometo posição; mostro o ponto de partida e um plano.\n\n[assinatura]\nSe não quiser receber outra mensagem, é só responder \"não\"."}
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a escada e os 10 prospects",
+      "sub": "A última entrega do curso.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Sua escada de oferta", "min": "30 min",
+         "texto": "Preencha a escada com os degraus que você faz hoje. Para cada um: entrega, duração e próximo passo.",
+         "pronto": "a escada tem pelo menos 4 degraus, termina no mensal e nenhum degrau promete posição ou citação."},
+        {"id": "e2", "titulo": "E2 · Dez prospects com motivo", "min": "60 min", "dias": 3,
+         "texto": "Escolha 10 negócios do seu nicho, rode o raio-x só de leitura na página principal de cada um e anote o achado público.",
+         "pronto": "o CSV tem 10 linhas, cada uma com um achado e a URL onde ele aparece, e a coluna opt_out existe."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "Um prospect quer só \"um site novo\". Como encaixar isso na sua oferta?",
+         "opcoes": ["Vender só o site, mais barato que o concorrente.", "Como parte do plano que sai do diagnóstico, com medição e acompanhamento; o produto é a confiança, não a construção.", "Recusar.", "Fazer o site e sumir."],
+         "certa": 1, "explica": "Construir ficou fácil e virou disputa de preço. O que sustenta a relação é diagnóstico, acompanhamento e ensino.", "ref": "passos", "cert": true},
+        {"p": "O que leva o primeiro contato com um prospect?",
+         "opcoes": ["Uma tabela de pacotes.", "Um achado público do site dele, por que pesa, a oferta de mostrar o diagnóstico e a opção de não receber mais.", "A promessa de primeira página.", "Uma sequência de 5 e-mails automáticos."],
+         "certa": 1, "explica": "O achado mostra método antes de vender. Opt-out e um contato por prospect são respeito e evitam virar spam.", "ref": "codigo"},
+        {"p": "O cliente pergunta se WebMCP vai pôr o site dele no topo das IAs. O que você diz?",
+         "opcoes": ["Sim, é o novo ranking.", "Que é um rascunho do W3C, sem navegador estável; entra como preparação para agentes, não como fator de ranking.", "Que já é padrão em todos os navegadores.", "Que é igual ao llms.txt."],
+         "certa": 1, "explica": "Vender preparação como resultado é a mesma promessa vazia da posição garantida.", "ref": "passos"},
+        {"p": "Por que publicar o caso do seu próprio site, inclusive o zero?",
+         "opcoes": ["Para encher o portfólio.", "Porque número real com fonte, até o ruim, prova o método melhor que depoimento.", "Porque o Google exige.", "Não convém mostrar o zero."],
+         "certa": 1, "explica": "O INEMA mostra 0 de 52 nas IAs e 0 clique sem marca no club. É isso que torna os outros números críveis.", "ref": "passos"}
+      ]
+    },
+    {
+      "tipo": "mapa",
+      "titulo": "O mapa do curso",
+      "sub": "Quatro degraus e os exercícios de cada um. Clique num exercício para ver o \"pronto quando\".",
+      "degraus": [
+        {"aula": "o-que-vender", "icone": "alvo", "quando": "Semana 1", "titulo": "Oferta", "sub": "o que vender (aula 1)",
+         "saida": "Posicionamento em 2 linhas e 5 promessas trocadas.", "passo": "Antes de falar com cliente, saber o que você vende e o que não promete."},
+        {"aula": "diagnostico", "icone": "lupa", "quando": "Semanas 1 e 2", "titulo": "Diagnóstico", "sub": "diagnóstico, plano, proposta (aulas 2 a 4)",
+         "saida": "Diagnóstico de 1 página, plano 30/90/180 e proposta com limites.", "passo": "Requer a oferta. O mapa mostra os exercícios da aula 2; o plano abaixo lista todos."},
+        {"aula": "entrega-com-agentes", "icone": "portao", "quando": "Semana 3", "titulo": "Entrega", "sub": "pasta, portões e autorização (aulas 5 e 7)",
+         "saida": "Pasta do cliente com portões e a autorização assinada.", "passo": "Requer a proposta. O mapa mostra os exercícios da aula 5; o plano abaixo lista todos."},
+        {"aula": "relatorio-mensal", "icone": "grafico", "quando": "Semana 4 em diante", "titulo": "Acompanhamento", "sub": "relatório e prospecção (aulas 6 e 8)",
+         "saida": "Relatório mensal de 1 página e 10 prospects com achado.", "passo": "Requer a entrega. A partir daqui é rotina: um relatório e uma decisão por mês."}
+      ],
+      "resultado": {"titulo": "Ao final do curso", "texto": "Uma oferta de confiança, do diagnóstico ao relatório mensal, com papel assinado e prospects reais.", "total": "16 exercícios"},
+      "rolagem_fim": {"titulo": "O curso inteiro", "texto": "Quatro degraus em sequência. Só suba quando o \"pronto quando\" do degrau anterior for verdade."},
+      "legenda": "Cada degrau usa o que o anterior montou."
+    },
+    {
+      "tipo": "gerador",
+      "titulo": "Gere o seu plano com datas",
+      "sub": "Escolha a data de início e quanto tempo você tem por semana. O plano respeita os exercícios que pedem espera.",
+      "curso": "inemaSEO 6 · Profissional",
+      "horas_padrao": 3,
+      "degraus": [
+        {"titulo": "Aula 1 · O que vender", "aula": "o-que-vender"},
+        {"titulo": "Aula 2 · Diagnóstico", "aula": "diagnostico"},
+        {"titulo": "Aula 3 · Plano 30/90/180", "aula": "plano-30-90-180"},
+        {"titulo": "Aula 4 · Proposta e escopo", "aula": "proposta-escopo"},
+        {"titulo": "Aula 5 · Entrega com agentes", "aula": "entrega-com-agentes"},
+        {"titulo": "Aula 6 · Relatório mensal", "aula": "relatorio-mensal"},
+        {"titulo": "Aula 7 · Ética e autorização", "aula": "etica-autorizacao"},
+        {"titulo": "Aula 8 · Prospecção e oferta", "aula": "prospeccao-oferta"}
+      ],
+      "txt": {"titulo": "Plano — inemaSEO 6 · Profissional", "inicio": "Início", "ritmo": "Ritmo", "termino": "Término previsto", "ate": "até", "pronto": "pronto quando", "semanas": "semanas", "travou": "## O que travou e o que eu decidi", "h": "h por semana", "exs": "exercícios"}
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Escada, não pacote", "texto": "Ensinar, diagnosticar, acompanhar, revisar e relatar todo mês."},
+        {"t": "Prospecte com achado", "texto": "Um problema visível de fora, um contato, opção de sair."},
+        {"t": "Seu site é a prova", "texto": "Número real com fonte, até o zero, convence mais que depoimento."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Profissional 2030", "href": "https://eventos.inema.pro/prof2030/", "icone": "usuario"},
+        {"t": "Formação Vendas com IA: clientes que chegam sozinhos", "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/clientes-que-chegam/", "icone": "megafone"},
+        {"t": "Prospector Agent (guia)", "href": "https://inematds.github.io/prospector-agent/guia/", "icone": "robo"},
+        {"t": "Curso 7 · Sistemas: monte o seu Semrush aberto", "href": "https://inematds.github.io/formacao-inemaseo-sistemas-v72/", "icone": "camadas"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "slug": "etica-autorizacao",
+  "num": 7,
+  "menu": "Ética",
+  "titulo": "Ética, risco e autorização por escrito",
+  "titulo_curto": "Ética e autorização",
+  "minutos": 17,
+  "lead": "Um pedido do cliente pode derrubar o site dele inteiro: rede de sites, mil artigos, indexação forçada. Você precisa recusar pelo nome, explicar o risco e oferecer o caminho seguro. E antes de tocar em qualquer coisa, ter por escrito o que pode fazer. Diagnóstico de SEO lê o site como um buscador lê: não é teste de invasão.",
+  "objetivo": "recusar pelo nome as táticas que o Google trata como spam, escrever a autorização do cliente e deixar claro que diagnóstico de SEO não é pentest.",
+  "competencias": ["reconhecer-tatica-de-spam", "escrever-autorizacao-por-escrito", "delimitar-diagnostico-de-pentest"],
+  "aprende": [
+    {"t": "As táticas que o Google trata como spam, pelo nome"},
+    {"t": "O que oferecer no lugar de cada uma"},
+    {"t": "O que a autorização por escrito precisa dizer"},
+    {"t": "Por que diagnóstico de SEO não é pentest"}
+  ],
+  "hero_alt": "Mão assina um documento de uma página sobre a mesa enquanto outra pessoa observa.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do pedido à execução segura",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {"icone": "chat", "titulo": "Pedido", "sub": "do cliente",
+         "detalhe": "\"Vi um curso que ensina a fazer 1.000 artigos.\" \"Meu concorrente tem 5 sites linkando entre si.\" \"Dá para forçar a indexação?\""},
+        {"icone": "escudo", "titulo": "É spam?", "sub": "política do Google", "forte": true,
+         "itens": [{"icone": "x", "t": "conteúdo escalado"}, {"icone": "x", "t": "esquema de links"}, {"icone": "x", "t": "reputação de site alheio"}, {"icone": "x", "t": "indexação forçada"}],
+         "detalhe": "O Google avalia valor, não a ferramenta que escreveu. Mas volume sem valor, links combinados, atalho em domínio alheio e API fora do uso permitido estão nas políticas de spam."},
+        {"icone": "arquivo", "titulo": "Autorização", "sub": "por escrito",
+         "detalhe": "Escopo, sites, acessos (mínimos, de leitura), o que pode ser alterado, quem aprova publicação, dados pessoais, validade. Assinada antes de começar."},
+        {"icone": "check", "titulo": "Executar", "sub": "e registrar",
+         "detalhe": "Cada mudança no git, com data. Cada publicação com aprovação registrada. Se algo der errado, dá para mostrar o que foi feito e desfazer."}
+      ],
+      "legenda": "Recusar com motivo, oferecer o caminho seguro e ter tudo por escrito."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "As táticas e o que oferecer no lugar",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Conteúdo escalado", "sub": "volume sem valor",
+         "texto": ["Cinco variações por palavra-chave, mil artigos, agentes publicando 24 horas: é o que o Google chama de scaled content abuse.", "\"Humanizar\" o texto para passar em detector de IA não resolve: mira a métrica errada (o Google avalia utilidade) e é paráfrase em escala com intenção de enganar."],
+         "exemplo": {"rot": "No INEMA", "texto": "283 fichas de 170 a 240 palavras, duas delas com 47% do vocabulário em comum, publicadas num commit só. Das 6 da amostra, 5 nunca foram rastreadas."}},
+        {"titulo": "Links combinados", "sub": "rede de sites",
+         "texto": ["Rede de sites próprios com links cruzados e \"20 backlinks por post\" é esquema de links. Uma ação manual pode derrubar todos os domínios de uma vez.", "No lugar: links contextuais, 1 ou 2 por página, e menções reais (parceiro, evento, projeto aberto)."]},
+        {"titulo": "Atalhos", "sub": "domínio alheio e indexação",
+         "texto": ["Subreddit com o nome da palavra-chave ou posts em massa no LinkedIn para ranquear é site reputation abuse. Google Indexing API só vale para vaga de emprego (JobPosting) e transmissão ao vivo (BroadcastEvent); indexador pago é ferramenta típica de spam.", "No lugar: sitemap, Search Console, IndexNow e links internos."]},
+        {"titulo": "Não é pentest", "sub": "o limite do diagnóstico",
+         "texto": ["O raio-x lê páginas públicas como um buscador: GET, pausa entre páginas, nada de senha, formulário ou varredura de falha.", "Se o cliente quer segurança, é outro serviço, com outra autorização e outro profissional. Diga isso na proposta."]}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelo de autorização por escrito",
+      "sub": "Modelo para adaptar. Não é parecer jurídico: em contrato grande, passe por um advogado.",
+      "blocos": [
+        {"rot": "Autorização de serviço de SEO", "icone": "arquivo",
+         "conteudo": "AUTORIZAÇÃO — [cliente] autoriza [você/empresa] — [data]\n\n1. ESCOPO: diagnóstico e acompanhamento de SEO e visibilidade em IA\n   dos sites: [domínio 1], [domínio 2]. Nada fora desta lista.\n2. O QUE É LIDO: páginas públicas (como um buscador lê, com pausa entre páginas).\n   NÃO É PENTEST: não há teste de senha, formulário, invasão ou busca de falha de segurança.\n3. ACESSOS (mínimos):\n   - Search Console e Bing Webmaster: usuário de leitura, em nome de [você].\n   - DNS/domínio: só para verificar a propriedade, feito por [cliente] ou na presença dele.\n   - Nenhuma senha por mensagem. Credenciais ficam fora de repositório e de relatório.\n4. O QUE PODE SER ALTERADO: [ex.: títulos, sitemap, robots.txt, páginas novas aprovadas].\n   Toda publicação passa pela aprovação de [nome].\n5. DADOS PESSOAIS: os relatórios usam dados agregados dos painéis; nenhum dado de\n   visitante ou cliente final é coletado ou exposto (LGPD).\n6. NÃO SERÁ FEITO: rede de sites, compra de links, indexador pago, Indexing API fora\n   do uso permitido, conteúdo em escala sem revisão.\n7. VALIDADE: até [data]. Pode ser revogada a qualquer momento por escrito;\n   na revogação, os acessos são removidos em até [N] dias.\n\nAssinaturas: [cliente] · [você]"},
+        {"rot": "Tabela pedido → recuso → ofereço", "icone": "lista",
+         "conteudo": "PEDIDO                          | POR QUE RECUSO                       | O QUE OFEREÇO\n1.000 artigos com IA            | conteúdo escalado (política de spam) | poucas páginas com dado próprio\n5 sites linkando entre si       | esquema de links; ação manual        | links contextuais e menções reais\n\"forçar\" a indexação            | Indexing API só JobPosting/Broadcast | sitemap, Search Console, IndexNow\ntexto que passe em detector     | mira a métrica errada                | revisão humana e dado próprio\ndepoimentos \"de exemplo\"        | sinal de confiança fabricado         | só número real com fonte"}
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o papel antes do trabalho",
+      "sub": "Os dois documentos que acompanham toda proposta.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Autorização preenchida", "min": "30 min",
+         "texto": "Preencha o modelo de autorização para o cliente da aula 4 (ou para o seu site, como cliente-zero).",
+         "pronto": "os 7 itens estão preenchidos, os domínios estão listados um a um, os acessos são só de leitura e a frase \"não é pentest\" está no item 2."},
+        {"id": "e2", "titulo": "E2 · Pedido, recusa, oferta", "min": "20 min",
+         "texto": "Monte a sua tabela com 5 pedidos que você já ouviu ou espera ouvir, o motivo da recusa e o que oferece no lugar.",
+         "pronto": "cada linha cita a tática pelo nome (conteúdo escalado, esquema de links, site reputation abuse, indexação forçada ou sinal fabricado) e tem uma alternativa que você consegue entregar."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "O cliente quer usar a Google Indexing API para indexar os posts do blog. O que você diz?",
+         "opcoes": ["Ótima ideia, é mais rápido.", "Que ela só vale para JobPosting e BroadcastEvent; para posts, o caminho é sitemap, Search Console, IndexNow e links internos.", "Que é preciso pagar.", "Que só funciona no Bing."],
+         "certa": 1, "explica": "Usar fora do permitido viola os termos. Os caminhos certos são gratuitos e você já os ensina.", "ref": "passos", "cert": true},
+        {"p": "O cliente pede para \"humanizar\" os textos gerados por IA para não serem detectados. Por que recusar?",
+         "opcoes": ["Porque dá trabalho.", "Porque o Google avalia utilidade, não detector; paráfrase em escala para enganar agrava o conteúdo escalado.", "Porque detector de IA é infalível.", "Não precisa recusar."],
+         "certa": 1, "explica": "O problema nunca foi a ferramenta, e sim o volume sem valor. Disfarçar não muda o valor.", "ref": "passos"},
+        {"p": "O que deixa claro que o seu diagnóstico não é pentest?",
+         "opcoes": ["Nada, é a mesma coisa.", "A autorização diz que só páginas públicas são lidas, como um buscador lê, sem teste de senha, formulário ou falha.", "Rodar à noite.", "Usar ferramenta paga."],
+         "certa": 1, "explica": "Escrever o limite protege você e o cliente. Segurança é outro serviço, com outra autorização.", "ref": "codigo"},
+        {"p": "O cliente oferece a senha da hospedagem por mensagem. O que a autorização prevê?",
+         "opcoes": ["Aceitar e guardar no repositório.", "Acesso mínimo e de leitura, sem senha por mensagem, credencial fora de repositório e relatório.", "Aceitar só se for criptografada no e-mail.", "Pedir também a do e-mail."],
+         "certa": 1, "explica": "Quanto menos acesso, menos risco para os dois. Se precisar de mais, amplia-se por escrito.", "ref": "codigo"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Recuse pelo nome", "texto": "Conteúdo escalado, esquema de links, site reputation abuse, indexação forçada, sinal fabricado."},
+        {"t": "Por escrito, antes", "texto": "Escopo, sites, acessos mínimos, o que pode mudar, quem aprova, dados pessoais, validade."},
+        {"t": "Não é pentest", "texto": "O diagnóstico lê como um buscador. Segurança é outro serviço."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Políticas de spam do Google (inglês)", "href": "https://developers.google.com/search/docs/essentials/spam-policies", "icone": "escudo"},
+        {"t": "Checklist de qualidade (16 itens)", "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/CHECKLIST.md", "icone": "check"},
+        {"t": "Curso 2 · Conteúdo: o que não fazer", "href": "https://inematds.github.io/formacao-inemaseo-conteudo-v72/", "icone": "caneta"},
+        {"t": "Profissional 2030: base comum (riscos, LGPD e escopo)", "href": "https://eventos.inema.pro/prof2030/", "icone": "usuario"}
+      ]
+    }
+  ]
+}

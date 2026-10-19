@@ -1,0 +1,123 @@
+{
+  "slug": "o-que-vender",
+  "num": 1,
+  "menu": "Oferta",
+  "titulo": "O que vender: resultado medido sem marca, não posição 1",
+  "titulo_curto": "O que vender",
+  "minutos": 15,
+  "lead": "O cliente chega pedindo primeiro lugar no Google, 500 artigos ou \"aparecer no ChatGPT\". Ninguém controla isso, e quem promete perde o cliente no mês 6. O que dá para vender é o que você controla e consegue provar: diagnóstico, plano, acompanhamento medido e ensino.",
+  "objetivo": "separar o que o cliente pede do que dá para entregar e medir, e escrever a sua oferta de diagnóstico, plano, acompanhamento e ensino.",
+  "competencias": ["separar-pedido-de-entrega", "escrever-oferta-medivel", "explicar-numero-sem-marca"],
+  "aprende": [
+    {"t": "Por que construir ficou fácil e confiar não"},
+    {"t": "As promessas que você não faz, e o que oferecer no lugar"},
+    {"t": "As quatro entregas que se vendem e se provam"},
+    {"t": "Por que o número que prova o trabalho é o sem marca"}
+  ],
+  "hero_alt": "Consultor de pé ao lado de um quadro branco conversa com uma cliente sentada numa sala de reunião pequena.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Do pedido à entrega que se prova",
+      "sub": "Clique em cada bloco.",
+      "nos": [
+        {"icone": "chat", "titulo": "O pedido", "sub": "o que o cliente diz",
+         "detalhe": "\"Quero ficar em primeiro.\" \"Quero 500 artigos.\" \"Quero aparecer no ChatGPT.\" O pedido é legítimo: ele quer mais clientes. A forma é que não está no controle de ninguém."},
+        {"icone": "x", "titulo": "A promessa ruim", "sub": "o que não se cumpre",
+         "itens": [{"icone": "x", "t": "posição garantida"}, {"icone": "x", "t": "pacote de artigos com IA"}, {"icone": "x", "t": "citação garantida em IA"}, {"icone": "x", "t": "\"nota de IA\" de ferramenta"}],
+         "detalhe": "O Google diz que não há atalho nem requisito especial para aparecer em IA, e as respostas das IAs mudam a cada execução. Pacote de artigos em volume é o caminho do conteúdo escalado, que o Google trata como spam."},
+        {"icone": "check", "titulo": "A entrega", "sub": "o que você controla", "forte": true,
+         "itens": [{"icone": "lupa", "t": "diagnóstico"}, {"icone": "lista", "t": "plano"}, {"icone": "grafico", "t": "acompanhamento medido"}, {"icone": "usuario", "t": "ensino"}],
+         "detalhe": "Diagnosticar o site, escrever o plano, acompanhar com número e ensinar a equipe do cliente. São os papéis do Profissional 2030 (Consultor, Auditor, Mentor, Treinador) aplicados ao SEO."},
+        {"icone": "grafico", "titulo": "A prova", "sub": "número sem marca",
+         "detalhe": "Cliques e impressões de quem não digitou o nome do cliente. É o único número que mostra gente nova chegando pelo seu trabalho. O resto o cliente já tinha."}
+      ],
+      "legenda": "Você vende o que controla e prova com o número que o cliente não tinha antes."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Por que vender assim",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Construir ficou fácil", "sub": "e perde valor",
+         "texto": ["Site, página e texto o cliente já consegue gerar com IA. Vender só a construção vira disputa de preço.", "O que ele não consegue sozinho é saber se aquilo funciona, o que está errado e o que fazer primeiro."]},
+        {"titulo": "Confiar é o produto", "sub": "Profissional 2030",
+         "texto": ["A empresa compra alguém que diagnostica, revisa, acompanha e ensina, e que diz com clareza o que sabe e o que não sabe fazer.", "Em SEO isso vira: diagnóstico, plano, acompanhamento medido e ensino."]},
+        {"titulo": "O total engana", "sub": "o caso do INEMA",
+         "texto": ["Na linha de base de 28 dias do inema.club, 639 dos 647 cliques das 25 principais buscas eram de marca. As buscas genéricas somavam 8 cliques.", "Se você mostrar ao cliente só o total, está mostrando gente que já o conhecia."],
+         "exemplo": {"rot": "No INEMA", "texto": "Em quatro semanas as impressões sem marca do inema.club foram de 8 para 157. Os cliques sem marca continuaram em 0. Esse é o tipo de número honesto que você reporta."}},
+        {"titulo": "O que não fazer", "sub": "nem como bônus",
+         "texto": ["Rede de sites com links cruzados, indexador pago, Google Indexing API para artigo comum, página por variação de palavra-chave.", "Uma ação manual derruba todos os domínios do cliente de uma vez. A aula 7 detalha cada uma."]}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos para a sua oferta",
+      "sub": "Copie e troque o que está entre [colchetes] pelo seu.",
+      "blocos": [
+        {"rot": "Posicionamento em 2 linhas", "icone": "caneta",
+         "conteudo": "Eu ajudo [tipo de negócio] a ser encontrado por quem ainda não conhece a marca, no Google, no Bing e nas IAs.\nFaço diagnóstico, plano, acompanhamento mensal medido e treino a equipe. Não prometo posição, não vendo pacote de artigos e não garanto citação em IA."},
+        {"rot": "Troca de promessa por entrega", "icone": "lista",
+         "conteudo": "PEDIDO DO CLIENTE              -> O QUE EU OFEREÇO\n\"primeiro lugar no Google\"      -> diagnóstico + plano + número sem marca medido toda semana\n\"500 artigos com IA\"            -> poucas páginas com dado próprio, no ritmo que o site aguenta\n\"aparecer no ChatGPT\"           -> bateria de perguntas fixas, rodada à mão todo mês, com planilha\n\"nota de IA\" de ferramenta      -> painéis oficiais: Search Console e Bing Webmaster\n\"llms.txt resolve\"              -> item opcional e barato da fundação, não entrega principal"}
+      ],
+      "saida": {
+        "selo": "real",
+        "abas": [
+          {"rot": "Linha de base do INEMA", "html": "<table><tr><th>inema.club, 28 dias</th><th>cliques</th><th>de marca</th></tr><tr><td>total do site</td><td>787</td><td>—</td></tr><tr><td>25 principais buscas</td><td>647</td><td>639</td></tr></table><p>Buscas genéricas: 8 cliques e 72 impressões. Linha de base de 23/09/2026 (25/08–21/09).</p>"},
+          {"rot": "Como contar ao cliente", "html": "<ul><li><b>Não</b>: \"o site teve 787 cliques\". A maioria é de quem já procurava o nome.</li><li><b>Sim</b>: \"buscas sem a sua marca: X cliques e Y impressões. É esse número que o nosso trabalho tem de mover.\"</li></ul>"}
+        ]
+      }
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: a sua oferta no papel",
+      "sub": "Dois arquivos curtos que você vai reusar no curso inteiro.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Posicionamento em 2 linhas", "min": "20 min",
+         "texto": "Escreva o seu posicionamento a partir do modelo: para quem, o que você entrega e o que você não faz.",
+         "pronto": "as 2 linhas não citam nenhuma ferramenta, nomeiam as quatro entregas (ou as que você faz) e dizem pelo menos uma coisa que você não promete."},
+        {"id": "e2", "titulo": "E2 · Cinco promessas trocadas", "min": "25 min",
+         "texto": "Liste 5 pedidos que você já ouviu (ou imagina ouvir) de cliente e escreva, ao lado de cada um, a entrega medível que você oferece no lugar.",
+         "pronto": "cada uma das 5 linhas tem um pedido e uma entrega com um número que dá para conferir (sem marca, indexadas, perguntas em que aparece)."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "O cliente pede \"primeiro lugar no Google em 90 dias\". Qual resposta mantém o cliente no mês 6?",
+         "opcoes": ["Garantir, para fechar o contrato.", "Oferecer diagnóstico, plano e o número sem marca medido toda semana, dizendo que posição ninguém garante.", "Recusar o cliente.", "Vender um pacote de 100 artigos."],
+         "certa": 1, "explica": "Posição depende do Google e da concorrência. O que você controla é o trabalho e a medição. Garantir fecha hoje e perde o cliente quando o número não vem.", "ref": "diagrama", "cert": true},
+        {"p": "Na linha de base do inema.club, 639 dos 647 cliques das principais buscas eram de marca. O que isso ensina para o relatório ao cliente?",
+         "opcoes": ["Que SEO não funciona.", "Que o total mostra quem já conhecia a marca; o trabalho se prova no sem marca.", "Que é preciso mudar de nome.", "Que os cliques de marca não contam para nada."],
+         "certa": 1, "explica": "Marca é importante, mas não é efeito do seu trabalho de SEO. O número sem marca é o que mostra gente nova.", "ref": "passos"},
+        {"p": "Qual destas é uma entrega que você controla?",
+         "opcoes": ["Citação garantida no ChatGPT.", "Nota de IA de uma ferramenta paga.", "Plano 30/90/180 dias com métrica e dono em cada linha.", "Posição 1 para a palavra principal."],
+         "certa": 2, "explica": "Plano é trabalho seu, com prazo e métrica. Citação e posição são resultado do Google e das IAs; você mede, não garante.", "ref": "codigo"},
+        {"p": "O cliente quer llms.txt \"para aparecer no ChatGPT\". O que você diz?",
+         "opcoes": ["Que é a entrega principal de IA.", "Que é um item opcional e barato da fundação; um estudo do Ahrefs viu 97% desses arquivos sem nenhuma leitura.", "Que é proibido.", "Que custa caro."],
+         "certa": 1, "explica": "Pode entrar na fundação porque custa pouco, mas não é alavanca de citação nem algo para vender sozinho.", "ref": "codigo"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Venda o que você controla", "texto": "Diagnóstico, plano, acompanhamento medido e ensino."},
+        {"t": "Prove com o sem marca", "texto": "O total mostra quem já conhecia o cliente. No inema.club, 639 dos 647 cliques das principais buscas eram de marca."},
+        {"t": "Régua de 2026", "texto": "O Google diz que não há requisito especial para aparecer em IA: conta conteúdo que só o cliente pode ter. Sua oferta parte daí."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Profissional 2030: as 4 formações", "href": "https://eventos.inema.pro/prof2030/", "icone": "usuario"},
+        {"t": "Vendas com IA: posicionamento de consultor", "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/posicionamento/", "icone": "alvo"},
+        {"t": "Google: otimização para recursos de IA (inglês)", "href": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide", "icone": "lupa"},
+        {"t": "Método inemaSEO", "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md", "icone": "arquivo"}
+      ]
+    }
+  ]
+}

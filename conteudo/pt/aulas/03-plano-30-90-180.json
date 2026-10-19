@@ -1,0 +1,117 @@
+{
+  "slug": "plano-30-90-180",
+  "num": 3,
+  "menu": "Plano",
+  "titulo": "Do diagnóstico ao plano 30/90/180, por impacto × esforço",
+  "titulo_curto": "Plano 30/90/180",
+  "minutos": 18,
+  "lead": "O diagnóstico diz o que está errado. O plano diz em que ordem consertar, quem faz e como se sabe que deu certo. A ordem que funcionou no INEMA: fundação e medição nos primeiros 30 dias, conteúdo depois, autoridade e outros idiomas só quando o índice responder.",
+  "objetivo": "ordenar os achados por impacto × esforço e escrever um plano 30/90/180 dias com métrica de sucesso e dono em cada linha.",
+  "competencias": ["priorizar-impacto-esforco", "escrever-plano-30-90-180", "definir-metrica-por-iniciativa"],
+  "aprende": [
+    {"t": "A matriz impacto × esforço com os achados do diagnóstico"},
+    {"t": "Por que fundação e medição vêm antes do conteúdo"},
+    {"t": "Métrica e dono em cada linha, e meta como hipótese"},
+    {"t": "A lista do que não fazer, escrita no próprio plano"}
+  ],
+  "hero_alt": "Mesa vista de cima com folhas organizadas em três colunas, post-its em branco, caneta e régua.",
+  "secoes": [
+    {
+      "tipo": "diagrama",
+      "titulo": "Dos achados às três janelas do plano",
+      "sub": "Clique em cada bloco.",
+      "estilo": "escada",
+      "nos": [
+        {"icone": "lista", "titulo": "Achados", "sub": "do diagnóstico",
+         "detalhe": "Tudo o que o raio-x, a prontidão e a bateria mostraram, um por linha, com a URL afetada."},
+        {"icone": "alvo", "titulo": "Impacto × esforço", "sub": "a matriz",
+         "detalhe": "Impacto: quanto muda o que o buscador vê ou o número sem marca. Esforço: horas suas e do cliente. Alto impacto e baixo esforço vão primeiro."},
+        {"icone": "portao", "titulo": "30 dias", "sub": "fundação e medição", "forte": true,
+         "detalhe": "Search Console e Bing verificados, canônico, sitemap, robots por finalidade, entidade, export semanal sem marca ligado. Sem medição, nada do que vem depois pode ser provado."},
+        {"icone": "caneta", "titulo": "90 dias", "sub": "conteúdo próprio",
+         "detalhe": "Poucas páginas com dado que só o cliente tem, no ritmo que o site aguenta, com portão humano. Ajuste de título onde há impressão sem clique."},
+        {"icone": "grafico", "titulo": "180 dias", "sub": "autoridade e idioma",
+         "detalhe": "Links e menções externas, outro idioma para as páginas vencedoras. Só depois que o índice e as impressões responderam."}
+      ],
+      "legenda": "Fundação primeiro. O que vem depois só entra quando o anterior mostrou resultado no painel."
+    },
+    {
+      "tipo": "passos",
+      "titulo": "Como escrever o plano",
+      "sub": "Clique em cada etapa.",
+      "passos": [
+        {"titulo": "Matriz", "sub": "10 achados",
+         "texto": ["Dê a cada achado uma nota de impacto (alto, médio, baixo) e de esforço (horas).", "Achado sem impacto no que o buscador vê ou no sem marca vai para o fim, mesmo que seja fácil."]},
+        {"titulo": "Sequência crítica", "sub": "o que trava o resto",
+         "texto": ["No roteiro do INEMA, quatro iniciativas eram fundação e vinham nos 30 dias: medição ligada, links dos repositórios para o site, fichas destravadas, entidade do autor.", "Conteúdo só depois. Outros idiomas e menções externas só quando o índice mostrou resultado."],
+         "exemplo": {"rot": "No INEMA", "texto": "Em 05/10, 12 de 14 URLs-chave estavam indexadas; em 13/10, 13 de 14. Só com o índice respondendo a próxima janela faz sentido."}},
+        {"titulo": "Métrica e dono", "sub": "em cada linha",
+         "texto": ["Cada iniciativa tem quem faz (você, o cliente, o agente) e como se confere (um número no painel, um arquivo, uma URL respondendo).", "Meta numérica é hipótese: escreva isso e recalibre no dia 30 com o dado do painel."]},
+        {"titulo": "O que não fazer", "sub": "escrito no plano",
+         "texto": ["Publicar um lote grande de uma vez, rede de sites, indexador pago, página por variação de palavra-chave, tradução sem revisão.", "Escrever isso no plano protege o cliente de você mesmo quando der pressa."],
+         "exemplo": {"rot": "No INEMA", "texto": "283 fichas publicadas num commit só: das 6 da amostra, 5 ficaram \"descobertas, não indexadas\". A primeira linha do \"não fazer\" do INEMA é não repetir isso."}}
+      ]
+    },
+    {
+      "tipo": "codigo",
+      "titulo": "Modelos do plano",
+      "sub": "Copie e troque o que está entre [colchetes].",
+      "blocos": [
+        {"rot": "Matriz impacto × esforço", "icone": "lista",
+         "conteudo": "| # | achado | URL | impacto (A/M/B) | esforço (h) | janela |\n|---|---|---|---|---|---|\n| 1 | [canônico com e sem www misturado] | [/] | A | 2 | 30 d |\n| 2 | [Bing Webmaster não verificado] | — | A | 0,5 | 30 d |\n| 3 | [páginas de serviço com pouco texto no HTML] | [/servicos/] | A | 8 | 30 d |\n| 4 | [título longo em 28 páginas] | [várias] | B | 3 | 90 d |"},
+        {"rot": "Plano 30/90/180 de uma página", "icone": "calendario",
+         "conteudo": "PLANO — [site] — início [data]\n\n| janela | iniciativa | dono | como se confere |\n|---|---|---|---|\n| 30 d | Search Console e Bing verificados; sitemap enviado | cliente (DNS) + eu | propriedade ativa nos dois painéis |\n| 30 d | export semanal sem marca ligado | eu | 2 linhas no arquivo semanal |\n| 30 d | canônico único, robots por finalidade | eu | raio-x sem achado importante |\n| 90 d | [3] páginas com dado próprio, portão do cliente | eu escrevo, cliente aprova | indexadas na inspeção de URL |\n| 90 d | título novo onde há impressão sem clique | eu | antes × depois em 2 semanas |\n| 180 d | menções externas; versão em [idioma] da página vencedora | cliente (relacionamento) + eu | impressões no idioma |\n\nMetas são hipóteses; recalibramos no dia 30 com o painel.\n\nNÃO FAZEMOS: lote grande de páginas de uma vez, rede de sites, indexador pago,\npágina por variação de palavra-chave, tradução sem revisão."}
+      ]
+    },
+    {
+      "tipo": "pratica",
+      "titulo": "Prática: o plano do seu primeiro cliente",
+      "sub": "Use os achados da aula 2.",
+      "exercicios": [
+        {"id": "e1", "titulo": "E1 · Matriz com 10 achados", "min": "30 min",
+         "texto": "Passe os achados do diagnóstico para a matriz, com impacto, esforço e janela.",
+         "pronto": "a matriz tem 10 linhas, cada uma com URL (ou \"site todo\"), impacto, horas e janela; nenhuma linha de conteúdo está na janela de 30 dias se a medição ainda não está ligada."},
+        {"id": "e2", "titulo": "E2 · Plano de uma página", "min": "40 min",
+         "texto": "Escreva o plano 30/90/180 com dono e \"como se confere\" em cada linha, mais o bloco \"não fazemos\".",
+         "pronto": "o plano cabe numa página, toda linha tem dono e uma conferência que o cliente consegue fazer sozinho, e há a frase de que metas são hipóteses a recalibrar no dia 30."}
+      ]
+    },
+    {
+      "tipo": "quiz",
+      "titulo": "Teste o que aprendeu",
+      "sub": "A explicação aparece depois da sua resposta.",
+      "perguntas": [
+        {"p": "O cliente quer começar pelos artigos. A medição ainda não está ligada. O que você propõe?",
+         "opcoes": ["Começar pelos artigos, para mostrar serviço.", "Ligar a medição e a fundação nos 30 primeiros dias; sem isso, o efeito dos artigos não pode ser provado.", "Fazer tudo ao mesmo tempo.", "Esperar 6 meses."],
+         "certa": 1, "explica": "Sem linha de base e export semanal, você não tem o \"antes\". O resultado dos artigos vira opinião.", "ref": "diagrama", "cert": true},
+        {"p": "O que o caso das 283 fichas do INEMA ensina para o plano?",
+         "opcoes": ["Que fichas não funcionam.", "Que publicar um lote grande de páginas finas de uma vez trava o rastreio: das 6 da amostra, 5 não tinham sido rastreadas.", "Que é preciso pagar indexador.", "Que o Google estava fora do ar."],
+         "certa": 1, "explica": "Lote grande de páginas parecidas sinaliza baixo valor. O plano escreve isso no \"não fazemos\".", "ref": "passos"},
+        {"p": "Como tratar uma meta como \"X mil impressões em 90 dias\" no plano?",
+         "opcoes": ["Como garantia contratual.", "Como hipótese, escrita assim, e recalibrada no dia 30 com o dado do painel.", "Não escrever meta nenhuma.", "Copiar a meta de outro cliente."],
+         "certa": 1, "explica": "Meta ajuda a decidir; promessa vira cobrança. O dado do próprio site no dia 30 é a base certa.", "ref": "passos"},
+        {"p": "O que toda linha do plano precisa ter?",
+         "opcoes": ["Um preço.", "Dono e uma forma de conferir que o cliente consegue fazer sozinho.", "Uma ferramenta paga.", "Uma posição-alvo."],
+         "certa": 1, "explica": "Dono evita que a tarefa fique no ar. Conferência simples deixa o cliente acompanhar sem depender de você.", "ref": "codigo"}
+      ]
+    },
+    {
+      "tipo": "resumo",
+      "titulo": "Para levar",
+      "itens": [
+        {"t": "Impacto × esforço", "texto": "Alto impacto e baixo esforço primeiro; impacto é o que muda para o buscador ou para o sem marca."},
+        {"t": "30 → 90 → 180", "texto": "Fundação e medição, depois conteúdo, depois autoridade e idioma."},
+        {"t": "Meta é hipótese", "texto": "Recalibre no dia 30 com o painel. E escreva o \"não fazemos\" no próprio plano."}
+      ]
+    },
+    {
+      "tipo": "links",
+      "titulo": "Para ir além",
+      "links": [
+        {"t": "Método inemaSEO: as 10 etapas e o Plano B", "href": "https://github.com/inematds/inemaseo-metodo/blob/main/docs/METODO.md", "icone": "arquivo"},
+        {"t": "Curso 3 · Medição e Rotina", "href": "https://inematds.github.io/formacao-inemaseo-medicao-v72/", "icone": "grafico"},
+        {"t": "Vendas com IA: solução e preço que escala", "href": "https://inematds.github.io/formacao-vendas-ia-consultoria-v72/aulas/solucao-preco/", "icone": "alvo"}
+      ]
+    }
+  ]
+}
