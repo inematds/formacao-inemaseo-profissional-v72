@@ -42,3 +42,9 @@ Somas: direto 2+2+2+2 = 8; desvio 2+1+1+2+2 = 8 (não passa). Máximo = 8.
 - Metas numéricas do PLANO_EXECUCAO (impressões, cliques por fase) eram hipóteses e não entram; a aula 3 ensina que meta de plano é hipótese a recalibrar no dia 30.
 - Prospector Agent entra só como ideia de descoberta + portão humano; a venda de redesenho em massa é mostrada como construção que perde valor (prof2030).
 - Faixas de preço: só as de TENDENCIAS §7 (US$ 500–7.500 auditoria; mensal de pequena empresa US$ 2.000–6.000), "de fornecedores dos EUA, adapte ao seu mercado". Preço detalhado aponta para o curso 2 de Vendas com IA.
+
+## Resultado (19/10/2026)
+- Publicado: https://inematds.github.io/formacao-inemaseo-profissional-v72/ (PT, /en/, /es/ → 200).
+- Portão: `validar.py --links` OK em PT/EN/ES, exceto o link para o curso 5 (`formacao-inemaseo-agentes-v72`, ainda não publicado); `conferir-tela.cjs` 27 páginas × 2 larguras OK, simconversa 8 de 8.
+- Imagens: 10/10 pelo Codex na 1ª tentativa, nenhuma reserva flux.
+- Tradução: 1009 textos por idioma (Sonnet 5.5 da assinatura). Correções à mão (JSON + cache): bloco-modelo do diagnóstico voltou meio PT no ES; objetivo ES da aula 5 passou de 160; CSV com `[https://...]` recusado → placeholder sem URL.
